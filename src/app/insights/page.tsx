@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { getAllInsights } from "@/lib/insights";
 
 export const metadata: Metadata = {
-  title: "Insights | IntellectAI — Agentic AI for SMBs",
+  title: "Insights | IntellectAI · Agentic AI for SMBs",
   description:
     "Practical writing on agentic AI, automation, and how small and medium businesses can deploy AI agents that actually move the numbers.",
   alternates: { canonical: "/insights" },
@@ -45,8 +46,18 @@ export default function InsightsPage() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
               Practical writing for SMB owners and operators. No hype, no
-              fluff — just what works.
+              fluff, just what works.
             </p>
+
+            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.06]">
+              <Image
+                src="/images/image1.jpeg"
+                alt="A close-up of an AI agent assistant integrated into a modern workflow"
+                width={1920}
+                height={1080}
+                className="h-[180px] w-full object-cover md:h-[260px]"
+              />
+            </div>
           </div>
         </section>
 

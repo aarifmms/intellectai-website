@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 type Step = {
@@ -16,7 +17,7 @@ const SCENARIOS: Record<
   leads: {
     title: "Lead Qualification Agent",
     userInput:
-      "New form submission: Sarah Chen, sarah@acme-retail.io — 'Interested in automating our inventory reorder process'",
+      "New form submission: Sarah Chen, sarah@acme-retail.io. 'Interested in automating our inventory reorder process'",
     steps: [
       {
         type: "thought",
@@ -35,7 +36,7 @@ const SCENARIOS: Record<
         type: "result",
         label: "Enrichment found",
         detail:
-          "Acme Retail — 48 employees, $12M revenue, e-commerce sector. Sarah is Head of Operations.",
+          "Acme Retail. 48 employees, $12M revenue, e-commerce sector. Sarah is Head of Operations.",
         duration: 800,
       },
       {
@@ -155,7 +156,7 @@ const SCENARIOS: Record<
       {
         type: "result",
         label: "Match",
-        detail: "Mike Johnson — 142 Oak St, last service 2024-11.",
+        detail: "Mike Johnson. 142 Oak St, last service 2024-11.",
         duration: 700,
       },
       {
@@ -175,7 +176,7 @@ const SCENARIOS: Record<
         type: "tool",
         label: "tool: tts.respond",
         detail:
-          "Speaking: 'I can do tomorrow at 2pm with Dave, or 4pm with Carlos — which works?'",
+          "Speaking: 'I can do tomorrow at 2pm with Dave, or 4pm with Carlos, which works?'",
         duration: 1100,
       },
       {
@@ -220,6 +221,33 @@ export default function AgentDemo() {
             Pick a scenario. Hit run. See exactly how an agent reasons, uses
             tools, and completes a real business task end-to-end.
           </p>
+        </div>
+
+        <div className="mb-8 grid grid-cols-1 gap-4 md:mb-10 md:grid-cols-2">
+          <figure className="overflow-hidden rounded-xl border border-white/[0.06]">
+            <Image
+              src="/images/image6.jpeg"
+              alt="An AI workforce dashboard showing live call volume and per-agent metrics"
+              width={1920}
+              height={1080}
+              className="h-full w-full object-cover"
+            />
+            <figcaption className="border-t border-white/[0.04] bg-black/30 px-4 py-2 text-xs text-zinc-500">
+              Live AI workforce operations dashboard
+            </figcaption>
+          </figure>
+          <figure className="overflow-hidden rounded-xl border border-white/[0.06]">
+            <Image
+              src="/images/image5.jpeg"
+              alt="Voice AI agent interface with active calls, transcripts, and appointment booking"
+              width={1024}
+              height={1024}
+              className="h-full w-full object-cover"
+            />
+            <figcaption className="border-t border-white/[0.04] bg-black/30 px-4 py-2 text-xs text-zinc-500">
+              Voice agent: live calls, transcripts, bookings
+            </figcaption>
+          </figure>
         </div>
 
         {/* Scenario tabs */}

@@ -166,7 +166,7 @@ export default function EVHubCaseStudyPage() {
               {[
                 "EV owners overpay through dealer markups and middleman distributors",
                 "Most online options lack Canadian safety certification (cETLus/UL)",
-                "No guided shopping experience — buyers don't know which charger fits their vehicle and home setup",
+                "No guided shopping experience, buyers don't know which charger fits their vehicle and home setup",
                 "Generic retailers don't offer EV-specific support, installation guidance, or trade-in options",
                 "Cross-border shipping and warranty complexity discourages online purchases",
               ].map((item) => (

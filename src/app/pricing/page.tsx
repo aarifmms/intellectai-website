@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { PRICING_TIERS, FAQS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Pricing | IntellectAI — AI Operating System for SMBs",
+  title: "Pricing | IntellectAI · AI Operating System for SMBs",
   description:
     "Transparent pricing for your AI Operating System. Free AI Operations Audit. Workflow automation from $2,000. Custom AI Workforce from $5,000. Built for small and medium businesses.",
   alternates: { canonical: "/pricing" },
@@ -34,9 +35,19 @@ export default function PricingPage() {
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
               Four tiers. One playbook. Every AI Operating System gets scoped
-              after the free audit — these are honest starting prices for
+              after the free audit, these are honest starting prices for
               SMBs, not enterprise fantasy quotes.
             </p>
+
+            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.06]">
+              <Image
+                src="/images/image4.jpeg"
+                alt="A secured, integrated business stack with AI workflows running across systems"
+                width={1920}
+                height={1080}
+                className="h-[180px] w-full object-cover md:h-[240px]"
+              />
+            </div>
           </div>
         </section>
 

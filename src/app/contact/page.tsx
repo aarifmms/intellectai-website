@@ -6,7 +6,7 @@ import ContactForm from "@/components/sections/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | IntellectAI",
   description:
-    "Get in touch with IntellectAI. Book a free AI Readiness Audit or tell us about your project.",
+    "Get in touch with IntellectAI · Book a free AI Readiness Audit or tell us about your project.",
 };
 
 export default function Contact() {

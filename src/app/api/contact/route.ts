@@ -26,7 +26,7 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           from: "IntellectAI <onboarding@resend.dev>",
           to: "aarifshaikhs@hotmail.com",
-          subject: `New Lead: ${name} — ${service}`,
+          subject: `New Lead: ${name}. ${service}`,
           html: `
             <h2>New Contact Form Submission</h2>
             <table style="border-collapse:collapse;width:100%;max-width:600px;">

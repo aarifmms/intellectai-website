@@ -41,7 +41,7 @@ export default function Testimonials() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
             Real AI workforces shipped for real businesses. No demos, no
-            slideware — just systems running in the wild.
+            slideware, just systems running in the wild.
           </p>
         </div>
 

@@ -116,7 +116,7 @@ export default function ROICalculator() {
               Hours/week spent on these tasks (per person)
             </div>
             <div className="mb-1 text-xs text-zinc-500">
-              Move the sliders — leave at 0 if it doesn&apos;t apply.
+              Move the sliders, leave at 0 if it doesn&apos;t apply.
             </div>
 
             <div className="mt-4 space-y-4">

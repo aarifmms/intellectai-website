@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { SERVICES } from "@/lib/constants";
 
 const ICONS = [
@@ -71,10 +72,27 @@ export default function Services() {
             <span className="text-gradient">AI Operating System</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
-            Voice AI, workflow orchestration, and autonomous agents — combined
+            Voice AI, workflow orchestration, and autonomous agents, combined
             into one intelligent business system, customized to your industry
             and operations.
           </p>
+        </div>
+
+        <div className="relative mb-10 overflow-hidden rounded-2xl border border-white/[0.06] md:mb-12">
+          <Image
+            src="/images/image9.jpeg"
+            alt="AI agent architecture showing memory, autonomous action, reactivity, tool use, and human-in-the-loop control"
+            width={1920}
+            height={1080}
+            className="h-[240px] w-full object-cover md:h-[360px]"
+          />
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(9,9,11,0.2) 0%, rgba(9,9,11,0.6) 100%)",
+            }}
+          />
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">

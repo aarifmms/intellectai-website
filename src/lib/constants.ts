@@ -2,7 +2,7 @@ export const SITE = {
   name: "IntellectAI",
   tagline: "The AI Operating System Built for SMBs.",
   description:
-    "We design and deploy Agentic AI infrastructure for small and medium businesses — AI agents, workflow automation, and autonomous operations that run your business 24/7.",
+    "We design and deploy Agentic AI infrastructure for small and medium businesses. AI agents, workflow automation, and autonomous operations that run your business 24/7.",
   url: "https://intellectai.io",
   email: "aarifshaikhs@hotmail.com",
   founder: "Aarif Shaikh",
@@ -63,7 +63,7 @@ export const SERVICES = [
   {
     title: "Custom AI Workforce",
     description:
-      "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents — built for your business, running 24/7.",
+      "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
     price: "Starting at $5,000",
     cta: "Deploy Your AI Workforce",
     popular: false,
@@ -136,7 +136,7 @@ export const STEPS = [
     number: "01",
     title: "Architect",
     description:
-      "Free AI Operations Audit. We map your business and design your AI Operating System — what to automate, what to leave alone, and the highest-ROI starting point.",
+      "Free AI Operations Audit. We map your business and design your AI Operating System, what to automate, what to leave alone, and the highest-ROI starting point.",
   },
   {
     number: "02",
@@ -156,12 +156,12 @@ export const FAQS = [
   {
     question: "What is an AI Operating System exactly?",
     answer:
-      "It's the connected layer of AI agents, automations, and workflows that runs your business operations. Instead of one chatbot for one task, you get an intelligent system that coordinates calls, leads, scheduling, customer comms, and admin work autonomously — all integrated with your existing tools.",
+      "It's the connected layer of AI agents, automations, and workflows that runs your business operations. Instead of one chatbot for one task, you get an intelligent system that coordinates calls, leads, scheduling, customer comms, and admin work autonomously, all integrated with your existing tools.",
   },
   {
     question: "How is Agentic AI different from a chatbot?",
     answer:
-      "A chatbot answers questions. An Agentic AI agent takes action — it can call your CRM, book in your calendar, send emails, update databases, escalate to humans when needed, and complete entire workflows end-to-end. We don't build chatbots. We deploy digital employees.",
+      "A chatbot answers questions. An Agentic AI agent takes action, it can call your CRM, book in your calendar, send emails, update databases, escalate to humans when needed, and complete entire workflows end-to-end. We don't build chatbots. We deploy digital employees.",
   },
   {
     question: "How long does deployment take?",
@@ -176,12 +176,12 @@ export const FAQS = [
   {
     question: "Do you work with small businesses?",
     answer:
-      "Yes — that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Our entry point is $2,000. Designed specifically for SMBs that want to punch above their weight.",
+      "Yes, that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Our entry point is $2,000. Designed specifically for SMBs that want to punch above their weight.",
   },
   {
     question: "What does it cost to deploy an AI workforce?",
     answer:
-      "AI Operations Audit: Free. Workflow Automation: From $2,000. Custom AI Workforce: From $5,000. Ongoing optimization: $1,500/mo. We scope every project before we quote — no surprises.",
+      "AI Operations Audit: Free. Workflow Automation: From $2,000. Custom AI Workforce: From $5,000. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
   },
   {
     question: "What happens after deployment?",
@@ -286,7 +286,7 @@ export const INDUSTRIES = [
     name: "Professional Services",
     icon: "building",
     description:
-      "Accounting, HR, marketing, IT services — client comms, onboarding, scheduling, and operations automation.",
+      "Accounting, HR, marketing, IT services, client comms, onboarding, scheduling, and operations automation.",
     examples: ["Client onboarding", "Scheduling agent", "Operations dashboard"],
   },
 ] as const;
@@ -299,7 +299,7 @@ export const CHATBOT_VS_AGENT = [
   },
   {
     capability: "Tools & systems",
-    chatbot: "Read-only — just text in, text out",
+    chatbot: "Read-only, just text in, text out",
     agent: "Uses your CRM, calendar, email, databases, APIs",
   },
   {
@@ -334,7 +334,7 @@ export const VALUE_PROPS = [
   {
     title: "Never Miss a Lead",
     description:
-      "Your AI workforce responds instantly, 24/7. Inbound calls, web forms, DMs — handled in seconds.",
+      "Your AI workforce responds instantly, 24/7. Inbound calls, web forms, DMs, handled in seconds.",
     icon: "zap",
   },
   {
@@ -346,7 +346,7 @@ export const VALUE_PROPS = [
   {
     title: "Enterprise-Grade UX",
     description:
-      "Deliver Fortune 500-level response times and consistency — on an SMB budget.",
+      "Deliver Fortune 500-level response times and consistency, on an SMB budget.",
     icon: "star",
   },
   {
@@ -405,7 +405,7 @@ export const PRICING_TIERS = [
     price: "$5,000",
     priceSuffix: "starting",
     description:
-      "Digital employees built for your business. Voice, sales, support, ops — running 24/7.",
+      "Digital employees built for your business. Voice, sales, support, ops, running 24/7.",
     cta: "Deploy Your AI Workforce",
     ctaHref: "/contact",
     highlight: false,

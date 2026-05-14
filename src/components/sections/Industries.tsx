@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { INDUSTRIES } from "@/lib/constants";
 
 const ICONS: Record<string, React.ReactElement> = {
@@ -123,6 +124,34 @@ export default function Industries() {
             its industry. If your team does it manually today, we can deploy
             an agent that does it tomorrow.
           </p>
+        </div>
+
+        <div className="relative mb-10 overflow-hidden rounded-2xl border border-white/[0.06] md:mb-14">
+          <Image
+            src="/images/image7.jpeg"
+            alt="AI networks connecting every industry, from retail to manufacturing"
+            width={1920}
+            height={1080}
+            className="h-[200px] w-full object-cover opacity-70 md:h-[280px]"
+            priority={false}
+          />
+          <div
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, rgba(9,9,11,0.4) 0%, rgba(9,9,11,0.85) 100%)",
+            }}
+          />
+          <div className="absolute inset-0 flex items-end p-6 md:p-8">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-wider text-blue-400">
+                14 industries
+              </p>
+              <p className="mt-1 text-lg font-semibold text-white md:text-xl">
+                One AI Operating System, custom-fit per vertical.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

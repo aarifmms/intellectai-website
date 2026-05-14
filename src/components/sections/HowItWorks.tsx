@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { STEPS } from "@/lib/constants";
 
 export default function HowItWorks() {
@@ -13,10 +14,21 @@ export default function HowItWorks() {
             <span className="text-gradient">Autonomous Operations</span>
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
-            Three phases. Three to four weeks. Zero buzzwords — just a
+            Three phases. Three to four weeks. Zero buzzwords, just a
             deployable AI Operating System for your business.
           </p>
         </div>
+
+        <div className="mx-auto mb-12 max-w-5xl overflow-hidden rounded-2xl border border-white/[0.06] md:mb-16">
+          <Image
+            src="/images/image3.jpeg"
+            alt="A growth trajectory showing AI tools and processes scaling from laptop to mobile"
+            width={1920}
+            height={1080}
+            className="h-[200px] w-full object-cover md:h-[280px]"
+          />
+        </div>
+
         <div className="relative mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
           <div className="absolute left-[16.67%] right-[16.67%] top-10 hidden h-0.5 bg-gradient-to-r from-blue-500/30 to-transparent md:block" />
 

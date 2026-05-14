@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CHATBOT_VS_AGENT } from "@/lib/constants";
 
 export default function AgentVsChatbot() {
@@ -29,9 +30,19 @@ export default function AgentVsChatbot() {
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
             Traditional AI responds to prompts. Agentic AI makes decisions,
-            uses your tools, and runs entire workflows autonomously — like a
+            uses your tools, and runs entire workflows autonomously, like a
             digital employee that never sleeps.
           </p>
+        </div>
+
+        <div className="mb-10 overflow-hidden rounded-2xl border border-white/[0.06]">
+          <Image
+            src="/images/image8.jpeg"
+            alt="A human professional on one side and an AI agent on the other, working in parallel"
+            width={1920}
+            height={1080}
+            className="h-[220px] w-full object-cover md:h-[320px]"
+          />
         </div>
 
         <div

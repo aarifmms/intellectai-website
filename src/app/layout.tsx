@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+});
+
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 const SITE_URL = "https://intellectai.io";
@@ -48,7 +56,7 @@ export const metadata: Metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "IntellectAI — The AI Operating System for Small & Medium Businesses",
+        alt: "IntellectAI · The AI Operating System for Small & Medium Businesses",
       },
     ],
   },
@@ -75,7 +83,7 @@ export default function RootLayout({
       <head>
         <meta name="color-scheme" content="dark" />
       </head>
-      <body className={`${inter.variable} antialiased bg-bg-primary text-text-primary`}>
+      <body className={`${inter.variable} ${sora.variable} antialiased bg-bg-primary text-text-primary`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

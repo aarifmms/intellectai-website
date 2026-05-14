@@ -56,7 +56,7 @@ export default function Hero() {
               <span className="font-semibold text-zinc-200">
                 Agentic AI infrastructure
               </span>{" "}
-              for SMBs across every industry — autonomous agents that handle
+              for SMBs across every industry, autonomous agents that handle
               calls, leads, scheduling, customer ops, and workflows 24/7. Not
               automation. Operations.
             </motion.p>

@@ -24,7 +24,7 @@ export default function FinalCTA() {
           <p className="mb-8 text-base leading-[1.6] text-zinc-400 md:text-lg">
             Book your free AI Operations Audit. We&apos;ll architect your AI
             Operating System and show you the highest-ROI place to start. No
-            commitment, no pressure — just a deployable blueprint.
+            commitment, no pressure, just a deployable blueprint.
           </p>
           <a
             href="/contact"
