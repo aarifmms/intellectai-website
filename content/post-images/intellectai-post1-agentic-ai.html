@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1200px; height: 630px; display: flex; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #000; }
+.left { width: 55%; height: 100%; background: #000; display: flex; flex-direction: column; justify-content: center; padding: 60px; }
+.right { width: 45%; height: 100%; background: #F59E0B; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 50px; position: relative; }
+.badge { display: inline-block; background: #F59E0B; color: #000; font-size: 14px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; padding: 8px 16px; margin-bottom: 30px; }
+.headline { color: #fff; font-size: 44px; font-weight: 800; line-height: 1.15; margin-bottom: 24px; }
+.headline span { color: #F59E0B; }
+.sub { color: #999; font-size: 20px; line-height: 1.5; }
+.vs-box { width: 100%; }
+.vs-item { background: rgba(0,0,0,0.12); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+.vs-label { font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: rgba(0,0,0,0.5); margin-bottom: 8px; }
+.vs-text { font-size: 22px; font-weight: 700; color: #000; line-height: 1.3; }
+.vs-divider { text-align: center; font-size: 28px; font-weight: 900; color: #000; margin: 4px 0; }
+.brand { position: absolute; bottom: 30px; right: 40px; font-size: 15px; font-weight: 700; color: rgba(0,0,0,0.4); letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="left">
+  <div class="badge">IntellectAI</div>
+  <div class="headline">AI That <span>Works</span>,<br>Not Just Talks</div>
+  <div class="sub">We build AI agents that close deals,<br>process orders, and run automations.<br>24/7. No supervision needed.</div>
+</div>
+<div class="right">
+  <div class="vs-box">
+    <div class="vs-item">
+      <div class="vs-label">Chatbots</div>
+      <div class="vs-text">Answer questions.<br>That's it.</div>
+    </div>
+    <div class="vs-divider">VS</div>
+    <div class="vs-item" style="background: rgba(0,0,0,0.2);">
+      <div class="vs-label">AI Agents</div>
+      <div class="vs-text">Reason. Plan. Act.<br>Complete real work.</div>
+    </div>
+  </div>
+  <div class="brand">intellectai.com</div>
+</div>
+</body>
+</html>

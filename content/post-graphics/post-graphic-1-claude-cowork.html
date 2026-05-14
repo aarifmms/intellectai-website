@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #222; font-family: 'Inter', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1080px;
+    background: #D4845A;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+  }
+
+  .top-label {
+    position: absolute; top: 50px; left: 50px;
+    background: #fff; color: #D4845A;
+    font-size: 18px; font-weight: 900; padding: 10px 24px;
+    letter-spacing: 3px;
+  }
+
+  .icon {
+    width: 220px; height: 220px; margin-bottom: 40px;
+    position: relative;
+  }
+
+  /* Lightning bolt */
+  .bolt {
+    width: 0; height: 0;
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  }
+
+  .bolt-shape {
+    width: 140px; height: 220px;
+    background: #fff;
+    clip-path: polygon(55% 0%, 100% 0%, 40% 50%, 75% 50%, 0% 100%, 0% 100%, 35% 55%, 0% 55%);
+    position: relative;
+  }
+
+  /* Nodes on bolt */
+  .node {
+    width: 18px; height: 18px; background: #333; border-radius: 50%;
+    position: absolute;
+  }
+  .node1 { top: 55px; left: 75px; }
+  .node2 { top: 105px; left: 45px; }
+  .node3 { top: 155px; left: 65px; }
+  .line {
+    position: absolute; background: #333; height: 3px;
+    transform-origin: left center;
+  }
+  .line1 { top: 63px; left: 58px; width: 40px; transform: rotate(55deg); }
+  .line2 { top: 113px; left: 54px; width: 35px; transform: rotate(-40deg); }
+
+  .main-text {
+    font-size: 72px; font-weight: 900; color: #fff;
+    line-height: 1.05; margin-bottom: 30px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+  }
+
+  .sub-text {
+    font-size: 28px; font-weight: 700; color: rgba(255,255,255,0.85);
+    line-height: 1.4;
+  }
+
+  .bottom-bar {
+    position: absolute; bottom: 50px; left: 80px; right: 80px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .brand { font-size: 20px; font-weight: 900; color: #fff; }
+  .save { font-size: 16px; font-weight: 700; color: rgba(255,255,255,0.7); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top-label">BREAKING</div>
+
+    <div class="icon">
+      <div class="bolt-shape">
+        <div class="node node1"></div>
+        <div class="node node2"></div>
+        <div class="node node3"></div>
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+      </div>
+    </div>
+
+    <div class="main-text">CLAUDE<br>COWORK</div>
+    <div class="sub-text">just built an entire SaaS dashboard<br>from a single prompt</div>
+
+    <div class="bottom-bar">
+      <div class="brand">@IntellectAI</div>
+      <div class="save">save this thread</div>
+    </div>
+  </div>
+</body>
+</html>

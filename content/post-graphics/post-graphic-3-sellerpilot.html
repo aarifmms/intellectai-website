@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #222; font-family: 'Inter', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1080px;
+    background: #FF9900;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 80px;
+  }
+
+  .alert-box {
+    position: absolute; top: 45px; left: 50%; transform: translateX(-50%);
+    background: #CC0000; color: #fff;
+    font-size: 18px; font-weight: 900; padding: 12px 30px;
+    letter-spacing: 3px;
+  }
+
+  /* Shield icon */
+  .shield {
+    width: 180px; height: 210px; margin-bottom: 35px;
+    position: relative;
+  }
+  .shield-shape {
+    width: 180px; height: 210px;
+    background: #fff;
+    clip-path: polygon(50% 0%, 100% 15%, 100% 65%, 50% 100%, 0% 65%, 0% 15%);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .shield-check {
+    font-size: 80px; color: #10B981; margin-top: -15px;
+  }
+
+  .big-number {
+    font-size: 130px; font-weight: 900; color: #fff;
+    line-height: 0.9; margin-bottom: 10px;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+  }
+
+  .context {
+    font-size: 28px; font-weight: 800; color: rgba(0,0,0,0.6);
+    margin-bottom: 40px;
+  }
+
+  .main-text {
+    font-size: 52px; font-weight: 900; color: #fff;
+    line-height: 1.1; margin-bottom: 10px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+  }
+
+  .sub-text {
+    font-size: 30px; font-weight: 800; color: rgba(0,0,0,0.5);
+  }
+
+  .bottom-bar {
+    position: absolute; bottom: 50px; left: 80px; right: 80px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .brand-box { display: flex; align-items: center; gap: 12px; }
+  .brand-icon { font-size: 32px; }
+  .brand-name { font-size: 24px; font-weight: 900; color: #fff; text-shadow: 1px 1px 0 rgba(0,0,0,0.15); }
+  .cta { background: #fff; color: #FF9900; font-size: 18px; font-weight: 900; padding: 14px 30px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="alert-box">SELLER ALERT</div>
+
+    <div class="shield">
+      <div class="shield-shape">
+        <div class="shield-check">✓</div>
+      </div>
+    </div>
+
+    <div class="big-number">12,000</div>
+    <div class="context">Amazon accounts suspended last month</div>
+
+    <div class="main-text">Don't be next.</div>
+    <div class="sub-text">AI-powered compliance on autopilot.</div>
+
+    <div class="bottom-bar">
+      <div class="brand-box">
+        <div class="brand-icon">🛡️</div>
+        <div class="brand-name">SellerPilotAI</div>
+      </div>
+      <div class="cta">PROTECT NOW →</div>
+    </div>
+  </div>
+</body>
+</html>

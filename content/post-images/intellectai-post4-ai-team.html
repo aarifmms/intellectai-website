@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 1200px; height: 630px; display: flex; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; }
+.left { width: 45%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 50px 50px 50px 60px; }
+.badge { display: inline-block; background: #F59E0B; color: #000; font-size: 12px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; padding: 6px 14px; margin-bottom: 24px; width: fit-content; }
+.headline { color: #fff; font-size: 36px; font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+.headline span { color: #F59E0B; }
+.sub { color: #777; font-size: 17px; line-height: 1.6; }
+.url { color: #444; font-size: 14px; margin-top: 24px; font-weight: 600; }
+.right { width: 55%; height: 100%; padding: 36px 50px 36px 30px; display: flex; flex-direction: column; justify-content: center; }
+.agent-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.agent { background: #151515; border: 1px solid #252525; border-radius: 12px; padding: 16px 18px; display: flex; align-items: center; gap: 14px; }
+.agent-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 800; color: #000; flex-shrink: 0; }
+.agent-info { display: flex; flex-direction: column; }
+.agent-role { color: #fff; font-size: 15px; font-weight: 700; }
+.agent-task { color: #666; font-size: 12px; margin-top: 2px; }
+.i1 { background: #F59E0B; }
+.i2 { background: #3B82F6; }
+.i3 { background: #10B981; }
+.i4 { background: #EF4444; }
+.i5 { background: #8B5CF6; }
+.i6 { background: #EC4899; }
+.i7 { background: #F97316; }
+.full-width { grid-column: 1 / -1; }
+</style>
+</head>
+<body>
+<div class="left">
+  <div class="badge">Behind the Scenes</div>
+  <div class="headline">I Run My Agency<br>With <span>7 AI Agents</span></div>
+  <div class="sub">Not as a gimmick.<br>Because it actually works.<br>Here's my entire team:</div>
+  <div class="url">intellectai.com</div>
+</div>
+<div class="right">
+  <div class="agent-grid">
+    <div class="agent">
+      <div class="agent-icon i1">C</div>
+      <div class="agent-info">
+        <div class="agent-role">CEO & Strategist</div>
+        <div class="agent-task">Vision, revenue, priorities</div>
+      </div>
+    </div>
+    <div class="agent">
+      <div class="agent-icon i2">O</div>
+      <div class="agent-info">
+        <div class="agent-role">Operations PM</div>
+        <div class="agent-task">Projects, SOPs, delivery</div>
+      </div>
+    </div>
+    <div class="agent">
+      <div class="agent-icon i3">E</div>
+      <div class="agent-info">
+        <div class="agent-role">Lead Engineer</div>
+        <div class="agent-task">Code, APIs, AI agents</div>
+      </div>
+    </div>
+    <div class="agent">
+      <div class="agent-icon i4">S</div>
+      <div class="agent-info">
+        <div class="agent-role">Sales Lead</div>
+        <div class="agent-task">Outreach, proposals, closing</div>
+      </div>
+    </div>
+    <div class="agent">
+      <div class="agent-icon i5">M</div>
+      <div class="agent-info">
+        <div class="agent-role">Marketing Lead</div>
+        <div class="agent-task">Content, social, SEO</div>
+      </div>
+    </div>
+    <div class="agent">
+      <div class="agent-icon i6">D</div>
+      <div class="agent-info">
+        <div class="agent-role">Designer</div>
+        <div class="agent-task">UI/UX, brand, frontend</div>
+      </div>
+    </div>
+    <div class="agent full-width" style="justify-content: center;">
+      <div class="agent-icon i7">F</div>
+      <div class="agent-info">
+        <div class="agent-role">Finance & Admin</div>
+        <div class="agent-task">Budgets, invoices, contracts</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

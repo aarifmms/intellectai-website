@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #222; font-family: 'Inter', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1080px;
+    background: #059669;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 80px 90px;
+  }
+
+  .top-label {
+    position: absolute; top: 45px; left: 50px;
+    background: #fff; color: #059669;
+    font-size: 16px; font-weight: 900; padding: 10px 24px;
+    letter-spacing: 3px;
+  }
+
+  .spots {
+    position: absolute; top: 45px; right: 50px;
+    background: #000; color: #fff;
+    font-size: 14px; font-weight: 900; padding: 10px 20px;
+    letter-spacing: 2px;
+  }
+
+  .title {
+    font-size: 56px; font-weight: 900; color: #fff;
+    line-height: 1.1; margin-bottom: 50px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    max-width: 800px;
+  }
+  .title .yellow { color: #FBBF24; }
+
+  .deliverables {
+    display: flex; flex-direction: column; gap: 16px; margin-bottom: 45px;
+  }
+
+  .del-row {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 24px 28px;
+    display: flex; align-items: center; gap: 20px;
+  }
+
+  .del-num {
+    font-size: 48px; font-weight: 900; color: #FBBF24;
+    min-width: 55px; text-align: center;
+  }
+
+  .del-content {}
+  .del-title { font-size: 22px; font-weight: 900; color: #fff; margin-bottom: 4px; }
+  .del-desc { font-size: 16px; color: rgba(255,255,255,0.6); font-weight: 600; }
+
+  .no-pitch {
+    font-size: 22px; font-weight: 700; color: rgba(255,255,255,0.5);
+    margin-bottom: 35px;
+  }
+
+  .cta-area {
+    display: flex; align-items: center; gap: 20px;
+  }
+
+  .cta-box {
+    background: #fff; color: #059669;
+    font-size: 24px; font-weight: 900;
+    padding: 18px 40px;
+  }
+
+  .cta-note {
+    font-size: 18px; font-weight: 700; color: rgba(255,255,255,0.6);
+  }
+
+  .bottom-bar {
+    position: absolute; bottom: 50px; left: 90px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .brand-icon { background: #F59E0B; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 900; color: #000; }
+  .brand-name { font-size: 20px; font-weight: 900; color: #fff; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top-label">FREE OFFER</div>
+    <div class="spots">LIMITED SPOTS</div>
+
+    <div class="title">I'll audit your business for <span class="yellow">AI automation</span> opportunities.</div>
+
+    <div class="deliverables">
+      <div class="del-row">
+        <div class="del-num">1</div>
+        <div class="del-content">
+          <div class="del-title">Process Map</div>
+          <div class="del-desc">Your top 5 automatable processes identified</div>
+        </div>
+      </div>
+      <div class="del-row">
+        <div class="del-num">2</div>
+        <div class="del-content">
+          <div class="del-title">ROI Estimate</div>
+          <div class="del-desc">Estimated time and money saved per month</div>
+        </div>
+      </div>
+      <div class="del-row">
+        <div class="del-num">3</div>
+        <div class="del-content">
+          <div class="del-title">Action Plan</div>
+          <div class="del-desc">Prioritized roadmap to implement AI workflows</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="no-pitch">No pitch. No pressure. Just clarity.</div>
+
+    <div class="cta-area">
+      <div class="cta-box">DM "AI AUDIT"</div>
+      <div class="cta-note">First 10 this week only</div>
+    </div>
+
+    <div class="bottom-bar">
+      <div class="brand-icon">iA</div>
+      <div class="brand-name">IntellectAI</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #222; font-family: 'Inter', sans-serif; }
+
+  .card {
+    width: 1080px; height: 1080px;
+    background: #2D1B69;
+    position: relative; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 70px;
+  }
+
+  .big-num {
+    position: absolute; top: -30px; right: 50px;
+    font-size: 350px; font-weight: 900; color: rgba(255,255,255,0.04);
+    line-height: 1;
+  }
+
+  .top-label {
+    font-size: 16px; font-weight: 900; color: #B794F4;
+    letter-spacing: 4px; margin-bottom: 40px;
+  }
+
+  .main-text {
+    font-size: 68px; font-weight: 900; color: #fff;
+    line-height: 1.08; margin-bottom: 50px;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  }
+  .main-text .yellow { color: #FBBF24; }
+
+  /* Tool grid */
+  .tools {
+    display: grid; grid-template-columns: repeat(5, 1fr);
+    gap: 16px; width: 100%; margin-bottom: 40px;
+  }
+
+  .tool {
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px 10px;
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+
+  .tool-icon {
+    width: 52px; height: 52px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 900; color: #fff;
+  }
+  .t1 { background: #D97739; }
+  .t2 { background: #D97739; }
+  .t3 { background: #22C55E; }
+  .t4 { background: #000; border: 2px solid rgba(255,255,255,0.2); }
+  .t5 { background: #fff; color: #000 !important; }
+  .t6 { background: #000; border: 2px solid rgba(255,255,255,0.2); }
+  .t7 { background: #fff; color: #000 !important; }
+  .t8 { background: #22A7F0; }
+  .t9 { background: #9333EA; }
+  .t10 { background: #F59E0B; color: #000 !important; }
+
+  .tool-name {
+    font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7);
+    text-align: center; line-height: 1.2;
+  }
+
+  .sub-text {
+    font-size: 24px; font-weight: 700; color: rgba(255,255,255,0.4);
+    line-height: 1.5;
+  }
+  .sub-text strong { color: #FBBF24; }
+
+  .bottom-bar {
+    position: absolute; bottom: 50px; left: 70px; right: 70px;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .brand-box { display: flex; align-items: center; gap: 12px; }
+  .brand-icon { background: #F59E0B; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 900; color: #000; }
+  .brand-name { font-size: 20px; font-weight: 900; color: #fff; }
+  .save { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.3); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="big-num">10</div>
+
+    <div class="top-label">MY STACK 2026</div>
+
+    <div class="main-text">10 AI tools running<br>my <span class="yellow">entire agency</span></div>
+
+    <div class="tools">
+      <div class="tool"><div class="tool-icon t1">C</div><div class="tool-name">Claude<br>Code</div></div>
+      <div class="tool"><div class="tool-icon t2">C</div><div class="tool-name">Claude<br>Cowork</div></div>
+      <div class="tool"><div class="tool-icon t3">▶</div><div class="tool-name">Cursor</div></div>
+      <div class="tool"><div class="tool-icon t4">v0</div><div class="tool-name">v0 by<br>Vercel</div></div>
+      <div class="tool"><div class="tool-icon t5">N</div><div class="tool-name">Notion<br>AI</div></div>
+      <div class="tool"><div class="tool-icon t6">11</div><div class="tool-name">Eleven<br>Labs</div></div>
+      <div class="tool"><div class="tool-icon t7">M</div><div class="tool-name">Mid<br>journey</div></div>
+      <div class="tool"><div class="tool-icon t8">P</div><div class="tool-name">Perplexity</div></div>
+      <div class="tool"><div class="tool-icon t9">M</div><div class="tool-name">Make<br>.com</div></div>
+      <div class="tool"><div class="tool-icon t10">iA</div><div class="tool-name">Custom<br>Agents</div></div>
+    </div>
+
+    <div class="sub-text">The unfair advantage isn't one tool.<br>It's <strong>knowing how to chain them.</strong></div>
+
+    <div class="bottom-bar">
+      <div class="brand-box">
+        <div class="brand-icon">iA</div>
+        <div class="brand-name">IntellectAI</div>
+      </div>
+      <div class="save">steal these before everyone else does</div>
+    </div>
+  </div>
+</body>
+</html>

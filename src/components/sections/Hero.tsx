@@ -1,0 +1,238 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { HERO_CAPABILITIES } from "@/lib/constants";
+
+const ease = [0.16, 1, 0.3, 1] as const;
+
+const metrics = [
+  { label: "Calls Handled", value: "1,247", color: "bg-blue-400" },
+  { label: "Leads Qualified", value: "382", color: "bg-cyan-400" },
+  { label: "Avg Response", value: "1.2s", color: "bg-emerald-400" },
+  { label: "Active Agents", value: "7", color: "bg-blue-500" },
+];
+
+export default function Hero() {
+  return (
+    <section
+      id="hero"
+      className="grid-bg relative overflow-hidden pb-20 pt-32 md:pb-32 md:pt-44"
+      style={{ background: "#09090B" }}
+    >
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-[600px] w-[600px] -translate-x-1/2"
+        style={{
+          background:
+            "radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%)",
+          filter: "blur(60px)",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-8">
+        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16 lg:gap-20">
+          <div className="text-center md:text-left">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease }}
+            >
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-400">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
+                AI Operating System for SMBs
+              </span>
+              <h1 className="mt-6 text-[40px] font-extrabold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
+                Build an AI-Powered{" "}
+                <span className="text-gradient">Business That Runs Itself</span>
+              </h1>
+            </motion.div>
+
+            <motion.p
+              className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-gray-400 md:mx-0 md:text-xl"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.15, ease }}
+            >
+              We design and deploy{" "}
+              <span className="font-semibold text-zinc-200">
+                Agentic AI infrastructure
+              </span>{" "}
+              for SMBs across every industry — autonomous agents that handle
+              calls, leads, scheduling, customer ops, and workflows 24/7. Not
+              automation. Operations.
+            </motion.p>
+
+            <motion.ul
+              className="mx-auto mt-6 grid max-w-xl grid-cols-1 gap-2 text-sm text-zinc-300 sm:grid-cols-2 md:mx-0"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.25, ease }}
+            >
+              {HERO_CAPABILITIES.map((cap) => (
+                <li key={cap} className="flex items-start gap-2">
+                  <svg
+                    className="mt-0.5 h-4 w-4 shrink-0 text-blue-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="3"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  {cap}
+                </li>
+              ))}
+            </motion.ul>
+
+            <motion.div
+              className="mt-10 flex flex-col items-center gap-4 sm:flex-row md:justify-start"
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.35, ease }}
+            >
+              <a
+                href="/contact"
+                className="btn-glow rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+                style={{
+                  background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                }}
+              >
+                Deploy Your AI Workforce
+              </a>
+              <a
+                href="#demo"
+                className="rounded-lg border border-[rgba(255,255,255,0.12)] px-8 py-4 text-lg font-semibold text-white transition-all duration-200 hover:border-[rgba(255,255,255,0.24)] hover:bg-white/5"
+              >
+                See It Run &darr;
+              </a>
+            </motion.div>
+
+            <motion.p
+              className="mt-8 text-sm tracking-wide text-gray-500"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+            >
+              Trusted by SMBs across 9+ industries · Toronto, Canada
+            </motion.p>
+          </div>
+
+          {/* Right column -- floating dashboard visual (desktop only) */}
+          <div className="relative mx-auto hidden w-full max-w-lg md:mx-0 md:block">
+            <div
+              className="pointer-events-none absolute inset-0 -m-8 rounded-3xl"
+              style={{
+                background:
+                  "radial-gradient(ellipse at 60% 40%, rgba(59, 130, 246, 0.12) 0%, transparent 70%)",
+                filter: "blur(40px)",
+              }}
+            />
+
+            <motion.div
+              className="hero-float-alt absolute -bottom-6 -left-6 z-0 w-[260px] rounded-xl border border-[rgba(255,255,255,0.06)] p-4 sm:-left-10"
+              style={{ background: "#131620" }}
+              initial={{ opacity: 0, x: 40, y: 20 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.6, ease }}
+            >
+              <div className="mb-2 text-[10px] font-medium uppercase tracking-wider text-gray-500">
+                workforce.config.ts
+              </div>
+              <pre className="font-mono text-xs leading-relaxed">
+                <span className="text-blue-400">const</span>{" "}
+                <span className="text-white">ops</span>{" "}
+                <span className="text-gray-500">=</span>{" "}
+                <span className="text-cyan-400">new</span>{" "}
+                <span className="text-blue-400">AIWorkforce</span>
+                <span className="text-gray-500">{"({"}</span>
+                {"\n"}
+                {"  "}
+                <span className="text-cyan-300">agents</span>
+                <span className="text-gray-500">:</span>{" "}
+                <span className="text-gray-500">[</span>
+                <span className="text-emerald-400">&quot;voice&quot;</span>
+                <span className="text-gray-500">,</span>{" "}
+                <span className="text-emerald-400">&quot;sales&quot;</span>
+                <span className="text-gray-500">,</span>{" "}
+                <span className="text-emerald-400">&quot;ops&quot;</span>
+                <span className="text-gray-500">],</span>
+                {"\n"}
+                {"  "}
+                <span className="text-cyan-300">mode</span>
+                <span className="text-gray-500">:</span>{" "}
+                <span className="text-emerald-400">
+                  &quot;autonomous&quot;
+                </span>
+                <span className="text-gray-500">,</span>
+                {"\n"}
+                <span className="text-gray-500">{"});"}</span>
+              </pre>
+            </motion.div>
+
+            <motion.div
+              className="hero-float glow-blue relative z-10 rounded-xl border border-[rgba(255,255,255,0.06)] p-5 sm:p-6"
+              style={{ background: "#131620" }}
+              initial={{ opacity: 0, x: 60 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.4, ease }}
+            >
+              <div className="mb-5 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
+                  <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
+                  <span className="h-3 w-3 rounded-full bg-[#28C840]" />
+                </div>
+                <span className="font-mono text-xs font-medium tracking-wider text-gray-400">
+                  AI Workforce · LIVE
+                </span>
+              </div>
+
+              <div className="space-y-4">
+                {metrics.map((m, i) => (
+                  <motion.div
+                    key={m.label}
+                    className="flex items-center justify-between"
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.5,
+                      delay: 0.55 + i * 0.1,
+                      ease,
+                    }}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className={`h-2 w-2 rounded-full ${m.color}`} />
+                      <span className="text-sm text-gray-300">{m.label}</span>
+                    </div>
+                    <span className="font-mono text-sm font-semibold text-white">
+                      {m.value}
+                    </span>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="mt-5 overflow-hidden rounded-full border-t border-white/5 pt-4">
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-white/5">
+                  <div
+                    className="animate-shimmer h-full w-1/3 rounded-full"
+                    style={{
+                      background:
+                        "linear-gradient(90deg, transparent, #3B82F6, #06B6D4, transparent)",
+                    }}
+                  />
+                </div>
+                <div className="mt-2 flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
+                  <span className="font-mono text-[10px] text-gray-500">
+                    Orchestrating workflows...
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
