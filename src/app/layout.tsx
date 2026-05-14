@@ -103,7 +103,7 @@ export default function RootLayout({
               },
               contactPoint: {
                 "@type": "ContactPoint",
-                email: "aarifshaikhs@hotmail.com",
+                email: "letstalk@intellectai.io",
                 contactType: "sales",
               },
               sameAs: [

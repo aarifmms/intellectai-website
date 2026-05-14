@@ -4,7 +4,7 @@ export const SITE = {
   description:
     "We design and deploy Agentic AI infrastructure for small and medium businesses. AI agents, workflow automation, and autonomous operations that run your business 24/7.",
   url: "https://intellectai.io",
-  email: "aarifshaikhs@hotmail.com",
+  email: "letstalk@intellectai.io",
   founder: "Aarif Shaikh",
   location: "Toronto, Canada",
 } as const;
@@ -344,9 +344,9 @@ export const VALUE_PROPS = [
     icon: "expand",
   },
   {
-    title: "Enterprise-Grade UX",
+    title: "Service That Outranks Competitors",
     description:
-      "Deliver Fortune 500-level response times and consistency, on an SMB budget.",
+      "Sub-second response, every channel, every hour. The kind of consistency only payroll used to buy.",
     icon: "star",
   },
   {

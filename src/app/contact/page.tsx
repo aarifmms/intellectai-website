@@ -18,11 +18,12 @@ export default function Contact() {
           <div className="mx-auto max-w-2xl">
             <div className="mx-auto mb-8 h-0.5 w-20 bg-brass-500" />
             <h1 className="mb-4 text-center text-[32px] font-bold leading-[1.1] tracking-tight text-white md:text-[48px]">
-              Let&apos;s Talk <span className="text-brass-300">AI</span>
+              Tell Us What&apos;s{" "}
+              <span className="text-brass-300">Eating Your Operations.</span>
             </h1>
             <p className="mb-12 text-center text-lg leading-[1.6] text-[#B6B8BC]">
-              Ready to put AI to work for your business? Fill out the form below
-              and we&apos;ll get back to you within 24 hours.
+              A 60-minute audit. A ranked map of what to automate first. Three
+              business days, no slide deck.
             </p>
 
             <div className="rounded-2xl border border-[rgba(255,255,255,0.06)] p-6 shadow-sm md:p-10" style={{ backgroundColor: "#17181B" }}>
@@ -32,10 +33,10 @@ export default function Contact() {
             <p className="mt-6 text-center text-sm text-[#8A8D93]">
               Or email us directly at{" "}
               <a
-                href="mailto:aarifshaikhs@hotmail.com"
+                href="mailto:letstalk@intellectai.io"
                 className="font-medium text-brass-300 hover:underline"
               >
-                aarifshaikhs@hotmail.com
+                letstalk@intellectai.io
               </a>
             </p>
           </div>

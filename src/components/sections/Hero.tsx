@@ -41,8 +41,8 @@ export default function Hero() {
                 AI Operating System for SMBs
               </span>
               <h1 className="mt-6 text-[40px] font-bold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
-                Build an AI-Powered{" "}
-                <span className="text-gradient">Business That Runs Itself</span>
+                Stop Hiring for Work{" "}
+                <span className="text-gradient">an Agent Can Do.</span>
               </h1>
             </motion.div>
 

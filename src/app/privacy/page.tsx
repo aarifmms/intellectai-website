@@ -137,10 +137,10 @@ export default function PrivacyPolicy() {
                 <br />
                 Email:{" "}
                 <a
-                  href="mailto:aarifshaikhs@hotmail.com"
+                  href="mailto:letstalk@intellectai.io"
                   className="font-medium text-brass-300 hover:underline"
                 >
-                  aarifshaikhs@hotmail.com
+                  letstalk@intellectai.io
                 </a>
               </p>
             </section>

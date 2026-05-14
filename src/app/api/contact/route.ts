@@ -24,8 +24,12 @@ export async function POST(request: Request) {
           Authorization: `Bearer ${resendApiKey}`,
         },
         body: JSON.stringify({
+          // TODO: Once intellectai.io is verified in Resend (SPF/DKIM/DMARC),
+          // change `from` to "IntellectAI <noreply@intellectai.io>" so leads
+          // don't hit spam. Until then this uses Resend's sandbox sender.
           from: "IntellectAI <onboarding@resend.dev>",
-          to: "aarifshaikhs@hotmail.com",
+          to: "letstalk@intellectai.io",
+          reply_to: email,
           subject: `New Lead: ${name}. ${service}`,
           html: `
             <h2>New Contact Form Submission</h2>

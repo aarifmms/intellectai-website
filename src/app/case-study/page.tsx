@@ -342,15 +342,15 @@ export default function CaseStudyPage() {
           <div className="mx-auto max-w-7xl px-6 md:px-8">
             <div className="mx-auto max-w-2xl rounded-2xl border border-brass-500/30 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#17181B" }}>
               <h2 className="mb-4 text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
-                Want Us to Build Something Like This for You?
+                We Can Ship Yours in Under Four Weeks.
               </h2>
               <p className="mb-8 text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
-                We build custom AI agents and SaaS products from concept to
-                launch. Start with a free AI Readiness Audit.
+                Same playbook. Different industry. Start with the free audit.
               </p>
               <a
                 href="/contact"
-                className="btn-glow inline-block rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
+                className="btn-glow inline-block rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
+                style={{ background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)" }}
               >
                 Book Your Free AI Audit
               </a>
