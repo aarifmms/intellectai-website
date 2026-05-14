@@ -106,7 +106,7 @@ export default function LogoBar() {
     <section
       className="border-t border-b py-10 md:py-14"
       style={{
-        background: "#0F1117",
+        background: "#131416",
         borderColor: "rgba(255, 255, 255, 0.06)",
       }}
     >
@@ -115,17 +115,17 @@ export default function LogoBar() {
           Powering AI infrastructure with industry-leading platforms
         </p>
         <div className="relative overflow-hidden">
-          {/* Fade edges matching #0F1117 bg */}
+          {/* Fade edges matching #131416 bg */}
           <div
             className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16"
             style={{
-              background: "linear-gradient(to right, #0F1117, transparent)",
+              background: "linear-gradient(to right, #131416, transparent)",
             }}
           />
           <div
             className="pointer-events-none absolute inset-y-0 right-0 z-10 w-16"
             style={{
-              background: "linear-gradient(to left, #0F1117, transparent)",
+              background: "linear-gradient(to left, #131416, transparent)",
             }}
           />
           {/* Scrolling track */}

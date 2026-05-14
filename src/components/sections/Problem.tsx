@@ -5,11 +5,11 @@ export default function Problem() {
     <section
       id="problem"
       className="grid-bg py-16 md:py-24"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Beyond Automation
           </span>
           <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-zinc-100 md:text-[48px]">
@@ -25,7 +25,7 @@ export default function Problem() {
           <div
             className="group rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 md:p-8"
             style={{
-              background: "#131620",
+              background: "#16181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
             }}
             onMouseEnter={(e) => {
@@ -77,22 +77,22 @@ export default function Problem() {
           <div
             className="group rounded-xl border border-l-2 p-6 transition-all duration-300 hover:-translate-y-1 md:p-8"
             style={{
-              background: "#131620",
+              background: "#16181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
-              borderLeftColor: "#3B82F6",
+              borderLeftColor: "#C9A961",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.12)";
-              e.currentTarget.style.borderLeftColor = "#60A5FA";
+              e.currentTarget.style.borderLeftColor = "#DAB97A";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.06)";
-              e.currentTarget.style.borderLeftColor = "#3B82F6";
+              e.currentTarget.style.borderLeftColor = "#C9A961";
             }}
           >
             <div className="mb-4">
               <svg
-                className="h-8 w-8 text-blue-400"
+                className="h-8 w-8 text-brass-300"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -104,25 +104,25 @@ export default function Problem() {
               </svg>
             </div>
             <div className="mb-4 flex items-center gap-3">
-              <h3 className="text-xl font-bold text-blue-400 md:text-2xl">
+              <h3 className="text-xl font-bold text-brass-300 md:text-2xl">
                 The AI Operating System
               </h3>
             </div>
             <ul className="space-y-2.5 text-base leading-[1.6] text-zinc-300">
               <li className="flex gap-2">
-                <span className="text-blue-400">·</span>
+                <span className="text-brass-300">·</span>
                 Autonomous agents that complete entire workflows
               </li>
               <li className="flex gap-2">
-                <span className="text-blue-400">·</span>
+                <span className="text-brass-300">·</span>
                 Voice + text + automation in one intelligent layer
               </li>
               <li className="flex gap-2">
-                <span className="text-blue-400">·</span>
+                <span className="text-brass-300">·</span>
                 Integrated with your CRM, calendar, billing, and ops
               </li>
               <li className="flex gap-2">
-                <span className="text-blue-400">·</span>
+                <span className="text-brass-300">·</span>
                 A digital workforce that scales without payroll
               </li>
             </ul>

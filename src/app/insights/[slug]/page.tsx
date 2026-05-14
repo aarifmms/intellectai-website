@@ -121,12 +121,12 @@ export default async function InsightPost({
   return (
     <>
       <Header />
-      <main className="relative" style={{ background: "#09090B" }}>
+      <main className="relative" style={{ background: "#0E0F11" }}>
         <article className="pb-16 pt-32 md:pb-24 md:pt-40">
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <Link
               href="/insights"
-              className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-blue-400"
+              className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-brass-300"
             >
               ← All insights
             </Link>
@@ -138,7 +138,7 @@ export default async function InsightPost({
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="ml-1 rounded-full bg-blue-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-blue-400"
+                  className="ml-1 rounded-full bg-brass-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-brass-300"
                 >
                   {tag}
                 </span>
@@ -160,8 +160,8 @@ export default async function InsightPost({
               className="mt-14 rounded-xl border p-6 text-center md:p-8"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.04)), #131620",
-                borderColor: "rgba(59, 130, 246, 0.3)",
+                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #16181B",
+                borderColor: "rgba(201, 169, 97, 0.3)",
               }}
             >
               <h3 className="text-xl font-bold text-white md:text-2xl">
@@ -175,7 +175,7 @@ export default async function InsightPost({
                 href="/contact"
                 className="mt-6 inline-block rounded-lg px-7 py-3 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
                 }}
               >
                 Book Your Free Audit →

@@ -47,11 +47,11 @@ export default function ValueProps() {
   return (
     <section
       className="relative overflow-hidden py-16 md:py-24"
-      style={{ background: "#0F1117" }}
+      style={{ background: "#131416" }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-10 text-center md:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Why It Matters
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -70,17 +70,17 @@ export default function ValueProps() {
               key={prop.title}
               className="rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 md:p-7"
               style={{
-                background: "#131620",
+                background: "#16181B",
                 borderColor: "rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.3)";
+                e.currentTarget.style.borderColor = "rgba(201, 169, 97, 0.3)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.06)";
               }}
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brass-500/10 text-brass-300">
                 <div className="h-6 w-6">{ICONS[prop.icon]}</div>
               </div>
               <h3 className="mb-2 text-lg font-bold text-white md:text-xl">

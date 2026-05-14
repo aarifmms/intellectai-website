@@ -1,24 +1,53 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #09090B;
-  --color-foreground: #F4F4F5;
-  --color-primary: #3B82F6;
-  --color-primary-light: #60A5FA;
-  --color-primary-dark: #2563EB;
-  --color-accent: #06B6D4;
-  --color-accent-light: #22D3EE;
-  --color-bg-primary: #09090B;
-  --color-bg-secondary: #0F1117;
-  --color-bg-card: #131620;
-  --color-bg-card-hover: #1A1F2E;
-  --color-bg-elevated: #1E2330;
-  --color-text-primary: #F4F4F5;
-  --color-text-secondary: #A1A1AA;
-  --color-text-muted: #71717A;
-  --color-border: rgba(255, 255, 255, 0.06);
-  --color-border-hover: rgba(255, 255, 255, 0.12);
-  --color-border-accent: rgba(59, 130, 246, 0.3);
+  /* ── Graphite & Brass palette ── */
+  --color-background: #0E0F11;
+  --color-foreground: #E6E7E9;
+  --color-primary: #C9A961;          /* antique brass */
+  --color-primary-light: #DAB97A;
+  --color-primary-dark: #A8893F;
+  --color-accent: #E8E2D4;           /* warm bone */
+  --color-accent-light: #F1ECDF;
+  --color-bg-primary: #0E0F11;
+  --color-bg-secondary: #131416;
+  --color-bg-card: #16181B;
+  --color-bg-card-hover: #1C1F23;
+  --color-bg-elevated: #23262B;
+  --color-text-primary: #E6E7E9;
+  --color-text-secondary: #B6B8BC;
+  --color-text-muted: #8A8D93;
+  --color-border: #23262B;
+  --color-border-hover: rgba(201, 169, 97, 0.25);
+  --color-border-accent: rgba(201, 169, 97, 0.4);
+  --color-success: #7A9E7E;
+  --color-warning: #D4A256;
+  --color-error: #B85450;
+
+  /* ── Brass scale (used in text-brass-*, bg-brass-*, etc.) ── */
+  --color-brass-50:  #FBF7EC;
+  --color-brass-100: #F2E8C7;
+  --color-brass-200: #E8D9A1;
+  --color-brass-300: #DAB97A;
+  --color-brass-400: #CFA869;
+  --color-brass-500: #C9A961;
+  --color-brass-600: #A8893F;
+  --color-brass-700: #856B2D;
+  --color-brass-800: #5F4D1F;
+  --color-brass-900: #3A2F12;
+
+  /* ── Bone scale (warm off-white secondary) ── */
+  --color-bone-50:  #FBF9F3;
+  --color-bone-100: #F5F0E2;
+  --color-bone-200: #E8E2D4;
+  --color-bone-300: #D3CCBA;
+  --color-bone-400: #B8B09C;
+
+  /* ── Sage (success/positive) ── */
+  --color-sage-300: #98B79C;
+  --color-sage-400: #7A9E7E;
+  --color-sage-500: #5C8261;
+
   --font-sans: var(--font-inter);
   --font-display: var(--font-sora);
 }
@@ -38,33 +67,33 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
-/* ── Gradient text (blue to cyan) ── */
+/* ── Brass gradient text ── */
 
 .text-gradient {
-  background: linear-gradient(90deg, #60A5FA, #22D3EE);
+  background: linear-gradient(90deg, #DAB97A, #E8E2D4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* ── Glow effects ── */
+/* ── Brass glow (subtle) ── */
 
 .glow-blue {
-  box-shadow: 0 0 30px rgba(59, 130, 246, 0.15), 0 0 60px rgba(59, 130, 246, 0.05);
+  box-shadow: 0 0 30px rgba(201, 169, 97, 0.12), 0 0 60px rgba(201, 169, 97, 0.04);
 }
 
 .glow-text {
   text-shadow:
-    0 0 20px rgba(59, 130, 246, 0.35),
-    0 0 40px rgba(59, 130, 246, 0.15);
+    0 0 20px rgba(201, 169, 97, 0.28),
+    0 0 40px rgba(201, 169, 97, 0.12);
 }
 
 /* ── Grid pattern background ── */
 
 .grid-bg {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(232, 226, 212, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 226, 212, 0.025) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
@@ -80,14 +109,14 @@ body {
   transform: rotateY(-2deg) rotateX(2deg) translateZ(10px);
 }
 
-/* ── Button glow on hover ── */
+/* ── Brass button glow on hover ── */
 
 .btn-glow {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 4px 16px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 0 20px rgba(201, 169, 97, 0.28), 0 4px 16px rgba(201, 169, 97, 0.18);
 }
 
 /* ── Logo bar marquee animation ── */

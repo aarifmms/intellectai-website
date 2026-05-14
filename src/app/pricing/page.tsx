@@ -15,18 +15,18 @@ export default function PricingPage() {
   return (
     <>
       <Header />
-      <main className="relative" style={{ background: "#09090B" }}>
+      <main className="relative" style={{ background: "#0E0F11" }}>
         <section className="grid-bg relative overflow-hidden pb-12 pt-32 md:pb-16 md:pt-40">
           <div
             className="pointer-events-none absolute left-1/2 top-0 h-[600px] w-[600px] -translate-x-1/2"
             style={{
               background:
-                "radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%)",
+                "radial-gradient(circle, rgba(201, 169, 97, 0.06) 0%, transparent 70%)",
               filter: "blur(60px)",
             }}
           />
           <div className="relative z-10 mx-auto max-w-5xl px-6 text-center md:px-8">
-            <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+            <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
               Pricing
             </span>
             <h1 className="mt-5 text-[40px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[56px]">
@@ -61,18 +61,18 @@ export default function PricingPage() {
                     key={tier.name}
                     className="relative flex flex-col rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 md:p-7"
                     style={{
-                      background: "#131620",
+                      background: "#16181B",
                       border: isHighlight
-                        ? "1px solid rgba(59, 130, 246, 0.4)"
+                        ? "1px solid rgba(201, 169, 97, 0.4)"
                         : "1px solid rgba(255, 255, 255, 0.06)",
                       boxShadow: isHighlight
-                        ? "0 0 40px rgba(59, 130, 246, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
+                        ? "0 0 40px rgba(201, 169, 97, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
                         : "0 8px 32px rgba(0, 0, 0, 0.3)",
                     }}
                   >
                     {"badge" in tier && tier.badge && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                        <span className="rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                        <span className="rounded-full bg-brass-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
                           {tier.badge}
                         </span>
                       </div>
@@ -108,7 +108,7 @@ export default function PricingPage() {
                           className="flex items-start gap-2 text-sm text-zinc-300"
                         >
                           <svg
-                            className="mt-0.5 h-4 w-4 shrink-0 text-blue-400"
+                            className="mt-0.5 h-4 w-4 shrink-0 text-brass-300"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -128,14 +128,14 @@ export default function PricingPage() {
                       className={`mt-auto block w-full rounded-lg py-3 text-center text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 ${
                         isHighlight
                           ? "text-white"
-                          : "border border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
+                          : "border border-brass-500/30 text-brass-300 hover:bg-brass-500/10"
                       }`}
                       style={
                         isHighlight
                           ? {
                               background:
-                                "linear-gradient(135deg, #3B82F6, #06B6D4)",
-                              boxShadow: "0 0 20px rgba(59, 130, 246, 0.3)",
+                                "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                              boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
                             }
                           : undefined
                       }
@@ -147,7 +147,7 @@ export default function PricingPage() {
               })}
             </div>
 
-            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-white/[0.06] bg-[#131620] p-6 text-center md:p-8">
+            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-white/[0.06] bg-[#16181B] p-6 text-center md:p-8">
               <h3 className="text-xl font-bold text-white md:text-2xl">
                 Not sure which tier fits?
               </h3>
@@ -160,7 +160,7 @@ export default function PricingPage() {
                 href="/contact"
                 className="mt-6 inline-block rounded-lg px-7 py-3 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
                 }}
               >
                 Book Your Free Audit →
@@ -178,12 +178,12 @@ export default function PricingPage() {
               {FAQS.map((faq) => (
                 <details
                   key={faq.question}
-                  className="group rounded-xl border border-white/[0.06] bg-[#131620] p-5 md:p-6"
+                  className="group rounded-xl border border-white/[0.06] bg-[#16181B] p-5 md:p-6"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-4 text-base font-semibold text-white md:text-lg">
                     {faq.question}
                     <svg
-                      className="h-5 w-5 shrink-0 text-blue-400 transition-transform group-open:rotate-45"
+                      className="h-5 w-5 shrink-0 text-brass-300 transition-transform group-open:rotate-45"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"

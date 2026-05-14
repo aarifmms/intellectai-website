@@ -7,7 +7,7 @@ const ICONS = [
   // Search / Magnifying Glass
   <svg
     key="search"
-    className="h-12 w-12 text-blue-400"
+    className="h-12 w-12 text-brass-300"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -21,7 +21,7 @@ const ICONS = [
   // Lightning Bolt
   <svg
     key="bolt"
-    className="h-12 w-12 text-blue-400"
+    className="h-12 w-12 text-brass-300"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -34,7 +34,7 @@ const ICONS = [
   // CPU / Chip
   <svg
     key="cpu"
-    className="h-12 w-12 text-blue-400"
+    className="h-12 w-12 text-brass-300"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -60,11 +60,11 @@ export default function Services() {
     <section
       id="services"
       className="relative overflow-hidden py-16 md:py-24"
-      style={{ backgroundColor: "#09090B" }}
+      style={{ backgroundColor: "#0E0F11" }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             The Platform
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -104,47 +104,47 @@ export default function Services() {
                 key={service.title}
                 className="card-3d group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8"
                 style={{
-                  backgroundColor: "#131620",
+                  backgroundColor: "#16181B",
                   border: isPopular
-                    ? "1px solid rgba(59, 130, 246, 0.4)"
+                    ? "1px solid rgba(201, 169, 97, 0.4)"
                     : "1px solid rgba(255, 255, 255, 0.06)",
                   boxShadow: isPopular
-                    ? "0 0 40px rgba(59, 130, 246, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
+                    ? "0 0 40px rgba(201, 169, 97, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
                     : "0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 40px rgba(0, 0, 0, 0.4)",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget;
-                  el.style.backgroundColor = "#1A1F2E";
+                  el.style.backgroundColor = "#1C1F23";
                   el.style.transform = "translateY(-4px)";
                   el.style.borderColor = isPopular
-                    ? "rgba(59, 130, 246, 0.5)"
+                    ? "rgba(201, 169, 97, 0.5)"
                     : "rgba(255, 255, 255, 0.12)";
                   if (!isPopular) {
                     el.style.boxShadow =
-                      "0 0 30px rgba(59, 130, 246, 0.08), 0 8px 40px rgba(0, 0, 0, 0.4)";
+                      "0 0 30px rgba(201, 169, 97, 0.08), 0 8px 40px rgba(0, 0, 0, 0.4)";
                   }
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
-                  el.style.backgroundColor = "#131620";
+                  el.style.backgroundColor = "#16181B";
                   el.style.transform = "translateY(0)";
                   el.style.borderColor = isPopular
-                    ? "rgba(59, 130, 246, 0.4)"
+                    ? "rgba(201, 169, 97, 0.4)"
                     : "rgba(255, 255, 255, 0.06)";
                   el.style.boxShadow = isPopular
-                    ? "0 0 40px rgba(59, 130, 246, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
+                    ? "0 0 40px rgba(201, 169, 97, 0.12), 0 8px 32px rgba(0, 0, 0, 0.3)"
                     : "0 0 0 1px rgba(255, 255, 255, 0.06), 0 8px 40px rgba(0, 0, 0, 0.4)";
                 }}
               >
                 {isPopular && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                    <span className="rounded-full bg-blue-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                    <span className="rounded-full bg-brass-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
                       Most Popular
                     </span>
                   </div>
                 )}
 
-                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-blue-500/10">
+                <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-brass-500/10">
                   {ICONS[i]}
                 </div>
 
@@ -163,7 +163,7 @@ export default function Services() {
                       className="flex items-start gap-2 text-sm text-zinc-300"
                     >
                       <svg
-                        className="mt-0.5 h-4 w-4 shrink-0 text-blue-400"
+                        className="mt-0.5 h-4 w-4 shrink-0 text-brass-300"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -195,14 +195,14 @@ export default function Services() {
                   className={`block w-full rounded-lg py-3 text-center text-base font-semibold transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 ${
                     isPopular
                       ? "text-white"
-                      : "border border-blue-500/30 bg-transparent text-blue-400 hover:bg-blue-500/10"
+                      : "border border-brass-500/30 bg-transparent text-brass-300 hover:bg-brass-500/10"
                   }`}
                   style={
                     isPopular
                       ? {
                           background:
-                            "linear-gradient(135deg, #3B82F6, #06B6D4)",
-                          boxShadow: "0 0 20px rgba(59, 130, 246, 0.3)",
+                            "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                          boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
                         }
                       : undefined
                   }

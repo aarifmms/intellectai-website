@@ -198,20 +198,20 @@ export default function AgentDemo() {
     <section
       id="demo"
       className="relative overflow-hidden py-16 md:py-24"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2"
         style={{
           background:
-            "radial-gradient(circle, rgba(59,130,246,0.06) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(201, 169, 97,0.06) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 md:px-8">
         <div className="mb-10 text-center md:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             See It In Action
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -259,7 +259,7 @@ export default function AgentDemo() {
               onClick={() => setScenarioKey(key)}
               className={`rounded-lg border px-4 py-2 text-sm font-semibold transition-all ${
                 scenarioKey === key
-                  ? "border-blue-500/50 bg-blue-500/10 text-blue-400"
+                  ? "border-brass-500/50 bg-brass-500/10 text-brass-300"
                   : "border-white/[0.08] bg-white/[0.02] text-zinc-400 hover:text-white"
               }`}
             >
@@ -329,7 +329,7 @@ function DemoRunner({
     <div
       className="rounded-2xl border p-4 md:p-6"
       style={{
-        background: "#131620",
+        background: "#16181B",
         borderColor: "rgba(255, 255, 255, 0.06)",
       }}
     >
@@ -344,13 +344,13 @@ function DemoRunner({
         </div>
         <div className="flex items-center gap-2">
           {running && (
-            <span className="flex items-center gap-1.5 text-xs font-medium text-blue-400">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-blue-400" />
+            <span className="flex items-center gap-1.5 text-xs font-medium text-brass-300">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-brass-400" />
               RUNNING
             </span>
           )}
           {done && (
-            <span className="flex items-center gap-1.5 text-xs font-medium text-emerald-400">
+            <span className="flex items-center gap-1.5 text-xs font-medium text-sage-400">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
               COMPLETED
             </span>
@@ -389,10 +389,10 @@ function DemoRunner({
                   <div
                     className={`font-mono text-[11px] font-semibold uppercase tracking-wider ${
                       step.type === "thought"
-                        ? "text-purple-400"
+                        ? "text-bone-300"
                         : step.type === "tool"
-                          ? "text-blue-400"
-                          : "text-emerald-400"
+                          ? "text-brass-300"
+                          : "text-sage-400"
                     }`}
                   >
                     {step.label}
@@ -409,7 +409,7 @@ function DemoRunner({
 
       {done && (
         <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-4">
-          <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-emerald-400">
+          <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-sage-400">
             <svg
               className="h-4 w-4"
               viewBox="0 0 24 24"
@@ -436,7 +436,7 @@ function DemoRunner({
             onClick={run}
             className="btn-glow w-full rounded-lg px-6 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 sm:w-auto"
             style={{
-              background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+              background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
             }}
           >
             ▶ Run Agent
@@ -464,7 +464,7 @@ function DemoRunner({
               href="/contact"
               className="w-full rounded-lg px-6 py-3 text-center text-sm font-semibold text-white sm:w-auto"
               style={{
-                background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
               }}
             >
               Build one for my business →
@@ -487,7 +487,7 @@ function StepIcon({
     type === "thought"
       ? "bg-purple-400"
       : type === "tool"
-        ? "bg-blue-400"
+        ? "bg-brass-400"
         : "bg-emerald-400";
   return (
     <div className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center">

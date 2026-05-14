@@ -2,19 +2,19 @@ import { SITE } from "@/lib/constants";
 
 export default function FinalCTA() {
   return (
-    <section id="book-a-call" className="relative overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#09090B" }}>
+    <section id="book-a-call" className="relative overflow-hidden py-16 md:py-24" style={{ backgroundColor: "#0E0F11" }}>
       <div
         className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         style={{
           width: "800px",
           height: "800px",
           background:
-            "radial-gradient(circle, rgba(59,130,246,0.05) 0%, rgba(59,130,246,0.02) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(201, 169, 97,0.05) 0%, rgba(201, 169, 97,0.02) 40%, transparent 70%)",
         }}
       />
       <div className="relative mx-auto max-w-7xl px-6 md:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Your Move
           </span>
           <h2 className="mt-4 mb-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -28,7 +28,7 @@ export default function FinalCTA() {
           </p>
           <a
             href="/contact"
-            className="btn-glow inline-block rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-150 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0"
+            className="btn-glow inline-block rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all duration-150 hover:-translate-y-0.5 hover:shadow-xl active:translate-y-0"
           >
             Get My AI Blueprint
           </a>
@@ -36,7 +36,7 @@ export default function FinalCTA() {
             Or email{" "}
             <a
               href={`mailto:${SITE.email}`}
-              className="font-medium text-blue-400 hover:underline"
+              className="font-medium text-brass-300 hover:underline"
             >
               {SITE.email}
             </a>

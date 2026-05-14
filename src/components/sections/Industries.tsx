@@ -108,11 +108,11 @@ export default function Industries() {
     <section
       id="industries"
       className="grid-bg relative overflow-hidden py-16 md:py-24"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-10 text-center md:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Built For Every Industry
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -144,7 +144,7 @@ export default function Industries() {
           />
           <div className="absolute inset-0 flex items-end p-6 md:p-8">
             <div>
-              <p className="font-mono text-xs uppercase tracking-wider text-blue-400">
+              <p className="font-mono text-xs uppercase tracking-wider text-brass-300">
                 14 industries
               </p>
               <p className="mt-1 text-lg font-semibold text-white md:text-xl">
@@ -160,20 +160,20 @@ export default function Industries() {
               key={industry.name}
               className="group relative rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1"
               style={{
-                background: "#131620",
+                background: "#16181B",
                 borderColor: "rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = "rgba(59, 130, 246, 0.4)";
+                e.currentTarget.style.borderColor = "rgba(201, 169, 97, 0.4)";
                 e.currentTarget.style.boxShadow =
-                  "0 0 30px rgba(59, 130, 246, 0.08)";
+                  "0 0 30px rgba(201, 169, 97, 0.08)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.06)";
                 e.currentTarget.style.boxShadow = "none";
               }}
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-brass-500/10 text-brass-300">
                 <div className="h-6 w-6">{ICONS[industry.icon]}</div>
               </div>
               <h3 className="mb-2 text-lg font-bold text-white md:text-xl">
@@ -204,7 +204,7 @@ export default function Industries() {
           <a
             href="/contact"
             className="btn-glow inline-block rounded-lg px-8 py-4 text-base font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: "linear-gradient(135deg, #3B82F6, #06B6D4)" }}
+            style={{ background: "linear-gradient(135deg, #C9A961, #E8E2D4)" }}
           >
             Build My AI Operating System
           </a>

@@ -7,7 +7,7 @@ export default function CaseStudy() {
     <section
       id="case-studies"
       className="py-16 md:py-24"
-      style={{ backgroundColor: "#0F1117" }}
+      style={{ backgroundColor: "#131416" }}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
@@ -26,20 +26,20 @@ export default function CaseStudy() {
               href={study.href}
               className="group relative flex flex-col overflow-hidden rounded-xl transition-all duration-300"
               style={{
-                backgroundColor: "#131620",
+                backgroundColor: "#16181B",
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget;
-                el.style.backgroundColor = "#1A1F2E";
+                el.style.backgroundColor = "#1C1F23";
                 el.style.transform = "scale(1.02)";
-                el.style.borderColor = "rgba(59, 130, 246, 0.2)";
+                el.style.borderColor = "rgba(201, 169, 97, 0.2)";
                 el.style.boxShadow =
-                  "0 0 30px rgba(59, 130, 246, 0.1)";
+                  "0 0 30px rgba(201, 169, 97, 0.1)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget;
-                el.style.backgroundColor = "#131620";
+                el.style.backgroundColor = "#16181B";
                 el.style.transform = "scale(1)";
                 el.style.borderColor = "rgba(255, 255, 255, 0.06)";
                 el.style.boxShadow = "none";
@@ -49,14 +49,14 @@ export default function CaseStudy() {
                 {/* Header */}
                 <div className="mb-4">
                   <div className="mb-2 flex items-center justify-between">
-                    <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
                       {study.category}
                     </span>
                     <span
                       className={`flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs font-medium ${
                         study.status === "Live"
-                          ? "border-emerald-800 bg-emerald-900/30 text-emerald-400"
-                          : "border-blue-500/30 bg-blue-500/10 text-blue-400"
+                          ? "border-emerald-800 bg-emerald-900/30 text-sage-400"
+                          : "border-brass-500/30 bg-brass-500/10 text-brass-300"
                       }`}
                     >
                       {study.status === "Live" && (
@@ -65,7 +65,7 @@ export default function CaseStudy() {
                       {study.status}
                     </span>
                   </div>
-                  <h3 className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-blue-400">
+                  <h3 className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-brass-300">
                     {study.title}
                   </h3>
                 </div>
@@ -79,7 +79,7 @@ export default function CaseStudy() {
                 <div className="mb-4 grid grid-cols-3 gap-3">
                   {study.stats.map((stat) => (
                     <div key={stat.label} className="text-center">
-                      <div className="text-sm font-bold text-blue-400">
+                      <div className="text-sm font-bold text-brass-300">
                         {stat.value}
                       </div>
                       <div className="text-xs text-zinc-500">
@@ -102,13 +102,13 @@ export default function CaseStudy() {
                 </div>
 
                 {/* Link indicator */}
-                <div className="mt-4 text-sm font-semibold text-blue-400 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="mt-4 text-sm font-semibold text-brass-300 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   Read Case Study &rarr;
                 </div>
               </div>
 
               {/* Gradient bottom border on hover */}
-              <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-blue-500 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute inset-x-0 bottom-0 h-[2px] bg-gradient-to-r from-brass-500 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
             </a>
           ))}
         </div>

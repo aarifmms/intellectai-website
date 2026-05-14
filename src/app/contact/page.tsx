@@ -13,19 +13,19 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <main className="pb-20 pt-32 md:pb-32 md:pt-44" style={{ backgroundColor: "#09090B" }}>
+      <main className="pb-20 pt-32 md:pb-32 md:pt-44" style={{ backgroundColor: "#0E0F11" }}>
         <div className="mx-auto max-w-7xl px-6 md:px-8">
           <div className="mx-auto max-w-2xl">
-            <div className="mx-auto mb-8 h-0.5 w-20 bg-blue-500" />
+            <div className="mx-auto mb-8 h-0.5 w-20 bg-brass-500" />
             <h1 className="mb-4 text-center text-[32px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[48px]">
-              Let&apos;s Talk <span className="text-blue-400">AI</span>
+              Let&apos;s Talk <span className="text-brass-300">AI</span>
             </h1>
             <p className="mb-12 text-center text-lg leading-[1.6] text-zinc-400">
               Ready to put AI to work for your business? Fill out the form below
               and we&apos;ll get back to you within 24 hours.
             </p>
 
-            <div className="rounded-2xl border border-[rgba(255,255,255,0.06)] p-6 shadow-sm md:p-10" style={{ backgroundColor: "#131620" }}>
+            <div className="rounded-2xl border border-[rgba(255,255,255,0.06)] p-6 shadow-sm md:p-10" style={{ backgroundColor: "#16181B" }}>
               <ContactForm />
             </div>
 
@@ -33,7 +33,7 @@ export default function Contact() {
               Or email us directly at{" "}
               <a
                 href="mailto:aarifshaikhs@hotmail.com"
-                className="font-medium text-blue-400 hover:underline"
+                className="font-medium text-brass-300 hover:underline"
               >
                 aarifshaikhs@hotmail.com
               </a>

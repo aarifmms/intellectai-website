@@ -26,7 +26,7 @@ export default function Header() {
       <div
         className={`${
           scrolled
-            ? "bg-[#09090B]/80 backdrop-blur-lg border-b border-white/[0.06]"
+            ? "bg-[#0E0F11]/80 backdrop-blur-lg border-b border-white/[0.06]"
             : "bg-transparent"
         } transition-all duration-300`}
       >
@@ -48,7 +48,7 @@ export default function Header() {
             ))}
             <a
               href="/contact"
-              className="rounded-lg bg-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-blue-400 hover:shadow-md active:translate-y-0 active:bg-blue-600"
+              className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-blue-600"
             >
               Book a Free Audit
             </a>
@@ -79,7 +79,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40" style={{ backgroundColor: "#09090B" }}>
+        <div className="fixed inset-0 z-40" style={{ backgroundColor: "#0E0F11" }}>
           <button
             onClick={() => setMobileOpen(false)}
             className="absolute right-6 top-5 p-2 text-white"
@@ -112,7 +112,7 @@ export default function Header() {
             <a
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg bg-blue-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-400"
+              className="rounded-lg bg-brass-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:bg-brass-400"
             >
               Book a Free Audit
             </a>

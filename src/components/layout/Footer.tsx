@@ -2,7 +2,7 @@ import { NAV_LINKS, SITE } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#09090B" }}>
+    <footer style={{ backgroundColor: "#0E0F11" }}>
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-8 md:py-16">
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Logo + Tagline */}
@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="mt-2 text-sm text-zinc-400">{SITE.tagline}</p>
             <a
               href="/contact"
-              className="btn-glow mt-4 inline-block rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
+              className="btn-glow mt-4 inline-block rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
             >
               Book a Free Audit
             </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-blue-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -87,7 +87,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X / Twitter"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-blue-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -103,7 +103,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-blue-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"

@@ -103,10 +103,10 @@ export default function CaseStudyPage() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="pb-16 pt-32 md:pb-24 md:pt-44" style={{ backgroundColor: "#0F1117" }}>
+        <section className="pb-16 pt-32 md:pb-24 md:pt-44" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-7xl px-6 md:px-8">
             <div className="mx-auto max-w-3xl text-center">
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.05em] text-blue-400">
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.05em] text-brass-300">
                 Case Study
               </p>
               <h1 className="text-[36px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[56px]">
@@ -136,11 +136,11 @@ export default function CaseStudyPage() {
         </section>
 
         {/* Stats Bar */}
-        <section className="border-b border-[rgba(255,255,255,0.06)] py-12" style={{ backgroundColor: "#09090B" }}>
+        <section className="border-b border-[rgba(255,255,255,0.06)] py-12" style={{ backgroundColor: "#0E0F11" }}>
           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 px-6 md:grid-cols-4 md:px-8">
             {STATS.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl font-bold text-blue-400 md:text-3xl">
+                <div className="text-2xl font-bold text-brass-300 md:text-3xl">
                   {stat.value}
                 </div>
                 <div className="mt-1 text-sm text-zinc-400">{stat.label}</div>
@@ -150,7 +150,7 @@ export default function CaseStudyPage() {
         </section>
 
         {/* The Problem */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#09090B" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#0E0F11" }}>
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               The Problem
@@ -217,7 +217,7 @@ export default function CaseStudyPage() {
         </section>
 
         {/* The Solution */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#0F1117" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               The Solution: SellerPilotAI
@@ -233,7 +233,7 @@ export default function CaseStudyPage() {
                 <div
                   key={feature.title}
                   className="rounded-xl border border-[rgba(255,255,255,0.06)] p-6"
-                  style={{ backgroundColor: "#131620" }}
+                  style={{ backgroundColor: "#16181B" }}
                 >
                   <h3 className="mb-2 text-lg font-bold text-white">
                     {feature.title}
@@ -248,7 +248,7 @@ export default function CaseStudyPage() {
         </section>
 
         {/* Tech Stack */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#09090B" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#0E0F11" }}>
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <h2 className="mb-8 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               Tech Stack
@@ -272,7 +272,7 @@ export default function CaseStudyPage() {
         </section>
 
         {/* Build Timeline */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#0F1117" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <h2 className="mb-10 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               Build Process: Under 4 Weeks
@@ -281,7 +281,7 @@ export default function CaseStudyPage() {
               {TIMELINE.map((phase) => (
                 <div key={phase.week} className="flex gap-4 md:gap-6">
                   <div className="flex flex-col items-center">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-500 text-sm font-bold text-white">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brass-500 text-sm font-bold text-white">
                       {phase.week.replace("Week ", "")}
                     </div>
                     <div className="mt-2 w-0.5 grow bg-[rgba(255,255,255,0.06)]" />
@@ -290,7 +290,7 @@ export default function CaseStudyPage() {
                     <h3 className="mb-1 text-lg font-bold text-white">
                       {phase.title}
                     </h3>
-                    <p className="mb-3 text-xs font-medium uppercase tracking-wider text-blue-400">
+                    <p className="mb-3 text-xs font-medium uppercase tracking-wider text-brass-300">
                       {phase.week}
                     </p>
                     <ul className="space-y-2">
@@ -300,7 +300,7 @@ export default function CaseStudyPage() {
                           className="flex items-start gap-2 text-base leading-[1.6] text-zinc-400"
                         >
                           <svg
-                            className="mt-1 h-4 w-4 shrink-0 text-blue-400"
+                            className="mt-1 h-4 w-4 shrink-0 text-brass-300"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
@@ -322,7 +322,7 @@ export default function CaseStudyPage() {
         </section>
 
         {/* Results & Key Takeaway */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#09090B" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#0E0F11" }}>
           <div className="mx-auto max-w-3xl px-6 text-center md:px-8">
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               Key Takeaway
@@ -338,9 +338,9 @@ export default function CaseStudyPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 md:py-24" style={{ backgroundColor: "#0F1117" }}>
+        <section className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-7xl px-6 md:px-8">
-            <div className="mx-auto max-w-2xl rounded-2xl border border-blue-500/20 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#131620" }}>
+            <div className="mx-auto max-w-2xl rounded-2xl border border-blue-500/20 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#16181B" }}>
               <h2 className="mb-4 text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
                 Want Us to Build Something Like This for You?
               </h2>
@@ -350,7 +350,7 @@ export default function CaseStudyPage() {
               </p>
               <a
                 href="/contact"
-                className="btn-glow inline-block rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
+                className="btn-glow inline-block rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
               >
                 Book Your Free AI Audit
               </a>
@@ -360,7 +360,7 @@ export default function CaseStudyPage() {
                   href="https://www.sellerpilotai.ai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-medium text-blue-400 hover:underline"
+                  className="font-medium text-brass-300 hover:underline"
                 >
                   sellerpilotai.ai
                 </a>{" "}

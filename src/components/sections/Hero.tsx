@@ -6,10 +6,10 @@ import { HERO_CAPABILITIES } from "@/lib/constants";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const metrics = [
-  { label: "Calls Handled", value: "1,247", color: "bg-blue-400" },
-  { label: "Leads Qualified", value: "382", color: "bg-cyan-400" },
+  { label: "Calls Handled", value: "1,247", color: "bg-brass-400" },
+  { label: "Leads Qualified", value: "382", color: "bg-bone-200" },
   { label: "Avg Response", value: "1.2s", color: "bg-emerald-400" },
-  { label: "Active Agents", value: "7", color: "bg-blue-500" },
+  { label: "Active Agents", value: "7", color: "bg-brass-500" },
 ];
 
 export default function Hero() {
@@ -17,13 +17,13 @@ export default function Hero() {
     <section
       id="hero"
       className="grid-bg relative overflow-hidden pb-20 pt-32 md:pb-32 md:pt-44"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-[600px] w-[600px] -translate-x-1/2"
         style={{
           background:
-            "radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(201, 169, 97, 0.05) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -36,8 +36,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease }}
             >
-              <span className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-400">
-                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
+              <span className="inline-flex items-center gap-2 rounded-full border border-brass-500/30 bg-brass-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brass-300">
+                <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass-400" />
                 AI Operating System for SMBs
               </span>
               <h1 className="mt-6 text-[40px] font-extrabold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
@@ -70,7 +70,7 @@ export default function Hero() {
               {HERO_CAPABILITIES.map((cap) => (
                 <li key={cap} className="flex items-start gap-2">
                   <svg
-                    className="mt-0.5 h-4 w-4 shrink-0 text-blue-400"
+                    className="mt-0.5 h-4 w-4 shrink-0 text-brass-300"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -95,7 +95,7 @@ export default function Hero() {
                 href="/contact"
                 className="btn-glow rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
                 style={{
-                  background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
+                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
                 }}
               >
                 Deploy Your AI Workforce
@@ -124,14 +124,14 @@ export default function Hero() {
               className="pointer-events-none absolute inset-0 -m-8 rounded-3xl"
               style={{
                 background:
-                  "radial-gradient(ellipse at 60% 40%, rgba(59, 130, 246, 0.12) 0%, transparent 70%)",
+                  "radial-gradient(ellipse at 60% 40%, rgba(201, 169, 97, 0.12) 0%, transparent 70%)",
                 filter: "blur(40px)",
               }}
             />
 
             <motion.div
               className="hero-float-alt absolute -bottom-6 -left-6 z-0 w-[260px] rounded-xl border border-[rgba(255,255,255,0.06)] p-4 sm:-left-10"
-              style={{ background: "#131620" }}
+              style={{ background: "#16181B" }}
               initial={{ opacity: 0, x: 40, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6, ease }}
@@ -140,28 +140,28 @@ export default function Hero() {
                 workforce.config.ts
               </div>
               <pre className="font-mono text-xs leading-relaxed">
-                <span className="text-blue-400">const</span>{" "}
+                <span className="text-brass-300">const</span>{" "}
                 <span className="text-white">ops</span>{" "}
                 <span className="text-gray-500">=</span>{" "}
-                <span className="text-cyan-400">new</span>{" "}
-                <span className="text-blue-400">AIWorkforce</span>
+                <span className="text-bone-200">new</span>{" "}
+                <span className="text-brass-300">AIWorkforce</span>
                 <span className="text-gray-500">{"({"}</span>
                 {"\n"}
                 {"  "}
-                <span className="text-cyan-300">agents</span>
+                <span className="text-bone-200">agents</span>
                 <span className="text-gray-500">:</span>{" "}
                 <span className="text-gray-500">[</span>
-                <span className="text-emerald-400">&quot;voice&quot;</span>
+                <span className="text-sage-400">&quot;voice&quot;</span>
                 <span className="text-gray-500">,</span>{" "}
-                <span className="text-emerald-400">&quot;sales&quot;</span>
+                <span className="text-sage-400">&quot;sales&quot;</span>
                 <span className="text-gray-500">,</span>{" "}
-                <span className="text-emerald-400">&quot;ops&quot;</span>
+                <span className="text-sage-400">&quot;ops&quot;</span>
                 <span className="text-gray-500">],</span>
                 {"\n"}
                 {"  "}
-                <span className="text-cyan-300">mode</span>
+                <span className="text-bone-200">mode</span>
                 <span className="text-gray-500">:</span>{" "}
-                <span className="text-emerald-400">
+                <span className="text-sage-400">
                   &quot;autonomous&quot;
                 </span>
                 <span className="text-gray-500">,</span>
@@ -172,7 +172,7 @@ export default function Hero() {
 
             <motion.div
               className="hero-float glow-blue relative z-10 rounded-xl border border-[rgba(255,255,255,0.06)] p-5 sm:p-6"
-              style={{ background: "#131620" }}
+              style={{ background: "#16181B" }}
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease }}
@@ -218,12 +218,12 @@ export default function Hero() {
                     className="animate-shimmer h-full w-1/3 rounded-full"
                     style={{
                       background:
-                        "linear-gradient(90deg, transparent, #3B82F6, #06B6D4, transparent)",
+                        "linear-gradient(90deg, transparent, #C9A961, #E8E2D4, transparent)",
                     }}
                   />
                 </div>
                 <div className="mt-2 flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-blue-400" />
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass-400" />
                   <span className="font-mono text-[10px] text-gray-500">
                     Orchestrating workflows...
                   </span>

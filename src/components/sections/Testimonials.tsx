@@ -28,11 +28,11 @@ export default function Testimonials() {
   return (
     <section
       className="py-16 md:py-24"
-      style={{ backgroundColor: "#09090B" }}
+      style={{ backgroundColor: "#0E0F11" }}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Shipped &amp; Running
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -51,7 +51,7 @@ export default function Testimonials() {
               key={t.name}
               className="group flex flex-col rounded-xl p-6 transition-all duration-300"
               style={{
-                backgroundColor: "#131620",
+                backgroundColor: "#16181B",
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
@@ -67,7 +67,7 @@ export default function Testimonials() {
             >
               {/* Quote icon */}
               <svg
-                className="mb-3 h-8 w-8 text-blue-500/20"
+                className="mb-3 h-8 w-8 text-brass-400/20"
                 viewBox="0 0 24 24"
                 fill="currentColor"
               >
@@ -84,7 +84,7 @@ export default function Testimonials() {
               >
                 <p className="font-semibold text-white">{t.name}</p>
                 <p className="text-sm text-zinc-500">{t.role}</p>
-                <p className="mt-1 text-xs font-medium text-blue-400">
+                <p className="mt-1 text-xs font-medium text-brass-300">
                   {t.metric}
                 </p>
               </div>

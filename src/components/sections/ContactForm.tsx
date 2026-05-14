@@ -47,7 +47,7 @@ export default function ContactForm() {
           htmlFor="name"
           className="mb-1.5 block text-sm font-medium text-white"
         >
-          Name <span className="text-blue-400">*</span>
+          Name <span className="text-brass-300">*</span>
         </label>
         <input
           type="text"
@@ -57,7 +57,7 @@ export default function ContactForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your full name"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#131620] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -66,7 +66,7 @@ export default function ContactForm() {
           htmlFor="email"
           className="mb-1.5 block text-sm font-medium text-white"
         >
-          Email <span className="text-blue-400">*</span>
+          Email <span className="text-brass-300">*</span>
         </label>
         <input
           type="email"
@@ -76,7 +76,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@company.com"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#131620] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -94,7 +94,7 @@ export default function ContactForm() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="+1 (416) 555-0123"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#131620] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -103,7 +103,7 @@ export default function ContactForm() {
           htmlFor="service"
           className="mb-1.5 block text-sm font-medium text-white"
         >
-          Service Interest <span className="text-blue-400">*</span>
+          Service Interest <span className="text-brass-300">*</span>
         </label>
         <select
           id="service"
@@ -111,7 +111,7 @@ export default function ContactForm() {
           required
           value={service}
           onChange={(e) => setService(e.target.value)}
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#131620] px-4 py-3 text-white outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         >
           <option value="" disabled>
             Select a service
@@ -129,7 +129,7 @@ export default function ContactForm() {
           htmlFor="message"
           className="mb-1.5 block text-sm font-medium text-white"
         >
-          Message <span className="text-blue-400">*</span>
+          Message <span className="text-brass-300">*</span>
         </label>
         <textarea
           id="message"
@@ -139,7 +139,7 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Tell us about your project or what you need help with..."
-          className="w-full resize-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#131620] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full resize-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-zinc-500 outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -152,7 +152,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="btn-glow w-full rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 disabled:pointer-events-none disabled:opacity-60"
+        className="btn-glow w-full rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 disabled:pointer-events-none disabled:opacity-60"
       >
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>

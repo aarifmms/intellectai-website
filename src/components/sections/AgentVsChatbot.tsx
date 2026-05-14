@@ -8,20 +8,20 @@ export default function AgentVsChatbot() {
     <section
       id="agentic-vs-chatbot"
       className="relative overflow-hidden py-16 md:py-24"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2"
         style={{
           background:
-            "radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(201, 169, 97, 0.05) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 md:px-8">
         <div className="mb-10 text-center md:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             What Is Agentic AI?
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -48,7 +48,7 @@ export default function AgentVsChatbot() {
         <div
           className="overflow-hidden rounded-2xl border"
           style={{
-            background: "#131620",
+            background: "#16181B",
             borderColor: "rgba(255, 255, 255, 0.06)",
           }}
         >
@@ -81,12 +81,12 @@ export default function AgentVsChatbot() {
               className="border-l border-white/[0.06] px-4 py-5 md:px-6 md:py-6"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.04))",
+                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04))",
               }}
             >
               <div className="flex items-center gap-2">
                 <svg
-                  className="h-4 w-4 text-blue-400 md:h-5 md:w-5"
+                  className="h-4 w-4 text-brass-300 md:h-5 md:w-5"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -96,7 +96,7 @@ export default function AgentVsChatbot() {
                 >
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
-                <div className="text-sm font-bold text-blue-400 md:text-lg">
+                <div className="text-sm font-bold text-brass-300 md:text-lg">
                   Agentic AI
                 </div>
               </div>
@@ -126,7 +126,7 @@ export default function AgentVsChatbot() {
                 className="border-l border-white/[0.06] px-4 py-4 md:px-6 md:py-5"
                 style={{
                   background:
-                    "linear-gradient(135deg, rgba(59,130,246,0.04), rgba(6,182,212,0.02))",
+                    "linear-gradient(135deg, rgba(201, 169, 97,0.04), rgba(232, 226, 212,0.02))",
                 }}
               >
                 <div className="text-sm leading-[1.5] text-zinc-200 md:text-base">

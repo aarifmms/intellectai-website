@@ -51,20 +51,20 @@ export default function ROICalculator() {
     <section
       id="roi"
       className="relative overflow-hidden py-16 md:py-24"
-      style={{ background: "#09090B" }}
+      style={{ background: "#0E0F11" }}
     >
       <div
         className="pointer-events-none absolute right-1/4 top-1/4 h-[400px] w-[400px]"
         style={{
           background:
-            "radial-gradient(circle, rgba(6,182,212,0.06) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(232, 226, 212,0.06) 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
 
       <div className="relative z-10 mx-auto max-w-6xl px-6 md:px-8">
         <div className="mb-10 text-center md:mb-14">
-          <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+          <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             ROI Calculator
           </span>
           <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -81,7 +81,7 @@ export default function ROICalculator() {
           <div
             className="rounded-xl border p-6 md:p-8 lg:col-span-3"
             style={{
-              background: "#131620",
+              background: "#16181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
             }}
           >
@@ -129,7 +129,7 @@ export default function ROICalculator() {
                     >
                       {task.label}
                     </label>
-                    <span className="font-mono text-sm font-semibold text-blue-400">
+                    <span className="font-mono text-sm font-semibold text-brass-300">
                       {hours[task.id]}h
                     </span>
                   </div>
@@ -146,7 +146,7 @@ export default function ROICalculator() {
                         [task.id]: parseInt(e.target.value, 10),
                       }))
                     }
-                    className="w-full accent-blue-500"
+                    className="w-full accent-brass-500"
                   />
                 </div>
               ))}
@@ -158,9 +158,9 @@ export default function ROICalculator() {
             className="relative overflow-hidden rounded-xl border p-6 md:p-8 lg:col-span-2"
             style={{
               background:
-                "linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.04)), #131620",
-              borderColor: "rgba(59, 130, 246, 0.3)",
-              boxShadow: "0 0 40px rgba(59, 130, 246, 0.10)",
+                "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #16181B",
+              borderColor: "rgba(201, 169, 97, 0.3)",
+              boxShadow: "0 0 40px rgba(201, 169, 97, 0.10)",
             }}
           >
             <h3 className="mb-6 text-lg font-bold text-white md:text-xl">
@@ -182,7 +182,7 @@ export default function ROICalculator() {
               <div className="my-5 border-t border-white/[0.08]" />
 
               <div>
-                <div className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+                <div className="text-xs font-semibold uppercase tracking-wider text-brass-300">
                   Net monthly savings
                 </div>
                 <div className="mt-2 text-4xl font-extrabold text-white md:text-5xl">
@@ -194,7 +194,7 @@ export default function ROICalculator() {
               </div>
 
               <div>
-                <div className="text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                <div className="text-xs font-semibold uppercase tracking-wider text-bone-200">
                   Annual impact
                 </div>
                 <div className="mt-1 text-2xl font-bold text-white md:text-3xl">
@@ -209,7 +209,7 @@ export default function ROICalculator() {
                     <span className="font-semibold text-zinc-200">$2,000</span>{" "}
                     automation pays for itself in
                   </div>
-                  <div className="mt-0.5 text-lg font-bold text-emerald-400">
+                  <div className="mt-0.5 text-lg font-bold text-sage-400">
                     ~{totals.paybackWeeks} weeks
                   </div>
                 </div>
@@ -220,8 +220,8 @@ export default function ROICalculator() {
               href="/contact"
               className="mt-7 block w-full rounded-lg py-3 text-center text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
-                boxShadow: "0 0 20px rgba(59, 130, 246, 0.3)",
+                background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
               }}
             >
               Get My Custom ROI Report →
@@ -260,7 +260,7 @@ function Field({
     <div>
       <div className="mb-1.5 flex items-center justify-between">
         <label className="text-sm font-semibold text-zinc-300">{label}</label>
-        <span className="font-mono text-sm font-semibold text-blue-400">
+        <span className="font-mono text-sm font-semibold text-brass-300">
           {format(value)}
         </span>
       </div>
@@ -271,7 +271,7 @@ function Field({
         step={step}
         value={value}
         onChange={(e) => onChange(parseInt(e.target.value, 10))}
-        className="w-full accent-blue-500"
+        className="w-full accent-brass-500"
       />
       {hint && <div className="mt-1 text-xs text-zinc-500">{hint}</div>}
     </div>

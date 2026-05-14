@@ -7,7 +7,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-16 md:py-24" style={{ backgroundColor: "#0F1117" }}>
+    <section id="faq" className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
           <h2 className="text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -26,12 +26,12 @@ export default function FAQ() {
                     : "border border-[rgba(255,255,255,0.06)]"
                 }`}
                 style={{
-                  backgroundColor: isOpen ? "#1A1F2E" : "#131620",
+                  backgroundColor: isOpen ? "#1C1F23" : "#16181B",
                 }}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between px-5 py-5 text-left focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0F1117] focus-visible:outline-none"
+                  className="flex w-full items-center justify-between px-5 py-5 text-left focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#131416] focus-visible:outline-none"
                   aria-expanded={isOpen}
                 >
                   <span className="pr-4 text-base font-semibold text-white md:text-lg">

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 md:py-24" style={{ backgroundColor: "#09090B" }}>
+    <section id="about" className="py-16 md:py-24" style={{ backgroundColor: "#0E0F11" }}>
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
           <div className="relative">
@@ -15,14 +15,14 @@ export default function About() {
                 className="h-full w-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 hidden h-20 w-20 items-center justify-center rounded-full ring-4 ring-[#09090B] md:flex"
-              style={{ background: "linear-gradient(135deg, #3B82F6, #06B6D4)" }}>
+            <div className="absolute -bottom-4 -right-4 hidden h-20 w-20 items-center justify-center rounded-full ring-4 ring-[#0E0F11] md:flex"
+              style={{ background: "linear-gradient(135deg, #C9A961, #E8E2D4)" }}>
               <span className="text-xl font-bold text-white">AS</span>
             </div>
           </div>
 
           <div>
-            <span className="text-xs font-semibold uppercase tracking-wider text-blue-400">
+            <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
               About IntellectAI
             </span>
             <h2 className="mt-4 mb-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
@@ -32,7 +32,7 @@ export default function About() {
             <h3 className="mb-1 text-xl font-semibold text-white">
               Aarif Shaikh
             </h3>
-            <p className="mb-6 text-sm font-medium text-blue-400">
+            <p className="mb-6 text-sm font-medium text-brass-300">
               Founder · IntellectAI &amp; SellerPilotAI
             </p>
             <p className="text-base leading-[1.7] text-zinc-400">
