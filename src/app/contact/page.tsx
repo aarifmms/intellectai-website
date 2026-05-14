@@ -17,10 +17,10 @@ export default function Contact() {
         <div className="mx-auto max-w-7xl px-6 md:px-8">
           <div className="mx-auto max-w-2xl">
             <div className="mx-auto mb-8 h-0.5 w-20 bg-brass-500" />
-            <h1 className="mb-4 text-center text-[32px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[48px]">
+            <h1 className="mb-4 text-center text-[32px] font-bold leading-[1.1] tracking-tight text-white md:text-[48px]">
               Let&apos;s Talk <span className="text-brass-300">AI</span>
             </h1>
-            <p className="mb-12 text-center text-lg leading-[1.6] text-zinc-400">
+            <p className="mb-12 text-center text-lg leading-[1.6] text-[#B6B8BC]">
               Ready to put AI to work for your business? Fill out the form below
               and we&apos;ll get back to you within 24 hours.
             </p>
@@ -29,7 +29,7 @@ export default function Contact() {
               <ContactForm />
             </div>
 
-            <p className="mt-6 text-center text-sm text-zinc-500">
+            <p className="mt-6 text-center text-sm text-[#8A8D93]">
               Or email us directly at{" "}
               <a
                 href="mailto:aarifshaikhs@hotmail.com"

@@ -11,10 +11,10 @@ export default function CaseStudy() {
     >
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mb-8 text-center md:mb-12">
-          <h2 className="text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             We Don&apos;t Just Talk About AI. We Ship It.
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
             Real products. Real businesses. Built and shipped by IntellectAI.
           </p>
         </div>
@@ -71,7 +71,7 @@ export default function CaseStudy() {
                 </div>
 
                 {/* Description */}
-                <p className="mb-6 flex-1 text-sm leading-[1.6] text-zinc-400">
+                <p className="mb-6 flex-1 text-sm leading-[1.6] text-[#B6B8BC]">
                   {study.description}
                 </p>
 
@@ -82,7 +82,7 @@ export default function CaseStudy() {
                       <div className="text-sm font-bold text-brass-300">
                         {stat.value}
                       </div>
-                      <div className="text-xs text-zinc-500">
+                      <div className="text-xs text-[#8A8D93]">
                         {stat.label}
                       </div>
                     </div>
@@ -94,7 +94,7 @@ export default function CaseStudy() {
                   {study.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-zinc-500"
+                      className="rounded-full border border-zinc-700 px-2 py-0.5 text-xs text-[#8A8D93]"
                     >
                       {tag}
                     </span>

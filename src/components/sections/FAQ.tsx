@@ -38,7 +38,7 @@ export default function FAQ() {
                     {faq.question}
                   </span>
                   <svg
-                    className={`h-5 w-5 shrink-0 text-zinc-500 transition-transform duration-300 ${
+                    className={`h-5 w-5 shrink-0 text-[#8A8D93] transition-transform duration-300 ${
                       isOpen ? "rotate-180" : ""
                     }`}
                     viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default function FAQ() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="px-5 pb-5 text-base leading-[1.6] text-zinc-400">
+                    <p className="px-5 pb-5 text-base leading-[1.6] text-[#B6B8BC]">
                       {faq.answer}
                     </p>
                   </div>

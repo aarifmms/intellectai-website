@@ -26,7 +26,7 @@ export default function Header() {
       <div
         className={`${
           scrolled
-            ? "bg-[#0E0F11]/80 backdrop-blur-lg border-b border-white/[0.06]"
+            ? "bg-[#0E0F11]/80 backdrop-blur-lg border-b border-[#23262B]"
             : "bg-transparent"
         } transition-all duration-300`}
       >
@@ -41,7 +41,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-zinc-400 transition-colors hover:text-white"
+                className="text-sm font-medium text-[#B6B8BC] transition-colors hover:text-white"
               >
                 {link.label}
               </a>

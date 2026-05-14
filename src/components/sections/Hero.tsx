@@ -40,20 +40,20 @@ export default function Hero() {
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass-400" />
                 AI Operating System for SMBs
               </span>
-              <h1 className="mt-6 text-[40px] font-extrabold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
+              <h1 className="mt-6 text-[40px] font-bold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
                 Build an AI-Powered{" "}
                 <span className="text-gradient">Business That Runs Itself</span>
               </h1>
             </motion.div>
 
             <motion.p
-              className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-gray-400 md:mx-0 md:text-xl"
+              className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:mx-0 md:text-xl"
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.15, ease }}
             >
               We design and deploy{" "}
-              <span className="font-semibold text-zinc-200">
+              <span className="font-semibold text-[#E6E7E9]">
                 Agentic AI infrastructure
               </span>{" "}
               for SMBs across every industry, autonomous agents that handle
@@ -62,7 +62,7 @@ export default function Hero() {
             </motion.p>
 
             <motion.ul
-              className="mx-auto mt-6 grid max-w-xl grid-cols-1 gap-2 text-sm text-zinc-300 sm:grid-cols-2 md:mx-0"
+              className="mx-auto mt-6 grid max-w-xl grid-cols-1 gap-2 text-sm text-[#D3CCBA] sm:grid-cols-2 md:mx-0"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25, ease }}
@@ -95,7 +95,7 @@ export default function Hero() {
                 href="/contact"
                 className="btn-glow rounded-lg px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
                 style={{
-                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                  background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                 }}
               >
                 Deploy Your AI Workforce
@@ -109,7 +109,7 @@ export default function Hero() {
             </motion.div>
 
             <motion.p
-              className="mt-8 text-sm tracking-wide text-gray-500"
+              className="mt-8 text-sm tracking-wide text-[#8A8D93]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
@@ -136,37 +136,37 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6, ease }}
             >
-              <div className="mb-2 text-[10px] font-medium uppercase tracking-wider text-gray-500">
+              <div className="mb-2 text-[10px] font-medium uppercase tracking-wider text-[#8A8D93]">
                 workforce.config.ts
               </div>
               <pre className="font-mono text-xs leading-relaxed">
                 <span className="text-brass-300">const</span>{" "}
                 <span className="text-white">ops</span>{" "}
-                <span className="text-gray-500">=</span>{" "}
+                <span className="text-[#8A8D93]">=</span>{" "}
                 <span className="text-bone-200">new</span>{" "}
                 <span className="text-brass-300">AIWorkforce</span>
-                <span className="text-gray-500">{"({"}</span>
+                <span className="text-[#8A8D93]">{"({"}</span>
                 {"\n"}
                 {"  "}
                 <span className="text-bone-200">agents</span>
-                <span className="text-gray-500">:</span>{" "}
-                <span className="text-gray-500">[</span>
+                <span className="text-[#8A8D93]">:</span>{" "}
+                <span className="text-[#8A8D93]">[</span>
                 <span className="text-sage-400">&quot;voice&quot;</span>
-                <span className="text-gray-500">,</span>{" "}
+                <span className="text-[#8A8D93]">,</span>{" "}
                 <span className="text-sage-400">&quot;sales&quot;</span>
-                <span className="text-gray-500">,</span>{" "}
+                <span className="text-[#8A8D93]">,</span>{" "}
                 <span className="text-sage-400">&quot;ops&quot;</span>
-                <span className="text-gray-500">],</span>
+                <span className="text-[#8A8D93]">],</span>
                 {"\n"}
                 {"  "}
                 <span className="text-bone-200">mode</span>
-                <span className="text-gray-500">:</span>{" "}
+                <span className="text-[#8A8D93]">:</span>{" "}
                 <span className="text-sage-400">
                   &quot;autonomous&quot;
                 </span>
-                <span className="text-gray-500">,</span>
+                <span className="text-[#8A8D93]">,</span>
                 {"\n"}
-                <span className="text-gray-500">{"});"}</span>
+                <span className="text-[#8A8D93]">{"});"}</span>
               </pre>
             </motion.div>
 
@@ -183,7 +183,7 @@ export default function Hero() {
                   <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
                   <span className="h-3 w-3 rounded-full bg-[#28C840]" />
                 </div>
-                <span className="font-mono text-xs font-medium tracking-wider text-gray-400">
+                <span className="font-mono text-xs font-medium tracking-wider text-[#B6B8BC]">
                   AI Workforce · LIVE
                 </span>
               </div>
@@ -203,7 +203,7 @@ export default function Hero() {
                   >
                     <div className="flex items-center gap-3">
                       <span className={`h-2 w-2 rounded-full ${m.color}`} />
-                      <span className="text-sm text-gray-300">{m.label}</span>
+                      <span className="text-sm text-[#D3CCBA]">{m.label}</span>
                     </div>
                     <span className="font-mono text-sm font-semibold text-white">
                       {m.value}
@@ -224,7 +224,7 @@ export default function Hero() {
                 </div>
                 <div className="mt-2 flex items-center gap-2">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass-400" />
-                  <span className="font-mono text-[10px] text-gray-500">
+                  <span className="font-mono text-[10px] text-[#8A8D93]">
                     Orchestrating workflows...
                   </span>
                 </div>

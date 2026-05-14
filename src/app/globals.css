@@ -1,30 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* ── Graphite & Brass palette ── */
+  /* ── Graphite & Brass palette (refined) ── */
   --color-background: #0E0F11;
   --color-foreground: #E6E7E9;
-  --color-primary: #C9A961;          /* antique brass */
+  --color-primary: #C9A961;
   --color-primary-light: #DAB97A;
   --color-primary-dark: #A8893F;
-  --color-accent: #E8E2D4;           /* warm bone */
+  --color-accent: #E8E2D4;
   --color-accent-light: #F1ECDF;
   --color-bg-primary: #0E0F11;
   --color-bg-secondary: #131416;
-  --color-bg-card: #16181B;
-  --color-bg-card-hover: #1C1F23;
+  --color-bg-card: #17181B;
+  --color-bg-card-hover: #1C1E22;
   --color-bg-elevated: #23262B;
   --color-text-primary: #E6E7E9;
   --color-text-secondary: #B6B8BC;
   --color-text-muted: #8A8D93;
   --color-border: #23262B;
-  --color-border-hover: rgba(201, 169, 97, 0.25);
-  --color-border-accent: rgba(201, 169, 97, 0.4);
+  --color-border-hover: rgba(201, 169, 97, 0.22);
+  --color-border-accent: rgba(201, 169, 97, 0.35);
   --color-success: #7A9E7E;
   --color-warning: #D4A256;
   --color-error: #B85450;
 
-  /* ── Brass scale (used in text-brass-*, bg-brass-*, etc.) ── */
+  /* ── Brass scale ── */
   --color-brass-50:  #FBF7EC;
   --color-brass-100: #F2E8C7;
   --color-brass-200: #E8D9A1;
@@ -43,7 +43,7 @@
   --color-bone-300: #D3CCBA;
   --color-bone-400: #B8B09C;
 
-  /* ── Sage (success/positive) ── */
+  /* ── Sage (success) ── */
   --color-sage-300: #98B79C;
   --color-sage-400: #7A9E7E;
   --color-sage-500: #5C8261;
@@ -52,9 +52,15 @@
   --font-display: var(--font-sora);
 }
 
+/* ── Typography refinement: editorial restraint ── */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.022em;
+  font-weight: 700;
+}
+
+h1 {
+  letter-spacing: -0.03em;
 }
 
 html {
@@ -65,40 +71,56 @@ body {
   background: var(--color-bg-primary);
   color: var(--color-foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
-/* ── Brass gradient text ── */
+/* ── Subtle film grain (breaks the 'CGI clean' AI look) ── */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.8 0 0 0 0 0.7 0 0 0 0 0.5 0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
 
+/* ── Headline accent: solid brass, not a rainbow gradient ── */
 .text-gradient {
-  background: linear-gradient(90deg, #DAB97A, #E8E2D4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #DAB97A;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  background-clip: initial;
+  -webkit-background-clip: initial;
 }
 
-/* ── Brass glow (subtle) ── */
-
+/* ── Brass glow (subtle, not screaming) ── */
 .glow-blue {
-  box-shadow: 0 0 30px rgba(201, 169, 97, 0.12), 0 0 60px rgba(201, 169, 97, 0.04);
+  box-shadow:
+    0 1px 0 rgba(232, 226, 212, 0.04) inset,
+    0 0 24px rgba(201, 169, 97, 0.08),
+    0 0 60px rgba(201, 169, 97, 0.03);
 }
 
 .glow-text {
   text-shadow:
-    0 0 20px rgba(201, 169, 97, 0.28),
-    0 0 40px rgba(201, 169, 97, 0.12);
+    0 0 18px rgba(201, 169, 97, 0.22),
+    0 0 36px rgba(201, 169, 97, 0.08);
 }
 
-/* ── Grid pattern background ── */
-
+/* ── Grid background (warmer, more paper-like) ── */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(232, 226, 212, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(232, 226, 212, 0.025) 1px, transparent 1px);
+    linear-gradient(rgba(232, 226, 212, 0.020) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 226, 212, 0.020) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 
-/* ── 3D card perspective tilt ── */
-
+/* ── 3D card perspective tilt (softened) ── */
 .card-3d {
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -106,28 +128,32 @@ body {
 }
 
 .card-3d:hover {
-  transform: rotateY(-2deg) rotateX(2deg) translateZ(10px);
+  transform: rotateY(-1deg) rotateX(1deg) translateZ(6px);
 }
 
-/* ── Brass button glow on hover ── */
-
+/* ── Brass button: solid stamp, subtle inset highlight, not a glow ── */
 .btn-glow {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.18) inset,
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(201, 169, 97, 0.18);
 }
 
 .btn-glow:hover {
-  box-shadow: 0 0 20px rgba(201, 169, 97, 0.28), 0 4px 16px rgba(201, 169, 97, 0.18);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.08) inset,
+    0 -1px 0 rgba(0, 0, 0, 0.20) inset,
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 6px 20px rgba(201, 169, 97, 0.28);
 }
 
-/* ── Logo bar marquee animation ── */
-
+/* ── Marquee for the logo bar ── */
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .animate-marquee {
@@ -138,39 +164,25 @@ body {
   animation-play-state: paused;
 }
 
-/* ── Pulsing dot for status badges ── */
-
+/* ── Pulse dot ── */
 @keyframes pulse-dot {
-  0%, 100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.4);
-  }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
 }
 
 .animate-pulse-dot {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
-/* ── Floating animation ── */
-
+/* ── Float ── */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
-
-/* ── Hero card float variants ── */
 
 @keyframes hero-card-float {
   0%, 100% { transform: translateY(0); }
@@ -190,17 +202,21 @@ body {
   animation: hero-card-float-alt 7s ease-in-out infinite;
 }
 
-/* ── Processing bar shimmer ── */
-
+/* ── Shimmer ── */
 @keyframes shimmer-slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(200%);
-  }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
 }
 
 .animate-shimmer {
-  animation: shimmer-slide 2s ease-in-out infinite;
+  animation: shimmer-slide 2.4s ease-in-out infinite;
+}
+
+/* ── Eyebrow utility for editorial labels ── */
+.eyebrow {
+  font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  font-weight: 600;
 }

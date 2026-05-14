@@ -6,7 +6,7 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
           <div className="relative">
-            <div className="overflow-hidden rounded-2xl border border-white/[0.06]">
+            <div className="overflow-hidden rounded-2xl border border-[#23262B]">
               <Image
                 src="/images/image2.jpeg"
                 alt="An AI system operating an enterprise workflow dashboard, the way IntellectAI runs its own business"
@@ -16,7 +16,7 @@ export default function About() {
               />
             </div>
             <div className="absolute -bottom-4 -right-4 hidden h-20 w-20 items-center justify-center rounded-full ring-4 ring-[#0E0F11] md:flex"
-              style={{ background: "linear-gradient(135deg, #C9A961, #E8E2D4)" }}>
+              style={{ background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)" }}>
               <span className="text-xl font-bold text-white">AS</span>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function About() {
             <p className="mb-6 text-sm font-medium text-brass-300">
               Founder · IntellectAI &amp; SellerPilotAI
             </p>
-            <p className="text-base leading-[1.7] text-zinc-400">
+            <p className="text-base leading-[1.7] text-[#B6B8BC]">
               IntellectAI isn&apos;t a consultancy that talks about AI. We
               operate our own business on a 7-agent AI workforce that handles
               everything from sales outreach to content production to customer

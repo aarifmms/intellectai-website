@@ -67,18 +67,18 @@ export default function Services() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             The Platform
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             We Build Your{" "}
             <span className="text-gradient">AI Operating System</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Voice AI, workflow orchestration, and autonomous agents, combined
             into one intelligent business system, customized to your industry
             and operations.
           </p>
         </div>
 
-        <div className="relative mb-10 overflow-hidden rounded-2xl border border-white/[0.06] md:mb-12">
+        <div className="relative mb-10 overflow-hidden rounded-2xl border border-[#23262B] md:mb-12">
           <Image
             src="/images/image9.jpeg"
             alt="AI agent architecture showing memory, autonomous action, reactivity, tool use, and human-in-the-loop control"
@@ -152,7 +152,7 @@ export default function Services() {
                   {service.title}
                 </h3>
 
-                <p className="mb-6 grow text-base leading-[1.6] text-zinc-400">
+                <p className="mb-6 grow text-base leading-[1.6] text-[#B6B8BC]">
                   {service.description}
                 </p>
 
@@ -160,7 +160,7 @@ export default function Services() {
                   {service.features.map((feature) => (
                     <li
                       key={feature}
-                      className="flex items-start gap-2 text-sm text-zinc-300"
+                      className="flex items-start gap-2 text-sm text-[#D3CCBA]"
                     >
                       <svg
                         className="mt-0.5 h-4 w-4 shrink-0 text-brass-300"
@@ -179,12 +179,12 @@ export default function Services() {
                 </ul>
 
                 <div className="mb-6">
-                  <span className="text-sm text-zinc-500">Starting at </span>
+                  <span className="text-sm text-[#8A8D93]">Starting at </span>
                   <span className="text-2xl font-bold text-white md:text-3xl">
                     {service.price}
                   </span>
                   {"originalPrice" in service && service.originalPrice && (
-                    <span className="ml-2 text-sm text-zinc-500 line-through">
+                    <span className="ml-2 text-sm text-[#8A8D93] line-through">
                       {service.originalPrice}
                     </span>
                   )}
@@ -201,7 +201,7 @@ export default function Services() {
                     isPopular
                       ? {
                           background:
-                            "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                            "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                           boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
                         }
                       : undefined

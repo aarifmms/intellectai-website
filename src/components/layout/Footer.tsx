@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo + Tagline */}
           <div className="lg:col-span-1">
             <span className="text-xl font-bold text-white">{SITE.name}</span>
-            <p className="mt-2 text-sm text-zinc-400">{SITE.tagline}</p>
+            <p className="mt-2 text-sm text-[#B6B8BC]">{SITE.tagline}</p>
             <a
               href="/contact"
               className="btn-glow mt-4 inline-block rounded-lg bg-gradient-to-r from-brass-500 to-bone-200 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0"
@@ -24,7 +24,7 @@ export default function Footer() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-zinc-400 transition-colors hover:text-white"
+                className="text-sm text-[#B6B8BC] transition-colors hover:text-white"
               >
                 {link.label}
               </a>
@@ -34,16 +34,16 @@ export default function Footer() {
           {/* Services */}
           <div className="flex flex-col gap-3">
             <span className="mb-1 text-sm font-semibold text-white">Services</span>
-            <a href="/contact" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/contact" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               AI Strategy Session
             </a>
-            <a href="/contact" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/contact" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               Workflow Automation
             </a>
-            <a href="/contact" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/contact" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               Custom AI Agent
             </a>
-            <a href="/contact" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/contact" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               AI Retainer
             </a>
           </div>
@@ -51,13 +51,13 @@ export default function Footer() {
           {/* Case Studies */}
           <div className="flex flex-col gap-3">
             <span className="mb-1 text-sm font-semibold text-white">Case Studies</span>
-            <a href="/case-study" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/case-study" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               SellerPilotAI
             </a>
-            <a href="/case-study/evhub" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/case-study/evhub" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               TheEVHub
             </a>
-            <a href="/case-study/ardenmd" className="text-sm text-zinc-400 transition-colors hover:text-white">
+            <a href="/case-study/ardenmd" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               ArdenMD
             </a>
           </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -87,7 +87,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X / Twitter"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -103,7 +103,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-zinc-400 transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -121,7 +121,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div style={{ backgroundColor: "#050507" }}>
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-4 text-xs text-zinc-500 md:flex-row md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-4 text-xs text-[#8A8D93] md:flex-row md:px-8">
           <span>&copy; 2026 {SITE.name}. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <a

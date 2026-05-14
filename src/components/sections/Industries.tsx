@@ -115,18 +115,18 @@ export default function Industries() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Built For Every Industry
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             AI Operating Systems for{" "}
             <span className="text-gradient">Every SMB Category</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Every business gets a custom AI workforce architecture tailored to
             its industry. If your team does it manually today, we can deploy
             an agent that does it tomorrow.
           </p>
         </div>
 
-        <div className="relative mb-10 overflow-hidden rounded-2xl border border-white/[0.06] md:mb-14">
+        <div className="relative mb-10 overflow-hidden rounded-2xl border border-[#23262B] md:mb-14">
           <Image
             src="/images/image7.jpeg"
             alt="AI networks connecting every industry, from retail to manufacturing"
@@ -179,14 +179,14 @@ export default function Industries() {
               <h3 className="mb-2 text-lg font-bold text-white md:text-xl">
                 {industry.name}
               </h3>
-              <p className="mb-4 text-sm leading-[1.6] text-zinc-400">
+              <p className="mb-4 text-sm leading-[1.6] text-[#B6B8BC]">
                 {industry.description}
               </p>
               <div className="flex flex-wrap gap-2">
                 {industry.examples.map((ex) => (
                   <span
                     key={ex}
-                    className="rounded-full border border-white/[0.06] bg-white/[0.03] px-2.5 py-1 text-xs text-zinc-300"
+                    className="rounded-full border border-[#23262B] bg-white/[0.03] px-2.5 py-1 text-xs text-[#D3CCBA]"
                   >
                     {ex}
                   </span>
@@ -197,14 +197,14 @@ export default function Industries() {
         </div>
 
         <div className="mt-10 text-center md:mt-14">
-          <p className="mb-5 text-base text-zinc-400 md:text-lg">
+          <p className="mb-5 text-base text-[#B6B8BC] md:text-lg">
             Your industry isn&apos;t listed? We&apos;ve probably built it
             anyway.
           </p>
           <a
             href="/contact"
             className="btn-glow inline-block rounded-lg px-8 py-4 text-base font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5"
-            style={{ background: "linear-gradient(135deg, #C9A961, #E8E2D4)" }}
+            style={{ background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)" }}
           >
             Build My AI Operating System
           </a>

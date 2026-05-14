@@ -1,64 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#09090B"/>
-      <stop offset="1" stop-color="#0B1226"/>
+      <stop offset="0" stop-color="#0E0F11"/>
+      <stop offset="1" stop-color="#17181B"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#3B82F6"/>
-      <stop offset="1" stop-color="#06B6D4"/>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#DAB97A"/>
+      <stop offset="0.6" stop-color="#C9A961"/>
+      <stop offset="1" stop-color="#A8893F"/>
     </linearGradient>
     <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+      <stop offset="0" stop-color="#C9A961" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#C9A961" stop-opacity="0"/>
     </radialGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(232,226,212,0.025)" stroke-width="1"/>
     </pattern>
+    <filter id="noise" x="0" y="0">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 0.8 0 0 0 0 0.7 0 0 0 0 0.5 0 0 0 0.06 0"/>
+    </filter>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <ellipse cx="900" cy="180" rx="380" ry="280" fill="url(#glow)"/>
+  <rect width="1200" height="630" filter="url(#noise)" opacity="0.5"/>
 
   <g transform="translate(80, 100)">
-    <rect width="280" height="36" rx="18" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.4)"/>
-    <text x="140" y="24" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="700" fill="#60A5FA" text-anchor="middle" letter-spacing="2">THE AI OPERATING SYSTEM</text>
+    <rect width="280" height="32" rx="4" fill="rgba(201,169,97,0.10)" stroke="rgba(201,169,97,0.35)"/>
+    <text x="140" y="22" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="700" fill="#DAB97A" text-anchor="middle" letter-spacing="3">THE AI OPERATING SYSTEM</text>
   </g>
 
-  <text x="80" y="240" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="900" fill="#FFFFFF" letter-spacing="-2">Build a Business That</text>
-  <text x="80" y="312" font-family="Inter, system-ui, sans-serif" font-size="64" font-weight="900" fill="url(#accent)" letter-spacing="-2">Runs Itself. With AI.</text>
+  <text x="80" y="240" font-family="Sora, Inter, sans-serif" font-size="64" font-weight="700" fill="#E6E7E9" letter-spacing="-2">Build a Business That</text>
+  <text x="80" y="312" font-family="Sora, Inter, sans-serif" font-size="64" font-weight="700" fill="#DAB97A" letter-spacing="-2">Runs Itself. With AI.</text>
 
-  <text x="80" y="382" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" fill="#9CA3AF">Autonomous AI agents · Voice AI · Workflow orchestration</text>
-  <text x="80" y="416" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" fill="#9CA3AF">Built for SMBs across every industry.</text>
+  <text x="80" y="382" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" fill="#B6B8BC">Autonomous AI agents · Voice AI · Workflow orchestration</text>
+  <text x="80" y="414" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="500" fill="#B6B8BC">Built for SMBs across every industry.</text>
 
   <g transform="translate(80, 500)">
-    <rect width="280" height="64" rx="12" fill="url(#accent)"/>
-    <text x="140" y="42" font-family="Inter, system-ui, sans-serif" font-size="19" font-weight="700" fill="#FFFFFF" text-anchor="middle">Deploy Your AI Workforce →</text>
+    <rect width="280" height="56" rx="4" fill="url(#brass)"/>
+    <text x="140" y="36" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="700" fill="#0E0F11" text-anchor="middle" letter-spacing="0.5">Deploy Your AI Workforce →</text>
   </g>
 
   <g transform="translate(380, 500)">
-    <text x="0" y="32" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF">IntellectAI</text>
-    <text x="0" y="56" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="400" fill="#6B7280">intellectai.io · Toronto, Canada</text>
+    <text x="0" y="28" font-family="Sora, Inter, sans-serif" font-size="17" font-weight="700" fill="#E6E7E9">IntellectAI</text>
+    <text x="0" y="52" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="400" fill="#8A8D93">intellectai.io · Toronto, Canada</text>
   </g>
 
-  <g transform="translate(820, 460) rotate(-4)" opacity="0.95">
-    <rect width="320" height="120" rx="16" fill="#131620" stroke="rgba(255,255,255,0.08)"/>
-    <circle cx="22" cy="22" r="6" fill="#FF5F57"/>
-    <circle cx="42" cy="22" r="6" fill="#FFBD2E"/>
-    <circle cx="62" cy="22" r="6" fill="#28C840"/>
-    <text x="300" y="26" font-family="ui-monospace, Menlo, monospace" font-size="11" fill="#9CA3AF" text-anchor="end">AI Workforce · LIVE</text>
+  <g transform="translate(820, 460) rotate(-3)" opacity="0.95">
+    <rect width="320" height="120" rx="4" fill="#17181B" stroke="#23262B"/>
+    <circle cx="22" cy="22" r="5" fill="#B85450"/>
+    <circle cx="40" cy="22" r="5" fill="#D4A256"/>
+    <circle cx="58" cy="22" r="5" fill="#7A9E7E"/>
+    <text x="300" y="26" font-family="ui-monospace, Menlo, monospace" font-size="10" fill="#8A8D93" text-anchor="end" letter-spacing="1.5">AI WORKFORCE · LIVE</text>
 
-    <circle cx="20" cy="58" r="4" fill="#60A5FA"/>
-    <text x="32" y="62" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#D1D5DB">Calls Handled</text>
-    <text x="300" y="62" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="end">1,247</text>
+    <circle cx="20" cy="58" r="3" fill="#DAB97A"/>
+    <text x="32" y="62" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#D3CCBA">Calls Handled</text>
+    <text x="300" y="62" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#E6E7E9" text-anchor="end">1,247</text>
 
-    <circle cx="20" cy="84" r="4" fill="#22D3EE"/>
-    <text x="32" y="88" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#D1D5DB">Leads Qualified</text>
-    <text x="300" y="88" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="end">382</text>
+    <circle cx="20" cy="84" r="3" fill="#E8E2D4"/>
+    <text x="32" y="88" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#D3CCBA">Leads Qualified</text>
+    <text x="300" y="88" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#E6E7E9" text-anchor="end">382</text>
 
-    <circle cx="20" cy="110" r="4" fill="#34D399"/>
-    <text x="32" y="114" font-family="Inter, system-ui, sans-serif" font-size="13" fill="#D1D5DB">Active Agents</text>
-    <text x="300" y="114" font-family="ui-monospace, Menlo, monospace" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="end">7</text>
+    <circle cx="20" cy="110" r="3" fill="#7A9E7E"/>
+    <text x="32" y="114" font-family="Inter, system-ui, sans-serif" font-size="12" fill="#D3CCBA">Active Agents</text>
+    <text x="300" y="114" font-family="ui-monospace, Menlo, monospace" font-size="12" font-weight="700" fill="#E6E7E9" text-anchor="end">7</text>
   </g>
 </svg>

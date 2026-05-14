@@ -14,14 +14,14 @@ export default function PrivacyPolicy() {
       <Header />
       <main className="pb-20 pt-32 md:pb-32 md:pt-44" style={{ backgroundColor: "#0E0F11" }}>
         <div className="mx-auto max-w-3xl px-6 md:px-8">
-          <h1 className="mb-8 text-[32px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[48px]">
+          <h1 className="mb-8 text-[32px] font-bold leading-[1.1] tracking-tight text-white md:text-[48px]">
             Privacy Policy
           </h1>
-          <p className="mb-8 text-sm text-zinc-400">
+          <p className="mb-8 text-sm text-[#B6B8BC]">
             Last updated: April 28, 2026
           </p>
 
-          <div className="space-y-8 text-base leading-[1.8] text-zinc-400">
+          <div className="space-y-8 text-base leading-[1.8] text-[#B6B8BC]">
             <section>
               <h2 className="mb-3 text-xl font-bold text-white">
                 Introduction

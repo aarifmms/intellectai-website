@@ -67,10 +67,10 @@ export default function ROICalculator() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             ROI Calculator
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             How Much Could <span className="text-gradient">You Save?</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Estimate the hours and dollars an AI agent could save your business
             every month. Numbers update as you type.
           </p>
@@ -112,10 +112,10 @@ export default function ROICalculator() {
               />
             </div>
 
-            <div className="mb-2 text-sm font-semibold text-zinc-300">
+            <div className="mb-2 text-sm font-semibold text-[#D3CCBA]">
               Hours/week spent on these tasks (per person)
             </div>
-            <div className="mb-1 text-xs text-zinc-500">
+            <div className="mb-1 text-xs text-[#8A8D93]">
               Move the sliders, leave at 0 if it doesn&apos;t apply.
             </div>
 
@@ -125,7 +125,7 @@ export default function ROICalculator() {
                   <div className="mb-1.5 flex items-center justify-between">
                     <label
                       htmlFor={task.id}
-                      className="text-sm text-zinc-300"
+                      className="text-sm text-[#D3CCBA]"
                     >
                       {task.label}
                     </label>
@@ -179,16 +179,16 @@ export default function ROICalculator() {
                 muted
               />
 
-              <div className="my-5 border-t border-white/[0.08]" />
+              <div className="my-5 border-t border-[#2A2D33]" />
 
               <div>
                 <div className="text-xs font-semibold uppercase tracking-wider text-brass-300">
                   Net monthly savings
                 </div>
-                <div className="mt-2 text-4xl font-extrabold text-white md:text-5xl">
+                <div className="mt-2 text-4xl font-bold text-white md:text-5xl">
                   {currency(totals.monthlyNet)}
                 </div>
-                <div className="mt-1 text-xs text-zinc-500">
+                <div className="mt-1 text-xs text-[#8A8D93]">
                   After ~{currency(AGENT_COST_MONTHLY)}/mo agent infra cost
                 </div>
               </div>
@@ -203,10 +203,10 @@ export default function ROICalculator() {
               </div>
 
               {totals.paybackWeeks > 0 && totals.monthlyNet > 0 && (
-                <div className="rounded-lg border border-white/[0.06] bg-black/20 p-3">
-                  <div className="text-xs text-zinc-400">
+                <div className="rounded-lg border border-[#23262B] bg-black/20 p-3">
+                  <div className="text-xs text-[#B6B8BC]">
                     A typical{" "}
-                    <span className="font-semibold text-zinc-200">$2,000</span>{" "}
+                    <span className="font-semibold text-[#E6E7E9]">$2,000</span>{" "}
                     automation pays for itself in
                   </div>
                   <div className="mt-0.5 text-lg font-bold text-sage-400">
@@ -220,13 +220,13 @@ export default function ROICalculator() {
               href="/contact"
               className="mt-7 block w-full rounded-lg py-3 text-center text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
               style={{
-                background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                 boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
               }}
             >
               Get My Custom ROI Report →
             </a>
-            <p className="mt-3 text-center text-xs text-zinc-500">
+            <p className="mt-3 text-center text-xs text-[#8A8D93]">
               Estimates assume 70% automation rate. Your audit gets exact
               numbers.
             </p>
@@ -259,7 +259,7 @@ function Field({
   return (
     <div>
       <div className="mb-1.5 flex items-center justify-between">
-        <label className="text-sm font-semibold text-zinc-300">{label}</label>
+        <label className="text-sm font-semibold text-[#D3CCBA]">{label}</label>
         <span className="font-mono text-sm font-semibold text-brass-300">
           {format(value)}
         </span>
@@ -273,7 +273,7 @@ function Field({
         onChange={(e) => onChange(parseInt(e.target.value, 10))}
         className="w-full accent-brass-500"
       />
-      {hint && <div className="mt-1 text-xs text-zinc-500">{hint}</div>}
+      {hint && <div className="mt-1 text-xs text-[#8A8D93]">{hint}</div>}
     </div>
   );
 }
@@ -289,10 +289,10 @@ function Stat({
 }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
-      <span className="text-sm text-zinc-400">{label}</span>
+      <span className="text-sm text-[#B6B8BC]">{label}</span>
       <span
         className={`font-mono text-lg font-bold ${
-          muted ? "text-zinc-200" : "text-white"
+          muted ? "text-[#E6E7E9]" : "text-white"
         }`}
       >
         {value}

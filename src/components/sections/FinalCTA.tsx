@@ -21,7 +21,7 @@ export default function FinalCTA() {
             Deploy Your AI Workforce.{" "}
             <span className="text-gradient">Today.</span>
           </h2>
-          <p className="mb-8 text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mb-8 text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Book your free AI Operations Audit. We&apos;ll architect your AI
             Operating System and show you the highest-ROI place to start. No
             commitment, no pressure, just a deployable blueprint.
@@ -32,7 +32,7 @@ export default function FinalCTA() {
           >
             Get My AI Blueprint
           </a>
-          <p className="mt-4 text-sm text-zinc-500">
+          <p className="mt-4 text-sm text-[#8A8D93]">
             Or email{" "}
             <a
               href={`mailto:${SITE.email}`}

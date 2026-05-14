@@ -61,7 +61,7 @@ function renderBody(body: string) {
       return (
         <ol
           key={i}
-          className="my-5 list-decimal space-y-2 pl-6 text-base leading-[1.7] text-zinc-300 md:text-lg"
+          className="my-5 list-decimal space-y-2 pl-6 text-base leading-[1.7] text-[#D3CCBA] md:text-lg"
         >
           {items.map((item, j) => (
             <li key={j}>{renderInline(item)}</li>
@@ -76,7 +76,7 @@ function renderBody(body: string) {
       return (
         <ul
           key={i}
-          className="my-5 list-disc space-y-2 pl-6 text-base leading-[1.7] text-zinc-300 md:text-lg"
+          className="my-5 list-disc space-y-2 pl-6 text-base leading-[1.7] text-[#D3CCBA] md:text-lg"
         >
           {items.map((item, j) => (
             <li key={j}>{renderInline(item)}</li>
@@ -87,7 +87,7 @@ function renderBody(body: string) {
     return (
       <p
         key={i}
-        className="my-5 text-base leading-[1.8] text-zinc-300 md:text-lg"
+        className="my-5 text-base leading-[1.8] text-[#D3CCBA] md:text-lg"
       >
         {renderInline(trimmed)}
       </p>
@@ -126,12 +126,12 @@ export default async function InsightPost({
           <div className="mx-auto max-w-3xl px-6 md:px-8">
             <Link
               href="/insights"
-              className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-zinc-500 transition-colors hover:text-brass-300"
+              className="mb-8 inline-flex items-center gap-1.5 text-sm font-medium text-[#8A8D93] transition-colors hover:text-brass-300"
             >
               ← All insights
             </Link>
 
-            <div className="mb-5 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+            <div className="mb-5 flex flex-wrap items-center gap-2 text-xs text-[#8A8D93]">
               <time>{formatDate(post.publishedAt)}</time>
               <span>·</span>
               <span>{post.readingMinutes} min read</span>
@@ -145,14 +145,14 @@ export default async function InsightPost({
               ))}
             </div>
 
-            <h1 className="text-[34px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+            <h1 className="text-[34px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
               {post.title}
             </h1>
-            <p className="mt-5 text-lg leading-[1.6] text-zinc-400 md:text-xl">
+            <p className="mt-5 text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
               {post.description}
             </p>
 
-            <div className="my-10 border-t border-white/[0.06]" />
+            <div className="my-10 border-t border-[#23262B]" />
 
             <div>{renderBody(post.body)}</div>
 
@@ -167,7 +167,7 @@ export default async function InsightPost({
               <h3 className="text-xl font-bold text-white md:text-2xl">
                 Want this applied to your business?
               </h3>
-              <p className="mx-auto mt-3 max-w-xl text-base text-zinc-400">
+              <p className="mx-auto mt-3 max-w-xl text-base text-[#B6B8BC]">
                 Book a free AI Readiness Audit and we&apos;ll show you exactly
                 where to start.
               </p>
@@ -175,7 +175,7 @@ export default async function InsightPost({
                 href="/contact"
                 className="mt-6 inline-block rounded-lg px-7 py-3 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                  background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                 }}
               >
                 Book Your Free Audit →

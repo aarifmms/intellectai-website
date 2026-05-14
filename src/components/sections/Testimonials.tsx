@@ -35,11 +35,11 @@ export default function Testimonials() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Shipped &amp; Running
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             AI Operating Systems{" "}
             <span className="text-gradient">in Production</span>
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
             Real AI workforces shipped for real businesses. No demos, no
             slideware, just systems running in the wild.
           </p>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
               </svg>
 
-              <p className="mb-6 flex-1 text-base leading-[1.7] text-zinc-300">
+              <p className="mb-6 flex-1 text-base leading-[1.7] text-[#D3CCBA]">
                 {t.quote}
               </p>
 
@@ -83,7 +83,7 @@ export default function Testimonials() {
                 style={{ borderTop: "1px solid rgba(63, 63, 70, 0.5)" }}
               >
                 <p className="font-semibold text-white">{t.name}</p>
-                <p className="text-sm text-zinc-500">{t.role}</p>
+                <p className="text-sm text-[#8A8D93]">{t.role}</p>
                 <p className="mt-1 text-xs font-medium text-brass-300">
                   {t.metric}
                 </p>

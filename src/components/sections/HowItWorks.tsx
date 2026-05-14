@@ -13,13 +13,13 @@ export default function HowItWorks() {
             From Audit to{" "}
             <span className="text-gradient">Autonomous Operations</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Three phases. Three to four weeks. Zero buzzwords, just a
             deployable AI Operating System for your business.
           </p>
         </div>
 
-        <div className="mx-auto mb-12 max-w-5xl overflow-hidden rounded-2xl border border-white/[0.06] md:mb-16">
+        <div className="mx-auto mb-12 max-w-5xl overflow-hidden rounded-2xl border border-[#23262B] md:mb-16">
           <Image
             src="/images/image3.jpeg"
             alt="A growth trajectory showing AI tools and processes scaling from laptop to mobile"
@@ -34,13 +34,13 @@ export default function HowItWorks() {
 
           {STEPS.map((step) => (
             <div key={step.number} className="relative text-center">
-              <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border border-brass-500/30 bg-brass-500/10 text-4xl font-extrabold text-brass-300 md:h-24 md:w-24 md:text-5xl">
+              <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border border-brass-500/30 bg-brass-500/10 text-4xl font-bold text-brass-300 md:h-24 md:w-24 md:text-5xl">
                 {step.number}
               </div>
               <h3 className="mb-3 text-xl font-bold text-white md:text-2xl">
                 {step.title}
               </h3>
-              <p className="mx-auto max-w-xs text-base leading-[1.6] text-zinc-400">
+              <p className="mx-auto max-w-xs text-base leading-[1.6] text-[#B6B8BC]">
                 {step.description}
               </p>
             </div>

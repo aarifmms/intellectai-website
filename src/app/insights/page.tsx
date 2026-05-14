@@ -40,16 +40,16 @@ export default function InsightsPage() {
             <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
               Insights
             </span>
-            <h1 className="mt-5 text-[40px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[56px]">
+            <h1 className="mt-5 text-[40px] font-bold leading-[1.1] tracking-tight text-white md:text-[56px]">
               Agentic AI for{" "}
               <span className="text-gradient">Real Businesses</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
               Practical writing for SMB owners and operators. No hype, no
               fluff, just what works.
             </p>
 
-            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.06]">
+            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-[#23262B]">
               <Image
                 src="/images/image1.jpeg"
                 alt="A close-up of an AI agent assistant integrated into a modern workflow"
@@ -74,7 +74,7 @@ export default function InsightsPage() {
                     borderColor: "rgba(255, 255, 255, 0.06)",
                   }}
                 >
-                  <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+                  <div className="mb-3 flex flex-wrap items-center gap-2 text-xs text-[#8A8D93]">
                     <time>{formatDate(post.publishedAt)}</time>
                     <span>·</span>
                     <span>{post.readingMinutes} min read</span>
@@ -90,7 +90,7 @@ export default function InsightsPage() {
                   <h2 className="text-xl font-bold leading-snug text-white transition-colors group-hover:text-brass-300 md:text-2xl">
                     {post.title}
                   </h2>
-                  <p className="mt-3 text-base leading-[1.6] text-zinc-400">
+                  <p className="mt-3 text-base leading-[1.6] text-[#B6B8BC]">
                     {post.description}
                   </p>
                   <div className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brass-300">
@@ -115,7 +115,7 @@ export default function InsightsPage() {
               <h3 className="text-xl font-bold text-white md:text-2xl">
                 Ready to stop reading and start shipping?
               </h3>
-              <p className="mx-auto mt-3 max-w-xl text-base text-zinc-400">
+              <p className="mx-auto mt-3 max-w-xl text-base text-[#B6B8BC]">
                 Book a free AI Readiness Audit. We&apos;ll map your highest-ROI
                 automation opportunity and price the scope.
               </p>
@@ -123,7 +123,7 @@ export default function InsightsPage() {
                 href="/contact"
                 className="mt-6 inline-block rounded-lg px-7 py-3 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                  background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                 }}
               >
                 Book Your Free Audit →

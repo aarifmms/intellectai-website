@@ -54,11 +54,11 @@ export default function ValueProps() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             Why It Matters
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             Why SMBs Are Moving to{" "}
             <span className="text-gradient">Agentic AI</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             An AI Operating System doesn&apos;t just save hours. It changes
             how your business operates.
           </p>
@@ -86,7 +86,7 @@ export default function ValueProps() {
               <h3 className="mb-2 text-lg font-bold text-white md:text-xl">
                 {prop.title}
               </h3>
-              <p className="text-sm leading-[1.6] text-zinc-400">
+              <p className="text-sm leading-[1.6] text-[#B6B8BC]">
                 {prop.description}
               </p>
             </div>

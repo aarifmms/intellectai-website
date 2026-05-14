@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 
 type Step = {
@@ -214,40 +213,13 @@ export default function AgentDemo() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             See It In Action
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             Watch an Agent <span className="text-gradient">Actually Work</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Pick a scenario. Hit run. See exactly how an agent reasons, uses
             tools, and completes a real business task end-to-end.
           </p>
-        </div>
-
-        <div className="mb-8 grid grid-cols-1 gap-4 md:mb-10 md:grid-cols-2">
-          <figure className="overflow-hidden rounded-xl border border-white/[0.06]">
-            <Image
-              src="/images/image6.jpeg"
-              alt="An AI workforce dashboard showing live call volume and per-agent metrics"
-              width={1920}
-              height={1080}
-              className="h-full w-full object-cover"
-            />
-            <figcaption className="border-t border-white/[0.04] bg-black/30 px-4 py-2 text-xs text-zinc-500">
-              Live AI workforce operations dashboard
-            </figcaption>
-          </figure>
-          <figure className="overflow-hidden rounded-xl border border-white/[0.06]">
-            <Image
-              src="/images/image5.jpeg"
-              alt="Voice AI agent interface with active calls, transcripts, and appointment booking"
-              width={1024}
-              height={1024}
-              className="h-full w-full object-cover"
-            />
-            <figcaption className="border-t border-white/[0.04] bg-black/30 px-4 py-2 text-xs text-zinc-500">
-              Voice agent: live calls, transcripts, bookings
-            </figcaption>
-          </figure>
         </div>
 
         {/* Scenario tabs */}
@@ -260,7 +232,7 @@ export default function AgentDemo() {
               className={`rounded-lg border px-4 py-2 text-sm font-semibold transition-all ${
                 scenarioKey === key
                   ? "border-brass-500/50 bg-brass-500/10 text-brass-300"
-                  : "border-white/[0.08] bg-white/[0.02] text-zinc-400 hover:text-white"
+                  : "border-[#2A2D33] bg-white/[0.02] text-[#B6B8BC] hover:text-white"
               }`}
             >
               {SCENARIOS[key].title}
@@ -270,7 +242,7 @@ export default function AgentDemo() {
 
         <DemoRunner key={scenarioKey} scenario={SCENARIOS[scenarioKey]} />
 
-        <p className="mt-4 text-center text-xs text-zinc-500">
+        <p className="mt-4 text-center text-xs text-[#8A8D93]">
           Demo is a deterministic simulation. Your production agent uses GPT-4o
           / Claude / Gemini with real tool calls to your stack.
         </p>
@@ -333,12 +305,12 @@ function DemoRunner({
         borderColor: "rgba(255, 255, 255, 0.06)",
       }}
     >
-      <div className="mb-4 flex items-center justify-between border-b border-white/[0.06] pb-3">
+      <div className="mb-4 flex items-center justify-between border-b border-[#23262B] pb-3">
         <div className="flex items-center gap-2">
           <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
           <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
           <span className="h-3 w-3 rounded-full bg-[#28C840]" />
-          <span className="ml-3 font-mono text-xs text-zinc-500">
+          <span className="ml-3 font-mono text-xs text-[#8A8D93]">
             agent.run · {scenario.title}
           </span>
         </div>
@@ -359,16 +331,16 @@ function DemoRunner({
       </div>
 
       <div className="mb-5">
-        <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+        <div className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-[#8A8D93]">
           Input
         </div>
-        <div className="rounded-lg border border-white/[0.04] bg-black/30 p-3 font-mono text-xs leading-relaxed text-zinc-300 md:text-sm">
+        <div className="rounded-lg border border-[#1C1E22] bg-black/30 p-3 font-mono text-xs leading-relaxed text-[#D3CCBA] md:text-sm">
           {scenario.userInput}
         </div>
       </div>
 
       <div className="mb-5 min-h-[280px]">
-        <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-500">
+        <div className="mb-2 text-xs font-semibold uppercase tracking-wider text-[#8A8D93]">
           Agent execution trace
         </div>
         <div className="space-y-2">
@@ -380,7 +352,7 @@ function DemoRunner({
                 key={i}
                 className={`flex items-start gap-3 rounded-md border p-3 transition-all duration-300 ${
                   visible
-                    ? "border-white/[0.06] bg-black/20 opacity-100"
+                    ? "border-[#23262B] bg-black/20 opacity-100"
                     : "border-transparent opacity-30"
                 }`}
               >
@@ -397,7 +369,7 @@ function DemoRunner({
                   >
                     {step.label}
                   </div>
-                  <div className="mt-0.5 text-sm leading-[1.5] text-zinc-300">
+                  <div className="mt-0.5 text-sm leading-[1.5] text-[#D3CCBA]">
                     {step.detail}
                   </div>
                 </div>
@@ -423,7 +395,7 @@ function DemoRunner({
             </svg>
             Task Completed
           </div>
-          <div className="text-sm leading-[1.5] text-zinc-200">
+          <div className="text-sm leading-[1.5] text-[#E6E7E9]">
             {scenario.outcome}
           </div>
         </div>
@@ -436,7 +408,7 @@ function DemoRunner({
             onClick={run}
             className="btn-glow w-full rounded-lg px-6 py-3 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 sm:w-auto"
             style={{
-              background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+              background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
             }}
           >
             ▶ Run Agent
@@ -464,7 +436,7 @@ function DemoRunner({
               href="/contact"
               className="w-full rounded-lg px-6 py-3 text-center text-sm font-semibold text-white sm:w-auto"
               style={{
-                background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
               }}
             >
               Build one for my business →

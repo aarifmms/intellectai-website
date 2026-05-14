@@ -28,10 +28,10 @@ export default function ThankYouPage() {
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
-            <h1 className="mb-4 text-[32px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[48px]">
+            <h1 className="mb-4 text-[32px] font-bold leading-[1.1] tracking-tight text-white md:text-[48px]">
               Message <span className="text-brass-300">Received</span>
             </h1>
-            <p className="mb-8 text-lg leading-[1.6] text-zinc-400">
+            <p className="mb-8 text-lg leading-[1.6] text-[#B6B8BC]">
               Thank you for reaching out. We&apos;ll review your message and get
               back to you within 24 hours.
             </p>
@@ -40,7 +40,7 @@ export default function ThankYouPage() {
               <h2 className="mb-4 text-lg font-bold text-white">
                 What happens next?
               </h2>
-              <ol className="space-y-3 text-base leading-[1.6] text-zinc-400">
+              <ol className="space-y-3 text-base leading-[1.6] text-[#B6B8BC]">
                 <li className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brass-500 text-xs font-bold text-white">
                     1

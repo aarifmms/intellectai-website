@@ -109,15 +109,15 @@ export default function CaseStudyPage() {
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.05em] text-brass-300">
                 Case Study
               </p>
-              <h1 className="text-[36px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[56px]">
+              <h1 className="text-[36px] font-bold leading-[1.1] tracking-tight text-white md:text-[56px]">
                 SellerPilotAI
               </h1>
-              <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-gray-400 md:text-xl">
+              <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
                 How IntellectAI built a full AI SaaS product from concept to
                 launch, proving that agentic AI can replace entire compliance
                 teams.
               </p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-gray-400">
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-[#B6B8BC]">
                 <span className="rounded-full border border-gray-700 px-3 py-1">
                   E-commerce / Amazon
                 </span>
@@ -143,7 +143,7 @@ export default function CaseStudyPage() {
                 <div className="text-2xl font-bold text-brass-300 md:text-3xl">
                   {stat.value}
                 </div>
-                <div className="mt-1 text-sm text-zinc-400">{stat.label}</div>
+                <div className="mt-1 text-sm text-[#B6B8BC]">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -155,11 +155,11 @@ export default function CaseStudyPage() {
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               The Problem
             </h2>
-            <p className="mb-6 text-base leading-[1.7] text-zinc-400 md:text-lg">
+            <p className="mb-6 text-base leading-[1.7] text-[#B6B8BC] md:text-lg">
               Amazon sellers face constant compliance threats that can destroy
               their business overnight:
             </p>
-            <ul className="space-y-3 text-base leading-[1.7] text-zinc-400 md:text-lg">
+            <ul className="space-y-3 text-base leading-[1.7] text-[#B6B8BC] md:text-lg">
               <li className="flex items-start gap-3">
                 <svg
                   className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
@@ -222,7 +222,7 @@ export default function CaseStudyPage() {
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               The Solution: SellerPilotAI
             </h2>
-            <p className="mb-10 text-base leading-[1.7] text-zinc-400 md:text-lg">
+            <p className="mb-10 text-base leading-[1.7] text-[#B6B8BC] md:text-lg">
               Most Amazon tools are reactive. SellerPilotAI is{" "}
               <strong className="text-white">agentic</strong>. It thinks
               ahead, connects patterns, and takes a proactive stance on
@@ -238,7 +238,7 @@ export default function CaseStudyPage() {
                   <h3 className="mb-2 text-lg font-bold text-white">
                     {feature.title}
                   </h3>
-                  <p className="text-base leading-[1.6] text-zinc-400">
+                  <p className="text-base leading-[1.6] text-[#B6B8BC]">
                     {feature.description}
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function CaseStudyPage() {
                   <span className="w-32 shrink-0 text-sm font-semibold text-white">
                     {item.category}
                   </span>
-                  <span className="text-sm text-zinc-400">{item.tech}</span>
+                  <span className="text-sm text-[#B6B8BC]">{item.tech}</span>
                 </div>
               ))}
             </div>
@@ -297,7 +297,7 @@ export default function CaseStudyPage() {
                       {phase.items.map((item) => (
                         <li
                           key={item}
-                          className="flex items-start gap-2 text-base leading-[1.6] text-zinc-400"
+                          className="flex items-start gap-2 text-base leading-[1.6] text-[#B6B8BC]"
                         >
                           <svg
                             className="mt-1 h-4 w-4 shrink-0 text-brass-300"
@@ -327,7 +327,7 @@ export default function CaseStudyPage() {
             <h2 className="mb-6 text-[28px] font-bold leading-[1.2] tracking-tight text-white md:text-[40px]">
               Key Takeaway
             </h2>
-            <p className="mx-auto max-w-2xl text-lg leading-[1.7] text-gray-300 md:text-xl">
+            <p className="mx-auto max-w-2xl text-lg leading-[1.7] text-[#D3CCBA] md:text-xl">
               SellerPilotAI proves AI agents are production-ready today. What
               required 2-3 compliance team members now runs 24/7 at a fraction
               of the cost. This approach applies to any repetitive,
@@ -344,7 +344,7 @@ export default function CaseStudyPage() {
               <h2 className="mb-4 text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
                 Want Us to Build Something Like This for You?
               </h2>
-              <p className="mb-8 text-base leading-[1.6] text-zinc-400 md:text-lg">
+              <p className="mb-8 text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
                 We build custom AI agents and SaaS products from concept to
                 launch. Start with a free AI Readiness Audit.
               </p>
@@ -354,7 +354,7 @@ export default function CaseStudyPage() {
               >
                 Book Your Free AI Audit
               </a>
-              <p className="mt-4 text-sm text-zinc-500">
+              <p className="mt-4 text-sm text-[#8A8D93]">
                 Or visit{" "}
                 <a
                   href="https://www.sellerpilotai.ai"

@@ -111,7 +111,7 @@ export default function LogoBar() {
       }}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-8">
-        <p className="mb-6 text-center text-sm font-medium uppercase tracking-wider text-zinc-500">
+        <p className="mb-6 text-center text-sm font-medium uppercase tracking-wider text-[#8A8D93]">
           Powering AI infrastructure with industry-leading platforms
         </p>
         <div className="relative overflow-hidden">
@@ -134,7 +134,7 @@ export default function LogoBar() {
             {LOGOS.map((logo) => (
               <div
                 key={logo.name}
-                className="flex shrink-0 items-center gap-2 text-zinc-600 transition-all duration-300 hover:text-zinc-300"
+                className="flex shrink-0 items-center gap-2 text-zinc-600 transition-all duration-300 hover:text-[#D3CCBA]"
                 aria-label={logo.name}
               >
                 {logo.svg}
@@ -144,7 +144,7 @@ export default function LogoBar() {
             {LOGOS.map((logo) => (
               <div
                 key={`${logo.name}-dup`}
-                className="flex shrink-0 items-center gap-2 text-zinc-600 transition-all duration-300 hover:text-zinc-300"
+                className="flex shrink-0 items-center gap-2 text-zinc-600 transition-all duration-300 hover:text-[#D3CCBA]"
                 aria-label={logo.name}
               >
                 {logo.svg}

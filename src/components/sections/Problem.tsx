@@ -16,7 +16,7 @@ export default function Problem() {
             Most SMBs Are Stuck With{" "}
             <span className="text-gradient">Yesterday&apos;s AI</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Generic chatbots. Disconnected tools. Half-finished automations.
             None of it actually runs your business.
           </p>
@@ -54,7 +54,7 @@ export default function Problem() {
                 The Old Way
               </h3>
             </div>
-            <ul className="space-y-2.5 text-base leading-[1.6] text-zinc-400">
+            <ul className="space-y-2.5 text-base leading-[1.6] text-[#B6B8BC]">
               <li className="flex gap-2">
                 <span className="text-red-400/70">·</span>
                 Chatbots that just answer FAQs and end the loop
@@ -108,7 +108,7 @@ export default function Problem() {
                 The AI Operating System
               </h3>
             </div>
-            <ul className="space-y-2.5 text-base leading-[1.6] text-zinc-300">
+            <ul className="space-y-2.5 text-base leading-[1.6] text-[#D3CCBA]">
               <li className="flex gap-2">
                 <span className="text-brass-300">·</span>
                 Autonomous agents that complete entire workflows
@@ -129,7 +129,7 @@ export default function Problem() {
           </div>
         </div>
 
-        <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-medium text-zinc-300 md:text-xl">
+        <p className="mx-auto mt-10 max-w-3xl text-center text-lg font-medium text-[#D3CCBA] md:text-xl">
           Beyond automation.{" "}
           <span className="text-gradient">Into autonomous operations.</span>
         </p>

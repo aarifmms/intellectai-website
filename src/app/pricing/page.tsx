@@ -29,17 +29,17 @@ export default function PricingPage() {
             <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
               Pricing
             </span>
-            <h1 className="mt-5 text-[40px] font-extrabold leading-[1.1] tracking-tight text-white md:text-[56px]">
+            <h1 className="mt-5 text-[40px] font-bold leading-[1.1] tracking-tight text-white md:text-[56px]">
               Deploy Your AI Workforce.{" "}
               <span className="text-gradient">Transparent Pricing.</span>
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-zinc-400 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
               Four tiers. One playbook. Every AI Operating System gets scoped
               after the free audit, these are honest starting prices for
               SMBs, not enterprise fantasy quotes.
             </p>
 
-            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-white/[0.06]">
+            <div className="mx-auto mt-10 max-w-3xl overflow-hidden rounded-2xl border border-[#23262B]">
               <Image
                 src="/images/image4.jpeg"
                 alt="A secured, integrated business stack with AI workflows running across systems"
@@ -81,21 +81,21 @@ export default function PricingPage() {
                     <h3 className="text-lg font-bold text-white md:text-xl">
                       {tier.name}
                     </h3>
-                    <p className="mt-2 min-h-[48px] text-sm leading-[1.5] text-zinc-400">
+                    <p className="mt-2 min-h-[48px] text-sm leading-[1.5] text-[#B6B8BC]">
                       {tier.description}
                     </p>
 
                     <div className="mt-5 flex items-baseline gap-2">
-                      <span className="text-3xl font-extrabold text-white md:text-4xl">
+                      <span className="text-3xl font-bold text-white md:text-4xl">
                         {tier.price}
                       </span>
                       {"originalPrice" in tier && tier.originalPrice && (
-                        <span className="text-sm text-zinc-500 line-through">
+                        <span className="text-sm text-[#8A8D93] line-through">
                           {tier.originalPrice}
                         </span>
                       )}
                       {"priceSuffix" in tier && tier.priceSuffix && (
-                        <span className="text-sm text-zinc-500">
+                        <span className="text-sm text-[#8A8D93]">
                           {tier.priceSuffix}
                         </span>
                       )}
@@ -105,7 +105,7 @@ export default function PricingPage() {
                       {tier.features.map((feature) => (
                         <li
                           key={feature}
-                          className="flex items-start gap-2 text-sm text-zinc-300"
+                          className="flex items-start gap-2 text-sm text-[#D3CCBA]"
                         >
                           <svg
                             className="mt-0.5 h-4 w-4 shrink-0 text-brass-300"
@@ -134,7 +134,7 @@ export default function PricingPage() {
                         isHighlight
                           ? {
                               background:
-                                "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                                "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                               boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
                             }
                           : undefined
@@ -147,11 +147,11 @@ export default function PricingPage() {
               })}
             </div>
 
-            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-white/[0.06] bg-[#16181B] p-6 text-center md:p-8">
+            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-[#23262B] bg-[#16181B] p-6 text-center md:p-8">
               <h3 className="text-xl font-bold text-white md:text-2xl">
                 Not sure which tier fits?
               </h3>
-              <p className="mt-3 text-base text-zinc-400">
+              <p className="mt-3 text-base text-[#B6B8BC]">
                 Every engagement starts with a free AI Readiness Audit. We map
                 your highest-ROI opportunity, then quote the right scope. No
                 pressure, no upsell.
@@ -160,7 +160,7 @@ export default function PricingPage() {
                 href="/contact"
                 className="mt-6 inline-block rounded-lg px-7 py-3 text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5"
                 style={{
-                  background: "linear-gradient(135deg, #C9A961, #E8E2D4)",
+                  background: "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
                 }}
               >
                 Book Your Free Audit →
@@ -171,14 +171,14 @@ export default function PricingPage() {
 
         <section className="py-12 md:py-16">
           <div className="mx-auto max-w-3xl px-6 md:px-8">
-            <h2 className="mb-8 text-center text-[28px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[40px]">
+            <h2 className="mb-8 text-center text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
               Pricing Questions
             </h2>
             <div className="space-y-3">
               {FAQS.map((faq) => (
                 <details
                   key={faq.question}
-                  className="group rounded-xl border border-white/[0.06] bg-[#16181B] p-5 md:p-6"
+                  className="group rounded-xl border border-[#23262B] bg-[#16181B] p-5 md:p-6"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-4 text-base font-semibold text-white md:text-lg">
                     {faq.question}
@@ -194,7 +194,7 @@ export default function PricingPage() {
                       <line x1="5" y1="12" x2="19" y2="12" />
                     </svg>
                   </summary>
-                  <p className="mt-4 text-sm leading-[1.6] text-zinc-400 md:text-base">
+                  <p className="mt-4 text-sm leading-[1.6] text-[#B6B8BC] md:text-base">
                     {faq.answer}
                   </p>
                 </details>

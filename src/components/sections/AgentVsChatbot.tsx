@@ -24,18 +24,18 @@ export default function AgentVsChatbot() {
           <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
             What Is Agentic AI?
           </span>
-          <h2 className="mt-4 text-[32px] font-extrabold leading-[1.15] tracking-tight text-white md:text-[48px]">
+          <h2 className="mt-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
             Chatbots Talk.{" "}
             <span className="text-gradient">Agentic AI Operates.</span>
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-zinc-400 md:text-lg">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.6] text-[#B6B8BC] md:text-lg">
             Traditional AI responds to prompts. Agentic AI makes decisions,
             uses your tools, and runs entire workflows autonomously, like a
             digital employee that never sleeps.
           </p>
         </div>
 
-        <div className="mb-10 overflow-hidden rounded-2xl border border-white/[0.06]">
+        <div className="mb-10 overflow-hidden rounded-2xl border border-[#23262B]">
           <Image
             src="/images/image8.jpeg"
             alt="A human professional on one side and an AI agent on the other, working in parallel"
@@ -52,13 +52,13 @@ export default function AgentVsChatbot() {
             borderColor: "rgba(255, 255, 255, 0.06)",
           }}
         >
-          <div className="grid grid-cols-3 border-b border-white/[0.06]">
+          <div className="grid grid-cols-3 border-b border-[#23262B]">
             <div className="px-4 py-5 md:px-6 md:py-6">
-              <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500">
+              <div className="text-xs font-semibold uppercase tracking-wider text-[#8A8D93]">
                 Capability
               </div>
             </div>
-            <div className="border-l border-white/[0.06] px-4 py-5 md:px-6 md:py-6">
+            <div className="border-l border-[#23262B] px-4 py-5 md:px-6 md:py-6">
               <div className="flex items-center gap-2">
                 <svg
                   className="h-4 w-4 text-red-400 md:h-5 md:w-5"
@@ -78,7 +78,7 @@ export default function AgentVsChatbot() {
               </div>
             </div>
             <div
-              className="border-l border-white/[0.06] px-4 py-5 md:px-6 md:py-6"
+              className="border-l border-[#23262B] px-4 py-5 md:px-6 md:py-6"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04))",
@@ -108,7 +108,7 @@ export default function AgentVsChatbot() {
               key={row.capability}
               className={`grid grid-cols-3 ${
                 i < CHATBOT_VS_AGENT.length - 1
-                  ? "border-b border-white/[0.04]"
+                  ? "border-b border-[#1C1E22]"
                   : ""
               }`}
             >
@@ -117,19 +117,19 @@ export default function AgentVsChatbot() {
                   {row.capability}
                 </div>
               </div>
-              <div className="border-l border-white/[0.06] px-4 py-4 md:px-6 md:py-5">
-                <div className="text-sm leading-[1.5] text-zinc-400 md:text-base">
+              <div className="border-l border-[#23262B] px-4 py-4 md:px-6 md:py-5">
+                <div className="text-sm leading-[1.5] text-[#B6B8BC] md:text-base">
                   {row.chatbot}
                 </div>
               </div>
               <div
-                className="border-l border-white/[0.06] px-4 py-4 md:px-6 md:py-5"
+                className="border-l border-[#23262B] px-4 py-4 md:px-6 md:py-5"
                 style={{
                   background:
                     "linear-gradient(135deg, rgba(201, 169, 97,0.04), rgba(232, 226, 212,0.02))",
                 }}
               >
-                <div className="text-sm leading-[1.5] text-zinc-200 md:text-base">
+                <div className="text-sm leading-[1.5] text-[#E6E7E9] md:text-base">
                   {row.agent}
                 </div>
               </div>
@@ -138,8 +138,8 @@ export default function AgentVsChatbot() {
         </div>
 
         <div className="mt-8 text-center md:mt-10">
-          <p className="text-base text-zinc-500">
-            <span className="font-semibold text-zinc-300">Plain English:</span>{" "}
+          <p className="text-base text-[#8A8D93]">
+            <span className="font-semibold text-[#D3CCBA]">Plain English:</span>{" "}
             a chatbot tells you the order is shipped. An agent ships it.
           </p>
         </div>

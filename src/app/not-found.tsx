@@ -8,11 +8,11 @@ export default function NotFound() {
       <Header />
       <main className="pb-20 pt-32 md:pb-32 md:pt-44" style={{ backgroundColor: "#0E0F11" }}>
         <div className="mx-auto max-w-7xl px-6 text-center md:px-8">
-          <p className="text-8xl font-extrabold text-brass-300 md:text-9xl">404</p>
+          <p className="text-8xl font-bold text-brass-300 md:text-9xl">404</p>
           <h1 className="mt-4 text-[28px] font-bold tracking-tight text-white md:text-[40px]">
             Page not found
           </h1>
-          <p className="mx-auto mt-4 max-w-md text-base leading-[1.6] text-zinc-400">
+          <p className="mx-auto mt-4 max-w-md text-base leading-[1.6] text-[#B6B8BC]">
             The page you&apos;re looking for doesn&apos;t exist or has been
             moved. Let&apos;s get you back on track.
           </p>
