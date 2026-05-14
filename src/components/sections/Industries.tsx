@@ -154,13 +154,13 @@ export default function Industries() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {INDUSTRIES.map((industry) => (
             <div
               key={industry.name}
               className="group relative rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1"
               style={{
-                background: "#16181B",
+                background: "#17181B",
                 borderColor: "rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {

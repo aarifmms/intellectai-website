@@ -13,7 +13,7 @@ export const INSIGHTS: Insight[] = [
     slug: "chatbot-vs-agentic-ai-for-smbs",
     title: "Chatbot vs Agentic AI: What SMBs Actually Need in 2026",
     description:
-      "Most small businesses are buying chatbots and calling it 'AI strategy.' Here's why agentic AI is a completely different category. and which one will actually move your numbers.",
+      "Most small businesses are buying chatbots and calling it 'AI strategy.' Here's why agentic AI is a completely different category, and which one will actually move your numbers.",
     publishedAt: "2026-05-10",
     readingMinutes: 6,
     tags: ["Agentic AI", "SMB", "Strategy"],
@@ -21,9 +21,9 @@ export const INSIGHTS: Insight[] = [
 
 ## The category confusion
 
-A **chatbot** is a text-in, text-out tool. It reads, it writes, it responds. That's the entire job. If the conversation needs to *do* something. update a CRM, send an invoice, dispatch a technician. a chatbot says "please contact our team" and ends the loop.
+A **chatbot** is a text-in, text-out tool. It reads, it writes, it responds. That's the entire job. If the conversation needs to *do* something, update a CRM, send an invoice, dispatch a technician, a chatbot says "please contact our team" and ends the loop.
 
-An **agent** is a system that plans, calls tools, observes results, and adjusts. It doesn't *describe* the work. it *does* the work. The chatbot is the receptionist. The agent is the employee.
+An **agent** is a system that plans, calls tools, observes results, and adjusts. It doesn't *describe* the work, it *does* the work. The chatbot is the receptionist. The agent is the employee.
 
 ## Why this matters for SMBs specifically
 
@@ -38,7 +38,7 @@ For an SMB, AI either replaces a workflow or it doesn't matter. Half-measures do
 
 Real examples we've shipped for businesses with 5-50 employees:
 
-1. **Lead-qualification agent** that enriches incoming leads, scores them, writes a personalized reply, and books a call. all without a human until the call itself.
+1. **Lead-qualification agent** that enriches incoming leads, scores them, writes a personalized reply, and books a call, all without a human until the call itself.
 2. **Voice booking agent** that picks up missed calls 24/7, books service appointments into Google Calendar, and SMSes confirmations.
 3. **Inventory reorder agent** that monitors stock, checks supplier prices across 3 vendors, and creates POs when thresholds hit.
 
@@ -46,23 +46,23 @@ In all three, no human touches the workflow until something genuinely needs judg
 
 ## Three questions to ask before you buy "AI"
 
-1. Does it integrate with your stack (CRM, email, calendar, billing). or does it just chat?
+1. Does it integrate with your stack (CRM, email, calendar, billing), or does it just chat?
 2. Can it complete a task end-to-end, or does it hand off to a human halfway?
 3. Does it have escalation logic for when it's unsure, or does it just fail silently?
 
-If the answer to any of these is no, you're buying a chatbot. That might be fine. but price it like a chatbot, not like a digital employee.
+If the answer to any of these is no, you're buying a chatbot. That might be fine, but price it like a chatbot, not like a digital employee.
 
 ## The bottom line
 
 The AI conversation for SMBs in 2026 is not "should we have AI." It's "should we have an agent or a chatbot." Different category, different price, completely different outcome.
 
-If you want a starting point: pick one workflow your team does manually every day. Map it step by step. If it has more than 3 decisions in it, you need an agent. not a chatbot.`,
+If you want a starting point: pick one workflow your team does manually every day. Map it step by step. If it has more than 3 decisions in it, you need an agent, not a chatbot.`,
   },
   {
     slug: "5-ai-agent-use-cases-every-smb-can-deploy-this-quarter",
     title: "5 Agentic AI Use Cases Every SMB Can Deploy This Quarter",
     description:
-      "Practical, shippable AI agent ideas that pay for themselves in under 90 days. across retail, services, real estate, and professional services.",
+      "Practical, shippable AI agent ideas that pay for themselves in under 90 days, across retail, services, real estate, and professional services.",
     publishedAt: "2026-05-05",
     readingMinutes: 5,
     tags: ["Use Cases", "Automation", "ROI"],
@@ -72,7 +72,7 @@ If you want a starting point: pick one workflow your team does manually every da
 
 **Problem**: Lead form submissions sit in an inbox until someone has time. By then, the prospect has called a competitor.
 
-**Agent**: Watches the inbox, enriches the company (size, industry, revenue), scores the lead against your ICP, drafts a personalized reply, and books a call slot. all within 2 minutes.
+**Agent**: Watches the inbox, enriches the company (size, industry, revenue), scores the lead against your ICP, drafts a personalized reply, and books a call slot, all within 2 minutes.
 
 **Typical SMB ROI**: 30-40% lift in inbound-to-meeting conversion. Pays for itself in weeks if your sales cycle has any size to it.
 
@@ -94,7 +94,7 @@ If you want a starting point: pick one workflow your team does manually every da
 
 ## 4. The Onboarding Agent
 
-**Problem**: Every new client triggers the same 14-step process. contract, intake form, kickoff scheduling, document collection, system access. Half of it falls through the cracks.
+**Problem**: Every new client triggers the same 14-step process, contract, intake form, kickoff scheduling, document collection, system access. Half of it falls through the cracks.
 
 **Agent**: Triggers on contract-signed event. Sends intake. Chases missing items. Schedules kickoff. Creates project channels in Slack. Provisions tool access. Hands the human a "ready to start" notification only when everything's done.
 
@@ -132,7 +132,7 @@ Pick the workflow you want to automate first. Write down every step. Every decis
 
 Don't write what the workflow *should* be. Write what it actually is, with the messy parts included. Agents have to handle reality, not the org chart.
 
-If you can't document the workflow in a single page, you're not ready to automate it. you're ready to *redesign* it first.
+If you can't document the workflow in a single page, you're not ready to automate it, you're ready to *redesign* it first.
 
 ## 2. Audit your systems
 
@@ -153,7 +153,7 @@ Agents are only as good as the context you give them. If your CRM has duplicate 
 You don't need perfect data. You need:
 
 - A consistent source of truth for the entities the agent will touch (customers, orders, leads, projects).
-- Reasonable hygiene. required fields are filled, duplicates aren't rampant, formats are standardized in the field that matters most.
+- Reasonable hygiene, required fields are filled, duplicates aren't rampant, formats are standardized in the field that matters most.
 
 90% clean is fine. 50% clean is going to bite you.
 
@@ -182,7 +182,7 @@ The bad metrics are vibes-based. "It feels faster" isn't measurable. "We saved 1
 
 ## The 90-day mental model
 
-If you do these five things. document the workflow, audit your systems, clean the data enough, define escalation, pick a metric. you can have your first agent live in 30 days and your second one live in 60.
+If you do these five things, document the workflow, audit your systems, clean the data enough, define escalation, pick a metric, you can have your first agent live in 30 days and your second one live in 60.
 
 Most SMBs we work with try to skip 1-3 and then wonder why month one is all integration work. Don't do that. Do the prep. The agent ships faster and works better.
 

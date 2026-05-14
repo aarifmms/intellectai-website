@@ -48,7 +48,7 @@ export default function AgentVsChatbot() {
         <div
           className="overflow-hidden rounded-2xl border"
           style={{
-            background: "#16181B",
+            background: "#17181B",
             borderColor: "rgba(255, 255, 255, 0.06)",
           }}
         >
@@ -61,7 +61,7 @@ export default function AgentVsChatbot() {
             <div className="border-l border-[#23262B] px-4 py-5 md:px-6 md:py-6">
               <div className="flex items-center gap-2">
                 <svg
-                  className="h-4 w-4 text-red-400 md:h-5 md:w-5"
+                  className="h-4 w-4 text-[#C95A3F] md:h-5 md:w-5"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -72,7 +72,7 @@ export default function AgentVsChatbot() {
                   <line x1="18" y1="6" x2="6" y2="18" />
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
-                <div className="text-sm font-bold text-red-400 md:text-lg">
+                <div className="text-sm font-bold text-[#C95A3F] md:text-lg">
                   Chatbot
                 </div>
               </div>

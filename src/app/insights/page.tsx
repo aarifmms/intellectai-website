@@ -70,7 +70,7 @@ export default function InsightsPage() {
                   href={`/insights/${post.slug}`}
                   className="group block rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 md:p-7"
                   style={{
-                    background: "#16181B",
+                    background: "#17181B",
                     borderColor: "rgba(255, 255, 255, 0.06)",
                   }}
                 >
@@ -108,7 +108,7 @@ export default function InsightsPage() {
               className="rounded-xl border p-6 text-center md:p-8"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #16181B",
+                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #17181B",
                 borderColor: "rgba(201, 169, 97, 0.3)",
               }}
             >

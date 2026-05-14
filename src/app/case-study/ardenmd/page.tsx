@@ -115,7 +115,7 @@ const TIMELINE = [
 function StatusBadge({ status }: { status: string }) {
   const colors =
     status === "Complete"
-      ? "border-green-800 bg-green-900/30 text-green-400"
+      ? "border-[#5C8261]/40 bg-[#7A9E7E]/10 text-[#98B79C]"
       : status === "In Progress"
         ? "border-brass-500/30 bg-brass-500/10 text-brass-300"
         : "border-gray-700 text-[#B6B8BC]";
@@ -200,7 +200,7 @@ export default function ArdenMDCaseStudyPage() {
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <svg
-                    className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                    className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -233,7 +233,7 @@ export default function ArdenMDCaseStudyPage() {
                 <div
                   key={feature.title}
                   className="rounded-xl border border-[rgba(255,255,255,0.06)] p-6"
-                  style={{ backgroundColor: "#16181B" }}
+                  style={{ backgroundColor: "#17181B" }}
                 >
                   <h3 className="mb-2 text-lg font-bold text-white">
                     {feature.title}
@@ -341,7 +341,7 @@ export default function ArdenMDCaseStudyPage() {
         {/* CTA */}
         <section className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-7xl px-6 md:px-8">
-            <div className="mx-auto max-w-2xl rounded-2xl border border-blue-500/20 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#16181B" }}>
+            <div className="mx-auto max-w-2xl rounded-2xl border border-brass-500/30 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#17181B" }}>
               <h2 className="mb-4 text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
                 Building Something in Healthcare or Regulated Industries?
               </h2>

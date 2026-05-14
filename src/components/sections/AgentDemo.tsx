@@ -301,15 +301,15 @@ function DemoRunner({
     <div
       className="rounded-2xl border p-4 md:p-6"
       style={{
-        background: "#16181B",
+        background: "#17181B",
         borderColor: "rgba(255, 255, 255, 0.06)",
       }}
     >
       <div className="mb-4 flex items-center justify-between border-b border-[#23262B] pb-3">
         <div className="flex items-center gap-2">
-          <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
-          <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-          <span className="h-3 w-3 rounded-full bg-[#28C840]" />
+          <span className="h-3 w-3 rounded-full bg-[#3A2F12]" />
+          <span className="h-3 w-3 rounded-full bg-[#5F4D1F]" />
+          <span className="h-3 w-3 rounded-full bg-[#5C8261]/60" />
           <span className="ml-3 font-mono text-xs text-[#8A8D93]">
             agent.run · {scenario.title}
           </span>
@@ -323,7 +323,7 @@ function DemoRunner({
           )}
           {done && (
             <span className="flex items-center gap-1.5 text-xs font-medium text-sage-400">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+              <span className="h-2 w-2 rounded-full bg-[#98B79C]" />
               COMPLETED
             </span>
           )}
@@ -380,7 +380,7 @@ function DemoRunner({
       </div>
 
       {done && (
-        <div className="rounded-lg border border-emerald-500/30 bg-emerald-500/5 p-4">
+        <div className="rounded-lg border border-[#7A9E7E]/30 bg-[#7A9E7E]/8 p-4">
           <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-sage-400">
             <svg
               className="h-4 w-4"
@@ -457,10 +457,10 @@ function StepIcon({
 }) {
   const color =
     type === "thought"
-      ? "bg-purple-400"
+      ? "bg-bone-300"
       : type === "tool"
         ? "bg-brass-400"
-        : "bg-emerald-400";
+        : "bg-[#98B79C]";
   return (
     <div className="mt-1.5 flex h-5 w-5 shrink-0 items-center justify-center">
       <span

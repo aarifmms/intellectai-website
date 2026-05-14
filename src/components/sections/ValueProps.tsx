@@ -70,7 +70,7 @@ export default function ValueProps() {
               key={prop.title}
               className="rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 md:p-7"
               style={{
-                background: "#16181B",
+                background: "#17181B",
                 borderColor: "rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {

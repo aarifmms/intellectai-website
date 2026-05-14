@@ -57,7 +57,7 @@ export default function ContactForm() {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Your full name"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#17181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-brass-500 focus:ring-1 focus:ring-brass-500"
         />
       </div>
 
@@ -76,7 +76,7 @@ export default function ContactForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@company.com"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#17181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-brass-500 focus:ring-1 focus:ring-brass-500"
         />
       </div>
 
@@ -94,7 +94,7 @@ export default function ContactForm() {
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="+1 (416) 555-0123"
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#17181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-brass-500 focus:ring-1 focus:ring-brass-500"
         />
       </div>
 
@@ -111,7 +111,7 @@ export default function ContactForm() {
           required
           value={service}
           onChange={(e) => setService(e.target.value)}
-          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#17181B] px-4 py-3 text-white outline-none transition-colors focus:border-brass-500 focus:ring-1 focus:ring-brass-500"
         >
           <option value="" disabled>
             Select a service
@@ -139,12 +139,12 @@ export default function ContactForm() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Tell us about your project or what you need help with..."
-          className="w-full resize-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#16181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+          className="w-full resize-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[#17181B] px-4 py-3 text-white placeholder:text-[#8A8D93] outline-none transition-colors focus:border-brass-500 focus:ring-1 focus:ring-brass-500"
         />
       </div>
 
       {status === "error" && (
-        <p className="text-sm text-red-500">
+        <p className="text-sm text-[#C95A3F]">
           Something went wrong. Please try again or email us directly.
         </p>
       )}

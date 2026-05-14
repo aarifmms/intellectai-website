@@ -25,7 +25,7 @@ export default function Problem() {
           <div
             className="group rounded-xl border p-6 transition-all duration-300 hover:-translate-y-1 md:p-8"
             style={{
-              background: "#16181B",
+              background: "#17181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
             }}
             onMouseEnter={(e) => {
@@ -37,7 +37,7 @@ export default function Problem() {
           >
             <div className="mb-4">
               <svg
-                className="h-8 w-8 text-red-400"
+                className="h-8 w-8 text-[#C95A3F]"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -50,25 +50,25 @@ export default function Problem() {
               </svg>
             </div>
             <div className="mb-4 flex items-center gap-3">
-              <h3 className="text-xl font-bold text-red-400 md:text-2xl">
+              <h3 className="text-xl font-bold text-[#C95A3F] md:text-2xl">
                 The Old Way
               </h3>
             </div>
             <ul className="space-y-2.5 text-base leading-[1.6] text-[#B6B8BC]">
               <li className="flex gap-2">
-                <span className="text-red-400/70">·</span>
+                <span className="text-[#B85450]/70">·</span>
                 Chatbots that just answer FAQs and end the loop
               </li>
               <li className="flex gap-2">
-                <span className="text-red-400/70">·</span>
+                <span className="text-[#B85450]/70">·</span>
                 Missed calls, dropped leads, manual scheduling
               </li>
               <li className="flex gap-2">
-                <span className="text-red-400/70">·</span>
+                <span className="text-[#B85450]/70">·</span>
                 Tools that don&apos;t talk to each other
               </li>
               <li className="flex gap-2">
-                <span className="text-red-400/70">·</span>
+                <span className="text-[#B85450]/70">·</span>
                 Hiring more people every time you scale
               </li>
             </ul>
@@ -77,7 +77,7 @@ export default function Problem() {
           <div
             className="group rounded-xl border border-l-2 p-6 transition-all duration-300 hover:-translate-y-1 md:p-8"
             style={{
-              background: "#16181B",
+              background: "#17181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
               borderLeftColor: "#C9A961",
             }}

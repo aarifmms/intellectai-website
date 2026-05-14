@@ -15,9 +15,9 @@ export default function ThankYouPage() {
       <main className="pb-20 pt-32 md:pb-32 md:pt-44" style={{ backgroundColor: "#0E0F11" }}>
         <div className="mx-auto max-w-7xl px-6 md:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-900/30 border border-green-800">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#7A9E7E]/10 border border-[#5C8261]/40">
               <svg
-                className="h-8 w-8 text-green-400"
+                className="h-8 w-8 text-[#98B79C]"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -36,7 +36,7 @@ export default function ThankYouPage() {
               back to you within 24 hours.
             </p>
 
-            <div className="mb-10 rounded-xl border border-[rgba(255,255,255,0.06)] p-6 text-left" style={{ backgroundColor: "#16181B" }}>
+            <div className="mb-10 rounded-xl border border-[rgba(255,255,255,0.06)] p-6 text-left" style={{ backgroundColor: "#17181B" }}>
               <h2 className="mb-4 text-lg font-bold text-white">
                 What happens next?
               </h2>

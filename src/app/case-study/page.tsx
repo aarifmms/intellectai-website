@@ -127,7 +127,7 @@ export default function CaseStudyPage() {
                 <span className="rounded-full border border-gray-700 px-3 py-1">
                   100% AI-Powered
                 </span>
-                <span className="rounded-full border border-green-800 bg-green-900/30 px-3 py-1 text-green-400">
+                <span className="rounded-full border border-[#5C8261]/40 bg-[#7A9E7E]/10 px-3 py-1 text-[#98B79C]">
                   Live at sellerpilotai.ai
                 </span>
               </div>
@@ -162,7 +162,7 @@ export default function CaseStudyPage() {
             <ul className="space-y-3 text-base leading-[1.7] text-[#B6B8BC] md:text-lg">
               <li className="flex items-start gap-3">
                 <svg
-                  className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                  className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -173,7 +173,7 @@ export default function CaseStudyPage() {
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                  className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -184,7 +184,7 @@ export default function CaseStudyPage() {
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                  className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -194,7 +194,7 @@ export default function CaseStudyPage() {
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                  className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -204,7 +204,7 @@ export default function CaseStudyPage() {
               </li>
               <li className="flex items-start gap-3">
                 <svg
-                  className="mt-1.5 h-4 w-4 shrink-0 text-red-500"
+                  className="mt-1.5 h-4 w-4 shrink-0 text-[#C95A3F]"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
@@ -233,7 +233,7 @@ export default function CaseStudyPage() {
                 <div
                   key={feature.title}
                   className="rounded-xl border border-[rgba(255,255,255,0.06)] p-6"
-                  style={{ backgroundColor: "#16181B" }}
+                  style={{ backgroundColor: "#17181B" }}
                 >
                   <h3 className="mb-2 text-lg font-bold text-white">
                     {feature.title}
@@ -340,7 +340,7 @@ export default function CaseStudyPage() {
         {/* CTA */}
         <section className="py-16 md:py-24" style={{ backgroundColor: "#131416" }}>
           <div className="mx-auto max-w-7xl px-6 md:px-8">
-            <div className="mx-auto max-w-2xl rounded-2xl border border-blue-500/20 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#16181B" }}>
+            <div className="mx-auto max-w-2xl rounded-2xl border border-brass-500/30 p-8 text-center shadow-lg md:p-12" style={{ backgroundColor: "#17181B" }}>
               <h2 className="mb-4 text-[28px] font-bold leading-[1.15] tracking-tight text-white md:text-[40px]">
                 Want Us to Build Something Like This for You?
               </h2>

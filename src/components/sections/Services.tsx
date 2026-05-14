@@ -104,7 +104,7 @@ export default function Services() {
                 key={service.title}
                 className="card-3d group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8"
                 style={{
-                  backgroundColor: "#16181B",
+                  backgroundColor: "#17181B",
                   border: isPopular
                     ? "1px solid rgba(201, 169, 97, 0.4)"
                     : "1px solid rgba(255, 255, 255, 0.06)",
@@ -126,7 +126,7 @@ export default function Services() {
                 }}
                 onMouseLeave={(e) => {
                   const el = e.currentTarget;
-                  el.style.backgroundColor = "#16181B";
+                  el.style.backgroundColor = "#17181B";
                   el.style.transform = "translateY(0)";
                   el.style.borderColor = isPopular
                     ? "rgba(201, 169, 97, 0.4)"

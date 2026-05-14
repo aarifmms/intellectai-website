@@ -25,7 +25,7 @@ export default function Contact() {
               and we&apos;ll get back to you within 24 hours.
             </p>
 
-            <div className="rounded-2xl border border-[rgba(255,255,255,0.06)] p-6 shadow-sm md:p-10" style={{ backgroundColor: "#16181B" }}>
+            <div className="rounded-2xl border border-[rgba(255,255,255,0.06)] p-6 shadow-sm md:p-10" style={{ backgroundColor: "#17181B" }}>
               <ContactForm />
             </div>
 

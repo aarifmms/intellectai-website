@@ -48,7 +48,7 @@ export default function Header() {
             ))}
             <a
               href="/contact"
-              className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-blue-600"
+              className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-brass-600"
             >
               Book a Free Audit
             </a>

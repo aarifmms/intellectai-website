@@ -160,7 +160,7 @@ export default async function InsightPost({
               className="mt-14 rounded-xl border p-6 text-center md:p-8"
               style={{
                 background:
-                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #16181B",
+                  "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #17181B",
                 borderColor: "rgba(201, 169, 97, 0.3)",
               }}
             >

@@ -81,7 +81,7 @@ export default function ROICalculator() {
           <div
             className="rounded-xl border p-6 md:p-8 lg:col-span-3"
             style={{
-              background: "#16181B",
+              background: "#17181B",
               borderColor: "rgba(255, 255, 255, 0.06)",
             }}
           >
@@ -158,7 +158,7 @@ export default function ROICalculator() {
             className="relative overflow-hidden rounded-xl border p-6 md:p-8 lg:col-span-2"
             style={{
               background:
-                "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #16181B",
+                "linear-gradient(135deg, rgba(201, 169, 97,0.08), rgba(232, 226, 212,0.04)), #17181B",
               borderColor: "rgba(201, 169, 97, 0.3)",
               boxShadow: "0 0 40px rgba(201, 169, 97, 0.10)",
             }}

@@ -61,7 +61,7 @@ export default function PricingPage() {
                     key={tier.name}
                     className="relative flex flex-col rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 md:p-7"
                     style={{
-                      background: "#16181B",
+                      background: "#17181B",
                       border: isHighlight
                         ? "1px solid rgba(201, 169, 97, 0.4)"
                         : "1px solid rgba(255, 255, 255, 0.06)",
@@ -147,7 +147,7 @@ export default function PricingPage() {
               })}
             </div>
 
-            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-[#23262B] bg-[#16181B] p-6 text-center md:p-8">
+            <div className="mx-auto mt-12 max-w-3xl rounded-xl border border-[#23262B] bg-[#17181B] p-6 text-center md:p-8">
               <h3 className="text-xl font-bold text-white md:text-2xl">
                 Not sure which tier fits?
               </h3>
@@ -178,7 +178,7 @@ export default function PricingPage() {
               {FAQS.map((faq) => (
                 <details
                   key={faq.question}
-                  className="group rounded-xl border border-[#23262B] bg-[#16181B] p-5 md:p-6"
+                  className="group rounded-xl border border-[#23262B] bg-[#17181B] p-5 md:p-6"
                 >
                   <summary className="flex cursor-pointer items-center justify-between gap-4 text-base font-semibold text-white md:text-lg">
                     {faq.question}

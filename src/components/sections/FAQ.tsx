@@ -22,16 +22,16 @@ export default function FAQ() {
                 key={i}
                 className={`mb-3 overflow-hidden rounded-xl transition-all duration-300 ${
                   isOpen
-                    ? "border border-blue-500/20"
+                    ? "border border-brass-500/30"
                     : "border border-[rgba(255,255,255,0.06)]"
                 }`}
                 style={{
-                  backgroundColor: isOpen ? "#1C1F23" : "#16181B",
+                  backgroundColor: isOpen ? "#1C1F23" : "#17181B",
                 }}
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="flex w-full items-center justify-between px-5 py-5 text-left focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#131416] focus-visible:outline-none"
+                  className="flex w-full items-center justify-between px-5 py-5 text-left focus-visible:ring-2 focus-visible:ring-brass-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F11] focus-visible:outline-none"
                   aria-expanded={isOpen}
                 >
                   <span className="pr-4 text-base font-semibold text-white md:text-lg">

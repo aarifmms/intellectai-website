@@ -8,7 +8,7 @@ const ease = [0.16, 1, 0.3, 1] as const;
 const metrics = [
   { label: "Calls Handled", value: "1,247", color: "bg-brass-400" },
   { label: "Leads Qualified", value: "382", color: "bg-bone-200" },
-  { label: "Avg Response", value: "1.2s", color: "bg-emerald-400" },
+  { label: "Avg Response", value: "1.2s", color: "bg-[#98B79C]" },
   { label: "Active Agents", value: "7", color: "bg-brass-500" },
 ];
 
@@ -114,7 +114,7 @@ export default function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Trusted by SMBs across 9+ industries · Toronto, Canada
+              Trusted by SMBs across 14 industries · Toronto, Canada
             </motion.p>
           </div>
 
@@ -131,7 +131,7 @@ export default function Hero() {
 
             <motion.div
               className="hero-float-alt absolute -bottom-6 -left-6 z-0 w-[260px] rounded-xl border border-[rgba(255,255,255,0.06)] p-4 sm:-left-10"
-              style={{ background: "#16181B" }}
+              style={{ background: "#17181B" }}
               initial={{ opacity: 0, x: 40, y: 20 }}
               animate={{ opacity: 1, x: 0, y: 0 }}
               transition={{ duration: 0.7, delay: 0.6, ease }}
@@ -172,16 +172,16 @@ export default function Hero() {
 
             <motion.div
               className="hero-float glow-blue relative z-10 rounded-xl border border-[rgba(255,255,255,0.06)] p-5 sm:p-6"
-              style={{ background: "#16181B" }}
+              style={{ background: "#17181B" }}
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.4, ease }}
             >
               <div className="mb-5 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-[#FF5F57]" />
-                  <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-                  <span className="h-3 w-3 rounded-full bg-[#28C840]" />
+                  <span className="h-3 w-3 rounded-full bg-[#3A2F12]" />
+                  <span className="h-3 w-3 rounded-full bg-[#5F4D1F]" />
+                  <span className="h-3 w-3 rounded-full bg-[#5C8261]/60" />
                 </div>
                 <span className="font-mono text-xs font-medium tracking-wider text-[#B6B8BC]">
                   AI Workforce · LIVE

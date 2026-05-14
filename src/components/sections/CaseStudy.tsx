@@ -26,7 +26,7 @@ export default function CaseStudy() {
               href={study.href}
               className="group relative flex flex-col overflow-hidden rounded-xl transition-all duration-300"
               style={{
-                backgroundColor: "#16181B",
+                backgroundColor: "#17181B",
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
@@ -39,7 +39,7 @@ export default function CaseStudy() {
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget;
-                el.style.backgroundColor = "#16181B";
+                el.style.backgroundColor = "#17181B";
                 el.style.transform = "scale(1)";
                 el.style.borderColor = "rgba(255, 255, 255, 0.06)";
                 el.style.boxShadow = "none";
@@ -55,12 +55,12 @@ export default function CaseStudy() {
                     <span
                       className={`flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs font-medium ${
                         study.status === "Live"
-                          ? "border-emerald-800 bg-emerald-900/30 text-sage-400"
+                          ? "border-[#5C8261]/40 bg-[#7A9E7E]/10 text-sage-400"
                           : "border-brass-500/30 bg-brass-500/10 text-brass-300"
                       }`}
                     >
                       {study.status === "Live" && (
-                        <span className="animate-pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                        <span className="animate-pulse-dot inline-block h-1.5 w-1.5 rounded-full bg-[#98B79C]" />
                       )}
                       {study.status}
                     </span>

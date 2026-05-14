@@ -51,7 +51,7 @@ export default function Testimonials() {
               key={t.name}
               className="group flex flex-col rounded-xl p-6 transition-all duration-300"
               style={{
-                backgroundColor: "#16181B",
+                backgroundColor: "#17181B",
                 border: "1px solid rgba(255, 255, 255, 0.06)",
               }}
               onMouseEnter={(e) => {
