@@ -129,6 +129,22 @@ export const CASE_STUDIES = [
       { value: "AI", label: "Powered" },
     ],
   },
+  {
+    title: "Keyblind",
+    category: "AI Security / DevTools",
+    description:
+      "Encrypted secrets vault with MCP integration for AI agents. Protects API keys from leaking to LLM conversations. 16 MCP tools, 40+ CLI commands, browser extension.",
+    tags: ["DevTools", "Security", "MCP", "AI"],
+    href: "/case-study/keyblind",
+    status: "Live" as const,
+    liveUrl: "keyblind.dev",
+    stats: [
+      { value: "40+", label: "CLI Commands" },
+      { value: "16", label: "MCP Tools" },
+      { value: "MIT", label: "License" },
+      { value: "Zero", label: "Telemetry" },
+    ],
+  },
 ] as const;
 
 export const STEPS = [
