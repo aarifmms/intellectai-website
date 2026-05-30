@@ -192,12 +192,12 @@ export const FAQS = [
   {
     question: "Do you work with small businesses?",
     answer:
-      "Yes, that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Our entry point is $2,000. Designed specifically for SMBs that want to punch above their weight.",
+      "Yes, that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Our entry point is $2,500. Designed specifically for SMBs that want to punch above their weight.",
   },
   {
     question: "What does it cost to deploy an AI workforce?",
     answer:
-      "AI Operations Audit: Free. Workflow Automation: From $2,000. Custom AI Workforce: From $5,000. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
+      "AI Operations Audit: Free. Workflow Automation: From $2,500. Custom AI Workforce: From $7,500. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
   },
   {
     question: "What happens after deployment?",
