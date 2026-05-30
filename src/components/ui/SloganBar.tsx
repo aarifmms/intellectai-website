@@ -19,7 +19,7 @@ export default function SloganBar() {
         <p className="text-center text-lg italic leading-relaxed tracking-wide text-[#D3CCBA] md:text-xl">
           {slogan}
         </p>
-        <p className="mt-1 text-right text-sm font-medium tracking-wider text-[#8A8D93]">
+        <p className="mt-1 pr-8 text-right text-sm font-medium tracking-wider text-[#8A8D93] md:pr-16">
           &mdash; IntellectAI
         </p>
       </div>
