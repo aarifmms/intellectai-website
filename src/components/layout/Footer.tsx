@@ -1,4 +1,5 @@
 import { NAV_LINKS, SITE } from "@/lib/constants";
+import BrandName from "@/components/ui/BrandName";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-2 lg:grid-cols-5">
           {/* Logo + Tagline */}
           <div className="lg:col-span-1">
-            <span className="text-xl font-bold text-white">{SITE.name}</span>
+            <BrandName className="text-xl font-bold" />
             <p className="mt-2 text-sm text-[#B6B8BC]">{SITE.tagline}</p>
             <a
               href="/contact"
@@ -122,7 +123,7 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div style={{ backgroundColor: "#050507" }}>
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-4 text-xs text-[#8A8D93] md:flex-row md:px-8">
-          <span>&copy; 2026 {SITE.name}. All rights reserved.</span>
+          <span>&copy; 2026 <BrandName className="text-xs" />. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <a
               href="/privacy"

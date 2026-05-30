@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BrandName from "@/components/ui/BrandName";
 
 export const metadata: Metadata = {
   title: "Case Study: TheEVHub | IntellectAI",
@@ -116,7 +117,7 @@ export default function EVHubCaseStudyPage() {
                 TheEVHub
               </h1>
               <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
-                How IntellectAI built a full e-commerce platform for certified EV
+                How <BrandName className="text-lg md:text-xl leading-[1.6]" /> built a full e-commerce platform for certified EV
                 charging equipment, from product catalog to Stripe checkout to
                 admin dashboard.
               </p>

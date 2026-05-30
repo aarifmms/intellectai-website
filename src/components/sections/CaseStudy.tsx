@@ -1,6 +1,7 @@
 "use client";
 
 import { CASE_STUDIES } from "@/lib/constants";
+import BrandName from "@/components/ui/BrandName";
 
 export default function CaseStudy() {
   return (
@@ -15,7 +16,7 @@ export default function CaseStudy() {
             We Don&apos;t Just Talk About AI. We Ship It.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
-            Real products. Real businesses. Built and shipped by IntellectAI.
+            Real products. Real businesses. Built and shipped by <BrandName className="text-lg md:text-xl leading-[1.6]" />.
           </p>
         </div>
 

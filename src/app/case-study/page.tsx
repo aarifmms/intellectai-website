@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import BrandName from "@/components/ui/BrandName";
 import { SITE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -113,7 +114,7 @@ export default function CaseStudyPage() {
                 SellerPilotAI
               </h1>
               <p className="mx-auto mt-4 max-w-2xl text-lg leading-[1.6] text-[#B6B8BC] md:text-xl">
-                How IntellectAI built a full AI SaaS product from concept to
+                How <BrandName className="text-lg md:text-xl leading-[1.6]" /> built a full AI SaaS product from concept to
                 launch, proving that agentic AI can replace entire compliance
                 teams.
               </p>

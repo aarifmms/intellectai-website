@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BrandName from "@/components/ui/BrandName";
 
 export default function About() {
   return (
@@ -23,7 +24,7 @@ export default function About() {
 
           <div>
             <span className="text-xs font-semibold uppercase tracking-wider text-brass-300">
-              About IntellectAI
+              About <BrandName className="text-xs font-semibold uppercase tracking-wider" />
             </span>
             <h2 className="mt-4 mb-4 text-[32px] font-bold leading-[1.15] tracking-tight text-white md:text-[48px]">
               We Run on the Same{" "}
@@ -33,10 +34,10 @@ export default function About() {
               Aarif Shaikh
             </h3>
             <p className="mb-6 text-sm font-medium text-brass-300">
-              Founder · IntellectAI &amp; SellerPilotAI
+              Founder · <BrandName className="text-sm font-medium" /> &amp; SellerPilotAI
             </p>
             <p className="text-base leading-[1.7] text-[#B6B8BC]">
-              IntellectAI isn&apos;t a consultancy that talks about AI. We
+              <BrandName className="text-base leading-[1.7]" /> isn&apos;t a consultancy that talks about AI. We
               operate our own business on a 7-agent AI workforce that handles
               everything from sales outreach to content production to customer
               support. 24/7, at a fraction of the cost of a human team. We

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { NAV_LINKS, SITE } from "@/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
+import BrandName from "@/components/ui/BrandName";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,8 +32,8 @@ export default function Header() {
         } transition-all duration-300`}
       >
         <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 md:h-20 md:px-8">
-          <Link href="/" className="text-xl font-bold text-white md:text-2xl">
-            {SITE.name}
+          <Link href="/" className="text-xl font-bold md:text-2xl">
+            <BrandName className="text-xl font-bold md:text-2xl" />
           </Link>
 
           {/* Desktop Nav */}

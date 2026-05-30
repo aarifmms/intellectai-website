@@ -30,7 +30,7 @@ export default function PopupPage() {
             </h1>
             <p className="mb-12 text-center text-lg leading-[1.6] text-[#B6B8BC]">
               Drop your pain points below. We&apos;ll show you what an AI agent
-              can do with them — no slide decks, just results.
+              can do with them. No slide decks, just results.
             </p>
 
             <div

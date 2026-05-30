@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import BrandName from "@/components/ui/BrandName";
 
 const SLOGANS = [
   "We Identify. We Automate. You Scale.",
@@ -21,7 +22,7 @@ export default function SloganBar() {
             {slogan}
           </p>
           <p className="mt-1 text-right text-sm font-medium tracking-wider text-[#8A8D93]">
-            &mdash; IntellectAI
+            &mdash; <BrandName className="text-sm font-medium tracking-wider" />
           </p>
         </div>
       </div>
