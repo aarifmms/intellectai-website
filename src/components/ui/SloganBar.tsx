@@ -15,13 +15,15 @@ export default function SloganBar() {
       className="border-b border-[rgba(255,255,255,0.04)]"
       style={{ backgroundColor: "#0E0F11" }}
     >
-      <div className="mx-auto max-w-7xl px-6 py-3 md:px-8">
-        <p className="text-center text-lg italic leading-relaxed tracking-wide text-[#D3CCBA] md:text-xl">
-          {slogan}
-        </p>
-        <p className="mt-1 pr-8 text-right text-sm font-medium tracking-wider text-[#8A8D93] md:pr-16">
-          &mdash; IntellectAI
-        </p>
+      <div className="mx-auto flex max-w-7xl flex-col items-center px-6 py-3 md:px-8">
+        <div className="w-fit">
+          <p className="text-center text-lg italic leading-relaxed tracking-wide text-[#D3CCBA] md:text-xl">
+            {slogan}
+          </p>
+          <p className="mt-1 text-right text-sm font-medium tracking-wider text-[#8A8D93]">
+            &mdash; IntellectAI
+          </p>
+        </div>
       </div>
     </div>
   );
