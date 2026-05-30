@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://intellectai-website-three.vercel.app/sitemap.xml",
+    sitemap: "https://intellectai.io/sitemap.xml",
   };
 }

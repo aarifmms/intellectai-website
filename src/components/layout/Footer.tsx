@@ -72,7 +72,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-[#23262B] text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -88,7 +88,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X / Twitter"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-[#23262B] text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"
@@ -104,7 +104,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-zinc-800 text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
+                className="flex h-9 w-9 items-center justify-center rounded-full bg-[#23262B] text-[#B6B8BC] transition-all hover:bg-brass-500 hover:text-white"
               >
                 <svg
                   width="24"

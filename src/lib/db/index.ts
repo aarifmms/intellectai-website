@@ -1,8 +1,18 @@
 import { neon } from "@neondatabase/serverless";
 
-const sql = neon(process.env.DATABASE_URL!);
+let _sql: any = null;
+function getSql() {
+  if (!_sql) {
+    if (!process.env.DATABASE_URL) {
+      throw new Error("DATABASE_URL environment variable is not set");
+    }
+    _sql = neon(process.env.DATABASE_URL);
+  }
+  return _sql;
+}
 
 export async function ensureRisLeadsTable() {
+  const sql = getSql();
   await sql`
     CREATE TABLE IF NOT EXISTS ris_leads (
       id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
@@ -16,7 +26,6 @@ export async function ensureRisLeadsTable() {
       created_at TIMESTAMPTZ DEFAULT NOW()
     )
   `;
-  // Add event_name column if upgrading from older schema
   await sql`ALTER TABLE ris_leads ADD COLUMN IF NOT EXISTS event_name TEXT`;
 }
 
@@ -29,6 +38,7 @@ export async function insertRisLead(lead: {
   audioBase64?: string | null;
   eventName?: string | null;
 }) {
+  const sql = getSql();
   const [row] = await sql`
     INSERT INTO ris_leads (full_name, company_name, phone, email, requirements, audio_base64, event_name)
     VALUES (${lead.fullName}, ${lead.companyName}, ${lead.phone}, ${lead.email}, ${lead.requirements}, ${lead.audioBase64 ?? null}, ${lead.eventName ?? null})
@@ -38,6 +48,7 @@ export async function insertRisLead(lead: {
 }
 
 export async function getRisLeads(eventName?: string) {
+  const sql = getSql();
   if (eventName) {
     return sql`
       SELECT id, full_name, company_name, phone, email, requirements, audio_base64, event_name, created_at
@@ -54,10 +65,11 @@ export async function getRisLeads(eventName?: string) {
 }
 
 export async function getDistinctEventNames() {
+  const sql = getSql();
   const rows = await sql`
     SELECT DISTINCT event_name FROM ris_leads WHERE event_name IS NOT NULL ORDER BY event_name
   `;
   return rows as { event_name: string }[];
 }
 
-export { sql };
+export { getSql as sql };

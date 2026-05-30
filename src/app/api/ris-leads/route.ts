@@ -1,8 +1,29 @@
 import { NextResponse } from "next/server";
 import { ensureRisLeadsTable, insertRisLead } from "@/lib/db";
+import { escapeHtml, isValidEmail, checkRateLimit, isSameOrigin } from "@/lib/utils";
+
+const SENDER_EMAIL =
+  process.env.SENDER_EMAIL || "IntellectAI <onboarding@resend.dev>";
 
 export async function POST(request: Request) {
   try {
+    if (!isSameOrigin(request)) {
+      return NextResponse.json(
+        { error: "Invalid origin" },
+        { status: 403 }
+      );
+    }
+
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      "unknown";
+    if (!checkRateLimit(`ris-leads:${ip}`, 10, 60_000)) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
     await ensureRisLeadsTable();
 
     const body = await request.json();
@@ -11,6 +32,13 @@ export async function POST(request: Request) {
     if (!fullName || !email || !requirements) {
       return NextResponse.json(
         { error: "Full name, email, and requirements are required" },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidEmail(email)) {
+      return NextResponse.json(
+        { error: "Invalid email address" },
         { status: 400 }
       );
     }
@@ -25,18 +53,17 @@ export async function POST(request: Request) {
       eventName: eventName || null,
     });
 
-    // Send notification email via Resend if configured
     if (process.env.RESEND_API_KEY) {
       const hasAudio = Boolean(audioBase64);
       const eventLabel = eventName || "Pop-Up";
-      await fetch("https://api.resend.com/emails", {
+      fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         },
         body: JSON.stringify({
-          from: "IntellectAI <onboarding@resend.dev>",
+          from: SENDER_EMAIL,
           to: "letstalk@intellectai.io",
           reply_to: email,
           subject: `${eventLabel} Lead: ${fullName} (${companyName || "No company"})`,
@@ -55,7 +82,7 @@ export async function POST(request: Request) {
           `,
         }),
       }).catch(() => {
-        // Resend failure is non-fatal — lead is already in the database
+        console.error("Resend notification failed for lead:", lead.id);
       });
     }
 
@@ -67,12 +94,4 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
-}
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }

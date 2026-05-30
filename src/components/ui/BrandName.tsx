@@ -3,7 +3,7 @@ export default function BrandName({ className = "" }: { className?: string }) {
     <span
       className={className}
       style={{
-        background: "linear-gradient(to bottom right, #FFFFFF 50%, #C9A961 50%)",
+        background: "linear-gradient(to bottom right, #FFFFFF 20%, #E6D5A8 50%, #C9A961 70%)",
         WebkitBackgroundClip: "text",
         WebkitTextFillColor: "transparent",
         backgroundClip: "text",

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BrandName from "@/components/ui/BrandName";
 
 const SLOGANS = [
@@ -9,7 +9,10 @@ const SLOGANS = [
 ];
 
 export default function SloganBar() {
-  const [slogan] = useState(() => SLOGANS[Math.floor(Math.random() * SLOGANS.length)]);
+  const [slogan, setSlogan] = useState(SLOGANS[0]);
+  useEffect(() => {
+    setSlogan(SLOGANS[Math.floor(Math.random() * SLOGANS.length)]);
+  }, []);
 
   return (
     <div

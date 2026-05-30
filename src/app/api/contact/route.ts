@@ -1,7 +1,28 @@
 import { NextResponse } from "next/server";
+import { escapeHtml, isValidEmail, checkRateLimit, isSameOrigin } from "@/lib/utils";
+
+const SENDER_EMAIL =
+  process.env.SENDER_EMAIL || "IntellectAI <onboarding@resend.dev>";
 
 export async function POST(request: Request) {
   try {
+    if (!isSameOrigin(request)) {
+      return NextResponse.json(
+        { error: "Invalid origin" },
+        { status: 403 }
+      );
+    }
+
+    const ip =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      "unknown";
+    if (!checkRateLimit(`contact:${ip}`, 5, 60_000)) {
+      return NextResponse.json(
+        { error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
     const { name, email, phone, service, message } = body;
 
@@ -12,8 +33,13 @@ export async function POST(request: Request) {
       );
     }
 
-    // Send notification email using Resend if API key is available,
-    // otherwise fall back to logging (for development/MVP)
+    if (!isValidEmail(email)) {
+      return NextResponse.json(
+        { error: "Invalid email address" },
+        { status: 400 }
+      );
+    }
+
     const resendApiKey = process.env.RESEND_API_KEY;
 
     if (resendApiKey) {
@@ -24,10 +50,7 @@ export async function POST(request: Request) {
           Authorization: `Bearer ${resendApiKey}`,
         },
         body: JSON.stringify({
-          // TODO: Once intellectai.io is verified in Resend (SPF/DKIM/DMARC),
-          // change `from` to "IntellectAI <noreply@intellectai.io>" so leads
-          // don't hit spam. Until then this uses Resend's sandbox sender.
-          from: "IntellectAI <onboarding@resend.dev>",
+          from: SENDER_EMAIL,
           to: "letstalk@intellectai.io",
           reply_to: email,
           subject: `New Lead: ${name}. ${service}`,
@@ -45,15 +68,13 @@ export async function POST(request: Request) {
       });
 
       if (!res.ok) {
-        const errorData = await res.text();
-        console.error("Resend API error:", errorData);
+        console.error("Resend API error:", await res.text());
         return NextResponse.json(
           { error: "Failed to send email" },
           { status: 500 }
         );
       }
     } else {
-      // Log to console in development / when Resend is not configured
       console.log("=== NEW CONTACT FORM SUBMISSION ===");
       console.log({ name, email, phone, service, message });
       console.log("===================================");
@@ -66,12 +87,4 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
-}
-
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;");
 }
