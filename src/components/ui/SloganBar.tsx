@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const SLOGANS = [
   "We Identify. We Automate. You Scale.",
-  "Your Pain Points In. Automation Out.",
+  "Your Pain Points In. Our Automation Out.",
 ];
 
 export default function SloganBar() {
