@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="grid-bg relative overflow-hidden pb-20 pt-32 md:pb-32 md:pt-44"
+      className="grid-bg relative overflow-hidden pb-20 pt-12 md:pb-32 md:pt-16"
       style={{ background: "#0E0F11" }}
     >
       <div
