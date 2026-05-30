@@ -7,7 +7,7 @@ import { PRICING_TIERS, FAQS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Pricing | IntellectAI · AI Operating System for SMBs",
   description:
-    "Transparent pricing for your AI Operating System. Free AI Operations Audit. Workflow automation from $2,000. Custom AI Workforce from $5,000. Built for small and medium businesses.",
+    "Transparent pricing for your AI Operating System. Free AI Operations Audit. Workflow automation from $2,500. Custom AI Workforce from $7,500. Built for small and medium businesses.",
   alternates: { canonical: "/pricing" },
 };
 

@@ -49,7 +49,7 @@ export const SERVICES = [
     title: "AI Workflow Automation",
     description:
       "Deploy autonomous workflows across your stack. AI handles the busywork, your team handles the customers. Connected, intelligent, always-on.",
-    price: "Starting at $2,000",
+    price: "Starting at $2,500",
     cta: "Automate Your Operations",
     popular: true,
     features: [
@@ -64,7 +64,7 @@ export const SERVICES = [
     title: "Custom AI Workforce",
     description:
       "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
-    price: "Starting at $5,000",
+    price: "Starting at $7,500",
     cta: "Deploy Your AI Workforce",
     popular: false,
     features: [
@@ -399,7 +399,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "AI Workflow Automation",
-    price: "$2,000",
+    price: "$2,500",
     priceSuffix: "starting",
     description:
       "Deploy autonomous workflows across your stack. The fast path to AI-powered operations.",
@@ -418,7 +418,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Custom AI Workforce",
-    price: "$5,000",
+    price: "$7,500",
     priceSuffix: "starting",
     description:
       "Digital employees built for your business. Voice, sales, support, ops, running 24/7.",
@@ -439,14 +439,14 @@ export const PRICING_TIERS = [
     price: "$1,500",
     priceSuffix: "/mo",
     description:
-      "Ongoing optimization, expansion, and monitoring of your AI Operating System.",
+      "Ongoing optimization, expansion, and monitoring of your AI Operating System. Three tiers to grow with you.",
     cta: "Talk to Us",
     ctaHref: "/contact",
     highlight: false,
     features: [
-      "Monthly performance review",
-      "New agents & workflows as you grow",
-      "Priority monitoring & bug fixes",
+      "Maintain ($1,500/mo): monitoring, fixes, monthly reports",
+      "Grow ($2,500/mo): + new workflows & quarterly strategy",
+      "Scale ($3,500/mo): + dedicated roadmap & priority support",
       "Quarterly AI strategy session",
       "Cancel anytime",
     ],
