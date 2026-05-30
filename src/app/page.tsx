@@ -1,5 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SloganBar from "@/components/ui/SloganBar";
 import Hero from "@/components/sections/Hero";
 import LogoBar from "@/components/sections/LogoBar";
 import Problem from "@/components/sections/Problem";
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <SloganBar />
       <main className="relative">
         <Hero />
         <SectionReveal>
