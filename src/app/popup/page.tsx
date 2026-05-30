@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import SloganBar from "@/components/ui/SloganBar";
 import PopupLeadForm from "@/components/sections/PopupLeadForm";
 
 export const metadata: Metadata = {
@@ -14,8 +15,9 @@ export default function PopupPage() {
   return (
     <>
       <Header />
+      <SloganBar />
       <main
-        className="min-h-screen pb-20 pt-32 md:pb-32 md:pt-44"
+        className="min-h-screen pb-20 pt-12 md:pb-32 md:pt-16"
         style={{ backgroundColor: "#0E0F11" }}
       >
         <div className="mx-auto max-w-7xl px-6 md:px-8">
