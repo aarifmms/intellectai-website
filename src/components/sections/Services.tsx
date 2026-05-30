@@ -102,7 +102,7 @@ export default function Services() {
             return (
               <div
                 key={service.title}
-                className="card-3d group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8"
+                className="group relative flex flex-col rounded-xl p-6 transition-all duration-300 md:p-8"
                 style={{
                   backgroundColor: "#17181B",
                   border: isPopular
@@ -194,18 +194,9 @@ export default function Services() {
                   href="/contact"
                   className={`block w-full rounded-lg py-3 text-center text-base font-semibold transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 ${
                     isPopular
-                      ? "text-white"
+                      ? "btn-glow bg-gradient-to-r from-brass-500 to-bone-200 text-white"
                       : "border border-brass-500/30 bg-transparent text-brass-300 hover:bg-brass-500/10"
                   }`}
-                  style={
-                    isPopular
-                      ? {
-                          background:
-                            "linear-gradient(180deg, #DAB97A 0%, #C9A961 60%, #A8893F 100%)",
-                          boxShadow: "0 0 20px rgba(201, 169, 97, 0.3)",
-                        }
-                      : undefined
-                  }
                 >
                   {service.cta}
                 </a>

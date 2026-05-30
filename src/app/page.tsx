@@ -11,7 +11,6 @@ import Industries from "@/components/sections/Industries";
 import ValueProps from "@/components/sections/ValueProps";
 import ROICalculator from "@/components/sections/ROICalculator";
 import CaseStudy from "@/components/sections/CaseStudy";
-import Testimonials from "@/components/sections/Testimonials";
 import HowItWorks from "@/components/sections/HowItWorks";
 import About from "@/components/sections/About";
 import FAQ from "@/components/sections/FAQ";
@@ -51,9 +50,6 @@ export default function Home() {
         </SectionReveal>
         <SectionReveal>
           <CaseStudy />
-        </SectionReveal>
-        <SectionReveal delay={0.1}>
-          <Testimonials />
         </SectionReveal>
         <SectionReveal>
           <HowItWorks />

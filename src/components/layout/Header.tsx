@@ -42,14 +42,14 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-[#B6B8BC] transition-colors hover:text-white"
+                className="rounded text-sm font-medium text-[#B6B8BC] transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F11]"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="/contact"
-              className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-brass-600"
+              className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-brass-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F11]"
             >
               Book a Free Audit
             </a>
@@ -58,7 +58,7 @@ export default function Header() {
           {/* Mobile Hamburger */}
           <button
             onClick={() => setMobileOpen(true)}
-            className="p-2 text-white md:hidden"
+            className="rounded p-2 text-white md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500"
             aria-label="Open menu"
           >
             <svg
@@ -83,7 +83,7 @@ export default function Header() {
         <div className="fixed inset-0 z-40" style={{ backgroundColor: "#0E0F11" }}>
           <button
             onClick={() => setMobileOpen(false)}
-            className="absolute right-6 top-5 p-2 text-white"
+            className="absolute right-6 top-5 rounded p-2 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500"
             aria-label="Close menu"
           >
             <svg
@@ -105,7 +105,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-2xl font-semibold text-white"
+                className="rounded text-2xl font-semibold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500"
               >
                 {link.label}
               </a>
@@ -113,7 +113,7 @@ export default function Header() {
             <a
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="rounded-lg bg-brass-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:bg-brass-400"
+              className="rounded-lg bg-brass-500 px-8 py-4 text-lg font-semibold text-white shadow-sm transition-all duration-150 hover:bg-brass-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500"
             >
               Book a Free Audit
             </a>
