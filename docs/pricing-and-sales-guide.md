@@ -6,7 +6,7 @@
 |---------|---------------|----------|---------|
 | **AI Operations Audit** | **FREE** | 3 business days | Deliverable: AI Opportunity Map + architecture + roadmap |
 | **AI Workflow Automation** | **$2,500** | 1–2 weeks | 30 days post-launch |
-| **Custom AI Workforce** | **$7,500** | 3–4 weeks | 60 days post-launch |
+| **Custom AI Workforce** | **$5,500** | 3–4 weeks | 60 days post-launch |
 
 ### Retainer Tiers (Existing Customers)
 
@@ -45,7 +45,7 @@ Use these real projects to anchor pricing conversations. The question is never "
 
 ---
 
-### Tier 2: Custom AI Workforce ($7,500+)
+### Tier 2: Custom AI Workforce ($5,500+)
 
 **What it is:** Custom-built AI agents (voice + text) that work autonomously. Multi-agent systems with reasoning, tool use, and escalation logic.
 
@@ -56,7 +56,7 @@ Use these real projects to anchor pricing conversations. The question is never "
 - 24/7 autonomous operation
 
 **Example conversation starter:**
-> "This is a Custom AI Workforce build. We'd design and deploy autonomous agents that handle calls, leads, scheduling, and ops — running 24/7, integrated with your entire stack. Starting range is $7,500. Live in 3-4 weeks."
+> "This is a Custom AI Workforce build. We'd design and deploy autonomous agents that handle calls, leads, scheduling, and ops — running 24/7, integrated with your entire stack. Starting range is $5,500. Live in 3-4 weeks."
 
 ---
 
@@ -65,8 +65,8 @@ Use these real projects to anchor pricing conversations. The question is never "
 | Project | Tier | Actual Range | Complexity Drivers |
 |---------|------|-------------|-------------------|
 | **Driving Academy Voice Agent** | Workflow Automation | $2,500-$4,500 | Single voice agent + Google Calendar + availability logic |
-| **SellerPilotAI** | Custom AI Workforce | $7,500-$10,000 | Multi-agent monitoring, compliance logic, SaaS platform |
-| **TheEVHub** | Custom AI Workforce | $7,500-$12,000 | Full-stack e-commerce, Stripe, shipping, AI quiz matcher |
+| **SellerPilotAI** | Custom AI Workforce | $5,500-$10,000 | Multi-agent monitoring, compliance logic, SaaS platform |
+| **TheEVHub** | Custom AI Workforce | $5,500-$12,000 | Full-stack e-commerce, Stripe, shipping, AI quiz matcher |
 | **Keyblind** | Custom AI Workforce | $10,000-$15,000 | MCP server, CLI, browser extension, encryption, multi-platform |
 | **ArdenMD** | Custom AI Workforce | $15,000-$30,000+ | Clinical AI, PIPEDA compliance, 658+ MLMs, 47 specialties |
 
@@ -74,7 +74,7 @@ Use these real projects to anchor pricing conversations. The question is never "
 
 ## Pricing Psychology
 
-### Why $2,500 and $7,500?
+### Why $2,500 and $5,500?
 
 - **Below $2,000** — SMBs question quality. "If it's that cheap, does it actually work?"
 - **$2,500-$7,500** — The SMB sweet spot. Feels like a serious investment without board approval.

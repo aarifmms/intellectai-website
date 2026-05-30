@@ -64,7 +64,7 @@ export const SERVICES = [
     title: "Custom AI Workforce",
     description:
       "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
-    price: "Starting at $7,500",
+    price: "Starting at $5,500",
     cta: "Deploy Your AI Workforce",
     popular: false,
     features: [
@@ -197,7 +197,7 @@ export const FAQS = [
   {
     question: "What does it cost to deploy an AI workforce?",
     answer:
-      "AI Operations Audit: Free. Workflow Automation: From $2,500. Custom AI Workforce: From $7,500. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
+      "AI Operations Audit: Free. Workflow Automation: From $2,500. Custom AI Workforce: From $5,500. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
   },
   {
     question: "What happens after deployment?",
@@ -418,7 +418,7 @@ export const PRICING_TIERS = [
   },
   {
     name: "Custom AI Workforce",
-    price: "$7,500",
+    price: "$5,500",
     priceSuffix: "starting",
     description:
       "Digital employees built for your business. Voice, sales, support, ops, running 24/7.",
