@@ -120,17 +120,6 @@ body::before {
   background-size: 60px 60px;
 }
 
-/* ── 3D card perspective tilt (softened) ── */
-.card-3d {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.card-3d:hover {
-  transform: rotateY(-1deg) rotateX(1deg) translateZ(6px);
-}
-
 /* ── Brass button: solid stamp, subtle inset highlight, not a glow ── */
 .btn-glow {
   position: relative;
