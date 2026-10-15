@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SITE } from "@/lib/constants";
 import BrandName from "@/components/ui/BrandName";
 
 export default function Header() {
@@ -47,6 +47,12 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={SITE.loginUrl}
+              className="rounded text-sm font-medium text-[#B6B8BC] transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F11]"
+            >
+              Sign in
+            </a>
             <a
               href="/contact"
               className="rounded-lg bg-brass-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:-translate-y-0.5 hover:bg-brass-400 hover:shadow-md active:translate-y-0 active:bg-brass-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0E0F11]"
@@ -110,6 +116,13 @@ export default function Header() {
                 {link.label}
               </a>
             ))}
+            <a
+              href={SITE.loginUrl}
+              onClick={() => setMobileOpen(false)}
+              className="rounded text-2xl font-semibold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brass-500"
+            >
+              Sign in
+            </a>
             <a
               href="/contact"
               onClick={() => setMobileOpen(false)}

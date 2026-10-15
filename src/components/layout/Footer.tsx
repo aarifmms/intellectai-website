@@ -126,6 +126,12 @@ export default function Footer() {
           <span>&copy; 2026 <BrandName className="text-xs" />. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <a
+              href={SITE.loginUrl}
+              className="transition-colors hover:text-white"
+            >
+              Sign in
+            </a>
+            <a
               href="/privacy"
               className="transition-colors hover:text-white"
             >

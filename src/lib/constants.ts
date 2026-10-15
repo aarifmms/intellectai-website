@@ -4,6 +4,8 @@ export const SITE = {
   description:
     "We design and deploy Agentic AI infrastructure for small and medium businesses. AI agents, workflow automation, and autonomous operations that run your business 24/7.",
   url: "https://intellectai.io",
+  osUrl: "https://os.intellectai.io",
+  loginUrl: "https://os.intellectai.io/login",
   email: "letstalk@intellectai.io",
   founder: "Aarif Shaikh",
   location: "Toronto, Canada",
