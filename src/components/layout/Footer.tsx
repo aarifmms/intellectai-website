@@ -61,6 +61,9 @@ export default function Footer() {
             <a href="/case-study/ardenmd" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
               ArdenMD
             </a>
+            <a href="/case-study/keyblind" className="text-sm text-[#B6B8BC] transition-colors hover:text-white">
+              Keyblind
+            </a>
           </div>
 
           {/* Social Links */}

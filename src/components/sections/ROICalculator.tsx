@@ -187,7 +187,7 @@ export default function ROICalculator() {
                   {currency(totals.monthlyNet)}
                 </div>
                 <div className="mt-1 text-xs text-[#8A8D93]">
-                  After ~{currency(AGENT_COST_MONTHLY)}/mo agent infra cost
+                  after agent running costs
                 </div>
               </div>
 

@@ -21,7 +21,7 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO_CAPABILITIES = [
-  "Handle inbound calls and bookings",
+  "Handle inbound calls with custom voice agents",
   "Follow up with leads automatically",
   "Manage customer conversations",
   "Schedule appointments end-to-end",
@@ -52,7 +52,7 @@ export const SERVICES = [
     popular: true,
     features: [
       "Cross-tool workflow orchestration",
-      "Integrations: CRM, email, calendar, Slack, billing",
+      "Integrations: CRM, email, calendar, billing, social publishing",
       "AI-powered decision logic & routing",
       "Live monitoring dashboard",
       "30 days post-launch support",
@@ -61,7 +61,7 @@ export const SERVICES = [
   {
     title: "Custom AI Workforce",
     description:
-      "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
+      "Digital employees that work alongside your team. Custom voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
     cta: "Deploy Your AI Workforce",
     popular: false,
     features: [
@@ -155,7 +155,7 @@ export const STEPS = [
     number: "02",
     title: "Deploy",
     description:
-      "Your AI workforce is built, integrated with your stack, and launched in 1–4 weeks. Voice agents, automations, and workflows go live with monitoring.",
+      "Your AI workforce is built, integrated with your stack, and launched in 1–4 weeks. Custom voice agents, automations, and workflows go live with monitoring.",
   },
   {
     number: "03",
@@ -169,12 +169,12 @@ export const FAQS = [
   {
     question: "What is an AI Operating System exactly?",
     answer:
-      "It's the connected layer of AI agents, automations, and workflows that runs your business operations. Instead of one chatbot for one task, you get an intelligent system that coordinates calls, leads, scheduling, customer comms, and admin work autonomously, all integrated with your existing tools.",
+      "It's the connected layer of AI agents, automations, and workflows that runs your business operations. Instead of one chatbot for one task, you get an intelligent system that coordinates leads, scheduling, customer comms, and admin work autonomously, and answers calls with a custom voice agent, all integrated with your existing tools.",
   },
   {
     question: "How is Agentic AI different from a chatbot?",
     answer:
-      "A chatbot answers questions. An Agentic AI agent takes action, it can call your CRM, book in your calendar, send emails, update databases, escalate to humans when needed, and complete entire workflows end-to-end. We don't build chatbots. We deploy digital employees.",
+      "A chatbot answers questions. An Agentic AI agent takes action, it can read your CRM, book in your calendar, send emails and invoices, escalate to humans when needed, and complete entire workflows end-to-end. We don't build chatbots. We deploy digital employees.",
   },
   {
     question: "How long does deployment take?",
@@ -209,21 +209,21 @@ export const INDUSTRIES = [
     icon: "car",
     description:
       "Service booking agents, parts inquiry handlers, lead qualification for dealers and EV brands.",
-    examples: ["Voice service booking", "Trade-in valuation", "Test drive scheduling"],
+    examples: ["Custom voice service booking", "Trade-in valuation", "Test drive scheduling"],
   },
   {
     name: "Restaurants & Hospitality",
     icon: "utensils",
     description:
       "Reservation agents, supplier ordering, review monitoring, staff scheduling, menu Q&A.",
-    examples: ["Voice reservation agent", "Supplier reorder bot", "Review responder"],
+    examples: ["Custom voice reservation agent", "Supplier reorder bot", "Review responder"],
   },
   {
     name: "Medical & Dental Clinics",
     icon: "heart",
     description:
       "Appointment scheduling, intake automation, insurance verification, follow-up workflows.",
-    examples: ["Voice booking agent", "Patient intake", "Recall automation"],
+    examples: ["Custom voice booking agent", "Patient intake", "Recall automation"],
   },
   {
     name: "Real Estate",
@@ -243,8 +243,8 @@ export const INDUSTRIES = [
     name: "Home Services & Trades",
     icon: "wrench",
     description:
-      "Voice intake, dispatch scheduling, quote-to-job automation, review collection for HVAC, plumbing, electrical, roofing.",
-    examples: ["Voice intake agent", "Dispatch optimizer", "Quote automation"],
+      "Custom voice intake, dispatch scheduling, quote-to-job automation, review collection for HVAC, plumbing, electrical, roofing.",
+    examples: ["Custom voice intake agent", "Dispatch optimizer", "Quote automation"],
   },
   {
     name: "Logistics & Trucking",
@@ -285,8 +285,8 @@ export const INDUSTRIES = [
     name: "Salons & Wellness",
     icon: "sparkles",
     description:
-      "Voice booking, rebooking automation, loyalty follow-ups, inventory orders, no-show recovery.",
-    examples: ["Voice booking agent", "Rebooking automation", "Loyalty workflows"],
+      "Custom voice booking, rebooking automation, loyalty follow-ups, inventory orders, no-show recovery.",
+    examples: ["Custom voice booking agent", "Rebooking automation", "Loyalty workflows"],
   },
   {
     name: "Agencies & Consultants",
