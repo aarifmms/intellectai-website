@@ -40,7 +40,7 @@ export default function Hero() {
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brass-400" />
                 AI Operating System for SMBs
               </span>
-              <h1 className="mt-6 text-[40px] font-bold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
+              <h1 className="mt-6 text-center text-[40px] font-bold leading-[1.05] tracking-tight text-white md:text-[56px] lg:text-[64px]">
                 Stop Hiring for Work{" "}
                 <span className="text-gradient">an Agent Can Do.</span>
               </h1>

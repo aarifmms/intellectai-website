@@ -64,6 +64,37 @@ export async function getRisLeads(eventName?: string) {
   `;
 }
 
+export async function ensureContactLeadsTable() {
+  const sql = getSql();
+  await sql`
+    CREATE TABLE IF NOT EXISTS contact_leads (
+      id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+      name TEXT NOT NULL,
+      email TEXT NOT NULL,
+      phone TEXT,
+      service TEXT,
+      message TEXT,
+      created_at TIMESTAMPTZ DEFAULT NOW()
+    )
+  `;
+}
+
+export async function insertContactLead(lead: {
+  name: string;
+  email: string;
+  phone: string;
+  service: string;
+  message: string;
+}) {
+  const sql = getSql();
+  const [row] = await sql`
+    INSERT INTO contact_leads (name, email, phone, service, message)
+    VALUES (${lead.name}, ${lead.email}, ${lead.phone}, ${lead.service}, ${lead.message})
+    RETURNING id, created_at
+  `;
+  return row as { id: string; created_at: Date };
+}
+
 export async function getDistinctEventNames() {
   const sql = getSql();
   const rows = await sql`

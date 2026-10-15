@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { escapeHtml, isValidEmail, checkRateLimit, isSameOrigin } from "@/lib/utils";
+import { ensureContactLeadsTable, insertContactLead } from "@/lib/db";
 
 const SENDER_EMAIL =
   process.env.SENDER_EMAIL || "IntellectAI <onboarding@resend.dev>";
@@ -40,14 +41,21 @@ export async function POST(request: Request) {
       );
     }
 
-    const resendApiKey = process.env.RESEND_API_KEY;
+    await ensureContactLeadsTable();
+    const lead = await insertContactLead({
+      name,
+      email,
+      phone: phone || "",
+      service,
+      message,
+    });
 
-    if (resendApiKey) {
-      const res = await fetch("https://api.resend.com/emails", {
+    if (process.env.RESEND_API_KEY) {
+      fetch("https://api.resend.com/emails", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${resendApiKey}`,
+          Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         },
         body: JSON.stringify({
           from: SENDER_EMAIL,
@@ -63,25 +71,17 @@ export async function POST(request: Request) {
               <tr><td style="padding:8px;font-weight:bold;border-bottom:1px solid #eee;">Service</td><td style="padding:8px;border-bottom:1px solid #eee;">${escapeHtml(service)}</td></tr>
               <tr><td style="padding:8px;font-weight:bold;vertical-align:top;">Message</td><td style="padding:8px;">${escapeHtml(message).replace(/\n/g, "<br>")}</td></tr>
             </table>
+            <p style="margin-top:16px;color:#666;">Lead ID: ${lead.id}</p>
           `,
         }),
+      }).catch(() => {
+        console.error("Resend notification failed for contact lead:", lead.id);
       });
-
-      if (!res.ok) {
-        console.error("Resend API error:", await res.text());
-        return NextResponse.json(
-          { error: "Failed to send email" },
-          { status: 500 }
-        );
-      }
-    } else {
-      console.log("=== NEW CONTACT FORM SUBMISSION ===");
-      console.log({ name, email, phone, service, message });
-      console.log("===================================");
     }
 
-    return NextResponse.json({ success: true });
-  } catch {
+    return NextResponse.json({ success: true, id: lead.id });
+  } catch (error) {
+    console.error("Contact form submission error:", error);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }
