@@ -16,7 +16,6 @@ export const NAV_LINKS = [
   { label: "Industries", href: "/#industries" },
   { label: "Demo", href: "/#demo" },
   { label: "ROI", href: "/#roi" },
-  { label: "Pricing", href: "/pricing" },
   { label: "Insights", href: "/insights" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -35,8 +34,6 @@ export const SERVICES = [
     title: "AI Operations Audit",
     description:
       "We map your business, identify automation opportunities, and architect your AI Operating System. You leave with a deployable blueprint, not a slide deck.",
-    price: "FREE",
-    originalPrice: "$500",
     cta: "Get Your AI Blueprint",
     popular: false,
     features: [
@@ -51,7 +48,6 @@ export const SERVICES = [
     title: "AI Workflow Automation",
     description:
       "Deploy autonomous workflows across your stack. AI handles the busywork, your team handles the customers. Connected, intelligent, always-on.",
-    price: "Starting at $2,500",
     cta: "Automate Your Operations",
     popular: true,
     features: [
@@ -66,7 +62,6 @@ export const SERVICES = [
     title: "Custom AI Workforce",
     description:
       "Digital employees that work alongside your team. Voice agents, sales agents, support agents, ops agents, built for your business, running 24/7.",
-    price: "Starting at $5,500",
     cta: "Deploy Your AI Workforce",
     popular: false,
     features: [
@@ -194,12 +189,12 @@ export const FAQS = [
   {
     question: "Do you work with small businesses?",
     answer:
-      "Yes, that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Our entry point is $2,500. Designed specifically for SMBs that want to punch above their weight.",
+      "Yes, that's our specialty. We've built AI Operating Systems for service businesses, clinics, e-commerce brands, agencies, real estate teams, and trades. Designed specifically for SMBs that want to punch above their weight.",
   },
   {
     question: "What does it cost to deploy an AI workforce?",
     answer:
-      "AI Operations Audit: Free. Workflow Automation: From $2,500. Custom AI Workforce: From $5,500. Ongoing optimization: $1,500/mo. We scope every project before we quote, no surprises.",
+      "Every engagement starts with a free AI Operations Audit so we understand your business before we quote. From there, pricing is scoped to your specific workflows, tools, and the size of the AI workforce you need. We work with you to find a number that fits your budget, no surprises.",
   },
   {
     question: "What happens after deployment?",
@@ -378,79 +373,5 @@ export const VALUE_PROPS = [
     description:
       "Your AI gets smarter every month. We monitor, tune, and expand capabilities as you grow.",
     icon: "refresh",
-  },
-] as const;
-
-export const PRICING_TIERS = [
-  {
-    name: "AI Operations Audit",
-    price: "Free",
-    originalPrice: "$500",
-    description:
-      "Architect your AI Operating System before spending a dollar.",
-    cta: "Get Your AI Blueprint",
-    ctaHref: "/contact",
-    highlight: false,
-    features: [
-      "60-minute strategy session",
-      "AI Opportunity Map ranked by ROI",
-      "Custom workforce architecture",
-      "Roadmap with costs & timelines",
-      "Deliverable in 3 business days",
-    ],
-  },
-  {
-    name: "AI Workflow Automation",
-    price: "$2,500",
-    priceSuffix: "starting",
-    description:
-      "Deploy autonomous workflows across your stack. The fast path to AI-powered operations.",
-    cta: "Automate Your Operations",
-    ctaHref: "/contact",
-    highlight: true,
-    badge: "Most Popular",
-    features: [
-      "Cross-tool workflow orchestration",
-      "CRM, email, calendar, Slack, billing integrations",
-      "AI-powered decision logic & routing",
-      "Live monitoring dashboard",
-      "30 days post-launch support",
-      "Live in 1–2 weeks",
-    ],
-  },
-  {
-    name: "Custom AI Workforce",
-    price: "$5,500",
-    priceSuffix: "starting",
-    description:
-      "Digital employees built for your business. Voice, sales, support, ops, running 24/7.",
-    cta: "Deploy Your AI Workforce",
-    ctaHref: "/contact",
-    highlight: false,
-    features: [
-      "Custom-trained AI agents (voice + text)",
-      "Tool use: CRMs, calendars, databases, APIs",
-      "Multi-step reasoning & escalation logic",
-      "Unified ops dashboard",
-      "60 days post-launch support",
-      "Live in 3–4 weeks",
-    ],
-  },
-  {
-    name: "AI Operations Retainer",
-    price: "$1,500",
-    priceSuffix: "/mo",
-    description:
-      "Ongoing optimization, expansion, and monitoring of your AI Operating System. Three tiers to grow with you.",
-    cta: "Talk to Us",
-    ctaHref: "/contact",
-    highlight: false,
-    features: [
-      "Maintain ($1,500/mo): monitoring, fixes, monthly reports",
-      "Grow ($2,500/mo): + new workflows & quarterly strategy",
-      "Scale ($3,500/mo): + dedicated roadmap & priority support",
-      "Quarterly AI strategy session",
-      "Cancel anytime",
-    ],
   },
 ] as const;

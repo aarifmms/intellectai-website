@@ -178,18 +178,6 @@ export default function Services() {
                   ))}
                 </ul>
 
-                <div className="mb-6">
-                  <span className="text-sm text-[#8A8D93]">Starting at </span>
-                  <span className="text-2xl font-bold text-white md:text-3xl">
-                    {service.price}
-                  </span>
-                  {"originalPrice" in service && service.originalPrice && (
-                    <span className="ml-2 text-sm text-[#8A8D93] line-through">
-                      {service.originalPrice}
-                    </span>
-                  )}
-                </div>
-
                 <a
                   href="/contact"
                   className={`block w-full rounded-lg py-3 text-center text-base font-semibold transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 ${

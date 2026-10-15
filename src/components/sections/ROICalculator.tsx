@@ -36,14 +36,12 @@ export default function ROICalculator() {
     const monthlyDollarsSaved = monthlyHoursSaved * hourlyRate;
     const monthlyNet = monthlyDollarsSaved - AGENT_COST_MONTHLY;
     const annualNet = monthlyNet * 12;
-    const paybackMonths = monthlyNet > 0 ? 2000 / monthlyNet : 0; // $2k setup
     return {
       weeklyHours,
       monthlyHoursSaved: Math.round(monthlyHoursSaved),
       monthlyDollarsSaved: Math.round(monthlyDollarsSaved),
       monthlyNet: Math.round(monthlyNet),
       annualNet: Math.round(annualNet),
-      paybackWeeks: paybackMonths > 0 ? Math.max(1, Math.round(paybackMonths * 4.33)) : 0,
     };
   }, [hours, hourlyRate, teamSize]);
 
@@ -201,19 +199,6 @@ export default function ROICalculator() {
                   {currency(totals.annualNet)}
                 </div>
               </div>
-
-              {totals.paybackWeeks > 0 && totals.monthlyNet > 0 && (
-                <div className="rounded-lg border border-[#23262B] bg-black/20 p-3">
-                  <div className="text-xs text-[#B6B8BC]">
-                    A typical{" "}
-                    <span className="font-semibold text-[#E6E7E9]">$2,000</span>{" "}
-                    automation pays for itself in
-                  </div>
-                  <div className="mt-0.5 text-lg font-bold text-sage-400">
-                    ~{totals.paybackWeeks} weeks
-                  </div>
-                </div>
-              )}
             </div>
 
             <a
