@@ -22,21 +22,27 @@ const SCENARIOS: Record<
         type: "thought",
         label: "Reasoning",
         detail:
-          "New lead. Need to enrich the company, score the lead, and route appropriately.",
+          "New lead. Need to enrich the account, score against the ICP, then route and reply.",
         duration: 900,
       },
       {
         type: "tool",
-        label: "tool: enrichCompany",
-        detail: "Querying Apollo + LinkedIn API for acme-retail.io...",
+        label: "tool: crm.read",
+        detail: "Loading lead + account context from the CRM...",
         duration: 1200,
       },
       {
         type: "result",
         label: "Enrichment found",
         detail:
-          "Acme Retail. 48 employees, $12M revenue, e-commerce sector. Sarah is Head of Operations.",
+          "Acme Retail. 48 employees, e-commerce sector. Sarah is Head of Operations. No existing account.",
         duration: 800,
+      },
+      {
+        type: "tool",
+        label: "tool: knowledge.search",
+        detail: "Looking up qualification criteria in the Company Brain...",
+        duration: 900,
       },
       {
         type: "thought",
@@ -47,26 +53,20 @@ const SCENARIOS: Record<
       },
       {
         type: "tool",
-        label: "tool: hubspotCRM.create",
-        detail: "Creating contact + deal in HubSpot pipeline 'Inbound'...",
-        duration: 1000,
-      },
-      {
-        type: "tool",
-        label: "tool: gmail.sendReply",
+        label: "tool: email.send",
         detail:
-          "Drafting personalized response referencing inventory + e-commerce context...",
+          "Drafting personalized reply referencing inventory + e-commerce context...",
         duration: 1100,
       },
       {
         type: "tool",
-        label: "tool: calendar.book",
-        detail: "Sending 3 Calendly slots Tue/Wed/Thu next week.",
+        label: "tool: calendar.freebusy",
+        detail: "Checking team calendars and proposing 3 slots Tue/Wed/Thu next week.",
         duration: 900,
       },
     ],
     outcome:
-      "Lead enriched, scored 87/100, added to CRM, personalized reply sent with 3 booking slots. Elapsed: 6.8s.",
+      "Lead scored 87/100, routed to sales, personalized reply sent with 3 booking slots. Elapsed: 6.8s.",
   },
   support: {
     title: "Support Triage Agent",
@@ -76,13 +76,13 @@ const SCENARIOS: Record<
       {
         type: "thought",
         label: "Reasoning",
-        detail: "Missing package complaint. Need order facts before responding.",
+        detail: "Missing package complaint. Need order facts + policy before responding.",
         duration: 900,
       },
       {
         type: "tool",
-        label: "tool: shopify.getOrder",
-        detail: "Fetching order #4471 from Shopify...",
+        label: "tool: crm.read",
+        detail: "Loading order #4471 + customer record from the CRM...",
         duration: 1000,
       },
       {
@@ -94,40 +94,34 @@ const SCENARIOS: Record<
       },
       {
         type: "tool",
-        label: "tool: ups.disputeStatus",
-        detail: "Checking UPS dispute API for known delivery issues in zone...",
+        label: "tool: knowledge.search",
+        detail: "Checking the Company Brain for the missing-delivery policy...",
         duration: 1100,
       },
       {
         type: "result",
         label: "Found",
         detail:
-          "UPS flagged 3 misdeliveries in same zip code this week. Likely route error.",
+          "Policy: first-time misdelivery complaint → approve replacement and open a carrier case.",
         duration: 800,
       },
       {
         type: "thought",
         label: "Reasoning",
         detail:
-          "Pattern of misdeliveries + first-time complaint from customer = approve replacement under policy.",
+          "First-time complaint + delivery scan anomaly = approve replacement under policy.",
         duration: 900,
       },
       {
         type: "tool",
-        label: "tool: shopify.createReplacement",
-        detail: "Creating replacement order with expedited shipping (no charge)...",
-        duration: 1000,
-      },
-      {
-        type: "tool",
-        label: "tool: gmail.sendReply",
+        label: "tool: email.send",
         detail:
-          "Drafting empathetic reply with new tracking number + UPS investigation note.",
+          "Drafting empathetic reply with replacement details + carrier investigation note.",
         duration: 1000,
       },
     ],
     outcome:
-      "Resolved in 7.5s. Replacement shipped, customer informed, UPS case logged for refund recovery.",
+      "Resolved in 7.5s. Replacement approved, customer informed, carrier case logged for refund recovery.",
   },
   booking: {
     title: "Voice Booking Agent",
@@ -148,7 +142,7 @@ const SCENARIOS: Record<
       },
       {
         type: "tool",
-        label: "tool: crm.findCustomer",
+        label: "tool: crm.read",
         detail: "Looking up 'Mike' by phone +1-416-555-0188...",
         duration: 900,
       },
@@ -244,7 +238,8 @@ export default function AgentDemo() {
 
         <p className="mt-4 text-center text-xs text-[#8A8D93]">
           Demo is a deterministic simulation. Your production agent uses GPT-4o
-          / Claude / Gemini with real tool calls to your stack.
+          / Claude / Gemini with real tool calls to your stack. Integrations
+          shown are illustrative — we wire your actual CRM, email, calendar, and tools.
         </p>
       </div>
     </section>
